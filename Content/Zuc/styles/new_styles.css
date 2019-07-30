@@ -1,0 +1,469 @@
+/*By default settings css*/
+.sr-only{
+	display: none;
+}
+
+.center{
+	display: block;
+	margin: 0 auto;
+}
+
+.margin-top-5{
+	margin-top:5vw;
+}
+
+.margin-bottom-1{
+	margin-bottom:1em;
+}
+
+.margin-top-1{
+	margin-top:1em;
+}
+/*Homepage styling*/
+.smarterLiving-logo{
+	width:40%;
+	margin-bottom:1em;
+}
+.zuc-modal .zuc-modal-subtitle{
+	font-size:1em;
+	margin-top:10px;
+}
+
+.member-login > .zuc-input-group{
+	width:80%;
+	margin-bottom: 1em;
+}
+
+.member-login > .zuc-input-group> .zuc-input-name{
+	color:#36384B;
+
+}
+
+.member-login > .zuc-input-group > input[type=date], input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url]{
+	/*background-color: rgba(163, 172, 255,0.2);*/
+	width: 100%;
+    height: 50px;
+    border: 2px solid #54565A;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    color: #54565A;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+}
+
+.member-login > .zuc-input-group> .zuc-input-link{
+	text-align: left;
+	color:#36384B;
+	margin-top:5px;
+}
+
+.member-login > .form-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+
+.form-buttons>.zuc-btn-secondary{
+	/*padding:0;*/
+}
+@media screen and (max-width:767px){
+	.zuc-modal-logo{
+		width:80%;
+	}
+	.member-login > .form-buttons{
+		flex-direction: column;
+	}
+}
+
+
+.remember-me{
+	width:80%;
+	margin-left:2.5em;
+}
+
+.remember-me > input{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    font-family: 'aktiv-grotesk',Helvetica,sans-serif;
+    font-size:12px;
+    margin:0 auto;
+}
+
+.square-radio{
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1.5vw;
+    user-select: none;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+}
+/* Hide the browser's default radio button */
+.square-radio > input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 0%;
+	
+}
+
+/* On mouse-over, add a grey background color */
+.square-radio:hover input ~ .checkmark{
+	background-color:#ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.square-radio input:checked ~ .checkmark{
+	border:2px solid #434DA0;
+	background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.remember-me input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.remember-me .checkmark:after {
+ 	top: 6.5px;
+	left: 6.5px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #434DA0;
+}
+
+/*Job posting styling*/
+.jobPostings{
+	width:60%;
+	margin: 0 auto;
+}
+
+.jobPostings h5{
+	font-size:2em;
+}
+
+.jobPostings .u-text-uppercase{
+	text-transform:uppercase;
+}
+
+.jobPostings p, .jobPostings ul li{
+	font-size:1.125rem;
+	line-height:1.5;
+}
+
+/*New About us styling*/
+
+.purple-arrows {
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	position: relative;
+	top: 1.5vw;
+	width: 7%;
+	left: 2vw;
+}
+
+@media only screen and (max-width:767px;){
+	.show-for-mobile-only{
+		display: block;
+	}
+
+	.value-text-shadow{
+		display: none;
+	}
+	.tip{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width:768px){
+	.show-for-mobile-only{
+		display: none;
+	}
+	.value-text-shadow{
+    margin-bottom: 3em;
+    /*box-shadow:0px 0px 1.43vw 5px hsla(0,0%,5%,.2)*/
+    box-shadow: 0px 0px 30px 0px #888888;
+    width: 100%;
+    height: auto;
+    border-bottom: 9px solid #434DA0;
+    display: block;
+	}
+
+	.tip{
+	 display: block;
+    width: 1px;
+    border-left: 10px solid rgba(255,255,255,0.0);
+    border-right: 10px solid rgba(255,255,255,0.0);
+    border-bottom: 30px solid white;
+    position: absolute;
+	}
+}
+
+
+
+#value-text{
+	text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: 600;
+    font-size:1vw;
+}
+
+
+
+@media only screen and (min-width:768px){
+		.tip-1{
+		top:48%;
+		left:15%;
+	}
+}
+@media only screen and(min-width:1025px){
+	.tip-1{
+		top:53%;
+		left:25%;
+	}
+}
+
+@media only screen and (min-width:1441px){
+	.tip-1{
+		top:59%;
+		left:29%;
+	}
+}
+
+
+/*Commitment section*/
+
+.commitments{
+    width: 100%;
+    /*position: relative;*/
+    /*padding: 3vw 0;*/
+    /*z-index: 11;*/
+    height:auto;
+}
+.commitments > .zuc-title-container > h4{
+	font-size: 1.5vw;
+}
+
+.commitments > h2.u-zuc-indigo{
+	margin-left:16vw;
+}
+
+.commitment-featured-content p{
+	margin-top:1vw;
+	/*font-size:1.1vw;*/
+}
+
+.circle{
+	border-radius: 50%;
+	-ms-border-radius:50%;
+	-webkit-border-radius:50%;
+	width:50px;
+	height:50px;
+	padding:0;
+	background-color: #434DA0;
+	color:white;
+	text-align: center;
+	 font: 50px Arial, sans-serif;
+  	font-weight:700;
+}
+
+.circle:hover{
+	cursor:pointer;
+}
+
+.plus-sign{
+	line-height:1em;
+}
+
+.minus-sign{
+	line-height:0.8em;
+	margin-bottom:10px;
+}
+
+@media screen and (max-width:767px){
+	.left-side-image{
+		flex-flow: column nowrap;
+	}
+
+	.right-side-image{
+		flex-flow: column-reverse nowrap;
+	}
+
+	.commitment-featured-image, .commitment-featured-content{
+		width: 100%;
+		padding:0;
+	}
+
+	.commitment-featured-image > img{
+		max-width: 100%;
+	}
+
+	.commitment-featured-content{
+		padding:0 1em;
+	}
+}
+
+@media screen and (min-width:768px){
+	.left-side-image, .right-side-image{
+		flex-flow: row wrap;
+	}
+
+	.commitment-featured-image{
+		width:50%;
+	}
+
+	.commitment-featured-image > img{
+		width:100%;
+		max-width:100%;
+	}
+
+	.commitment-featured-content{
+		width:50%;
+		padding:0 3vw;
+
+	}
+
+}
+
+@media only screen and (min-width: 1025px){
+
+
+}
+
+/*Team gallery info*/
+.main-info{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top:4vw;
+}
+.gallery-arrow > i{
+	color:#434DA0;
+	font-size:100px;
+	font-weight:700;
+}
+
+.gallery-image > img{
+	width:100%;
+}
+
+.gallery-text > .subtext-team{
+	font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.gallery-title{
+	color: #434DA0;
+	font-family: PublicoHeadline;
+	font-weight: 700;
+}
+
+.gallery-subtitle{
+	margin-bottom:10px;
+	font-weight: 500;
+	font-size:1.1vw;
+}
+
+.gallery-info > p{
+	font-size:1vw;
+	margin-top:1em;
+}
+
+.gallery-info > a > i{
+    font-size: 2vw;
+    margin-top: 0.95vw;
+    color: #0077B5;
+}
+.thumbnails{
+	margin-top:3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.low-opacity{
+	opacity: 0.6;
+}
+.thumb-active{
+	box-shadow: 3px 7px 10px #888888;
+	opacity: 1;
+}
+
+
+@media screen and(max-width:767px){
+	.thumbnails{
+		display: none;
+	}
+	.more-page-links{
+		flex-direction: column;
+	}
+	.gallery-text{
+		padding:0 1em;
+	}
+}
+
+@media screen and (min-width:768px){
+	.gallery-image{
+		width:25%;
+	}
+
+	.gallery-info{
+		display: block;
+		width:30%;
+	}
+
+	.team-gallery > .gallery-text{
+		width:45%;
+		margin-left:18vw;
+	}
+	.thumbnail > img{
+		width:100px;
+	}
+	.more-page-links{
+		flex-direction: row;
+	}
+}
+
+.more-page-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.more-page-links > a{
+	padding: 1em;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #A3ACFF;
+    /*text-decoration: underline;*/
+}
+

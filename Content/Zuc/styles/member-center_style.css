@@ -1,0 +1,429 @@
+/*meDefault styles*/
+.width-80{
+	width:80%;
+	max-width:80%;
+}
+
+.memberForm-margin{
+	margin:1.3vw 0;
+}
+
+.auto-width{
+	width:auto;
+	max-width: 100%;
+}
+
+.padding-10{
+	padding:10px;
+}
+
+.strong{
+	font-weight:700;
+}
+/*Member navigation*/
+.member-navigation{
+	background-color: #54565A;
+	width:100%;
+	max-width:100%;
+    color: white;
+    /*display: flex;*/
+    padding: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -100;
+    position: relative;
+}
+
+.member-links{
+	width:auto;
+	max-width:100%;
+}
+
+.member-links > a{
+	padding:0 10px;
+}
+
+.member-links> .active{
+	color:#898A8D;
+}
+
+.light-grey{
+	color: #C8C8C8 !important;
+}
+
+.dark-grey{
+	color:#54565A;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.memberInfo-table > div> p.light-grey{
+	color: #898A8D;
+}
+/*Member info box only for desktop*/
+@media screen and (max-width:767px){
+	.member-info-boxed, .member-navigation{
+		display: none;
+		visibility: hidden;
+	}
+}	
+@media screen and (min-width:768px){
+	.member-info-boxed,.member-navigation{
+		display: flex;
+		visibility: visible;
+		justify-content: flex-end;
+	}
+
+	.memberInfo-table{
+		    display: grid;
+		    width: auto;
+		    max-width: 100%;
+		    border: 2px solid #54565A;
+		    grid-template-columns: auto auto;
+		    padding: 1em;
+		    grid-gap: 1em 2em;
+		}
+
+		.memberInfo-table > div> p{
+			font-weight: 700;
+			text-transform: uppercase;
+			color:#54565A;
+		}
+}
+/*Member Account set up page*/
+
+.member-setup-page{
+	border: 4px solid #C8C8C8;
+	margin-top:10%;
+}
+
+@media screen and (max-width: 767px){
+	.member-setup-page{
+		margin-top:20%;
+	}
+
+	.memberForm-checkmark{
+		flex-direction: column;
+	}
+
+	.memberForm-checkmark > label:nth-child(3n){
+		margin-left:-17px;
+		
+	}
+
+	.memberForm-checkmark > label:nth-child(4n){
+		margin-left:-6px;
+		
+	}
+
+}
+
+@media screen and (min-width:768px){
+	.memberForm-checkmark{
+			flex-direction: row;
+		}	
+}
+
+.member-setup-page>.inner-width{
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 4vw 2vw;
+}
+.memberProfile-title{
+	color: #54565A;
+    text-align: center;
+    font-weight: 500;
+}
+
+.memberProfile-title> h3{
+	font-size: 30px;
+    font-family:'aktiv-grotesk',Helvetica,sans-serif;
+    font-weight: 500;
+}
+
+.memberPortal-login>.zuc-form-row{
+	margin-top:1.3vw;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.memberPortal-login>.zuc-form-row >.zuc-form-group >.zuc-input-name{
+	color: #898A8D;
+    font-weight: 600;
+    /*font-size: 20px;*/
+}
+
+.memberForm-checkmark{
+	width:100%;
+	margin-top:1em;
+	display: flex;
+	align-items: center;
+}
+
+.memberForm-checkmark > h3{
+	font-family: aktiv-grotesk,Helvetica,sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #54565A;
+	font-weight: 600;
+	margin-bottom: 0px;
+	padding-right: 1em;
+}
+
+
+/* The container */
+.checkmark-container,.radio-container {
+  display: block;
+  position: relative;
+  padding: 0 30px 0 35px;
+  margin:12px 0;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width:auto;
+  font-family: aktiv-grotesk,Helvetica,sans-serif;
+  color:#54565A;
+}
+
+.radio-container{
+	/*margin-top:13px;*/
+	/*color:#898A8D;*/
+}
+
+/* Hide the browser's default checkbox */
+.checkmark-container input, .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 2px solid #54565A;
+
+}
+
+.radio-checkmark{
+	position: absolute;
+	top:-5px;
+	left:0;
+	height:25px;
+	width:25px;
+	background-color: #eee;
+	border:2px solid #54565A;
+	border-radius:50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkmark-container:hover input ~ .checkmark, .radio-container:hover input ~ .radio-checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkmark-container input:checked ~ .checkmark, .radio-container input:checked ~ .radio-checkmark {
+  background-color: #FFF;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after, .radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark-container input:checked ~ .checkmark:after, .radio-container input:checked ~ .radio-checkmark:after{
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkmark-container .checkmark:after {
+	 left: 7px;
+	top: 2px;
+	width: 7px;
+	height: 13px;
+	border: solid #54565A;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.radio-container .radio-checkmark:after{
+	top: 5px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+	border-radius: 50%;
+	background: #54565A;
+}
+.member-setup-page > .zuc-form-row{
+	display: flex;
+	align-items: center;
+}
+/*After registration */
+
+.page-smarterLiving-logo{
+	
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width:767px){
+	.afterRegistration-block{
+		width:90%;
+		margin-top:30%;
+	}
+	.page-smarterLiving-logo{
+		width:90%;
+	}
+}
+
+@media screen and (min-width:768px){
+	.afterRegistration-block{
+		width:50%;
+		margin-top:15%;
+	}
+	.page-smarterLiving-logo{
+		width:40%;
+	}
+}
+.registration-border{
+	border: 4px solid #C8C8C8;
+	padding:5vw;
+}
+
+.registration-para{
+	margin-top: 2em;
+	color:#54565A;
+	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+	font-size:20px;
+}
+
+.zuc-memberForm-button{
+    background-color: #898A8D;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    min-width: 15em;
+    width: auto;
+}
+
+ /*Address list screen*/
+
+.mainAddress-container{
+	display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-gap: 2em 5em;
+
+}
+
+.address-box{
+	border: 2px solid #54565A;
+	min-height: 223px;
+	height:auto;
+}
+
+.address-box> h6{
+	border-bottom: 2px solid #54565A;
+	color:#54565A;
+	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+	background-color: #E4E4E4;
+}
+
+.address-box >p{
+	color:#898A8D;
+}
+
+@media screen and (max-width: 768px){
+	.mainAddress-container{
+		grid-template-columns: auto;
+	}
+}
+
+.addressForm-select> .zuc-select-container select{
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 10px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #54565A;
+    border: 2px solid #54565A;
+}
+
+.addressForm-select>.zuc-select-container:before {
+    width: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 1px;
+    background: #fbfbfb;
+    content: "";
+    pointer-events: none;
+    height: 25px;
+}
+
+.addressForm-select>.zuc-select-container select:focus{
+    border: 1px solid #a3acff;
+    outline: none;
+}
+
+
+/*Payment option screens*/
+
+.payment-container{
+	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+}
+
+.payment-container p, .payment-containeri{
+	color: #54565A;
+}
+
+.payment-box{
+	border:2px solid #54565A;
+	padding:10px;
+}
+
+.chevron{
+	float: right;
+	cursor: pointer;
+}
+
+.two-row{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+@media screen and (min-width:768px){
+	
+
+}
+
