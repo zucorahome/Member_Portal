@@ -1,235 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Zucora Home: Event page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/new_styles.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/member-center_style.css">
-    <!--[if lt IE 9]>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet"><!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- [ FONTS ]-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
-    <!-- [ JQUERY ]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../../Scripts/Zuc/js/navigation.js"></script>
-    <script src="../../Scripts/Zuc/js/modals.js"></script>
-    <script src="../../Scripts/Zuc/js/display-jobPostings.js"></script>
-    <script src="../../Scripts/Zuc/js/Controllers/Utils.js"></script>
-    <script src="../../Scripts/Zuc/js/member-center.js"></script>
-    <!-- [ Alerts ]-->
-    <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css">
-    <!-- [ RESPONSIVE VIEWPORT ]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet"><!-- [ JQUERY ]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/navigation.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/modals.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/display-jobPostings.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/member-center.js">
+    </script><!-- [ Alerts ]-->
+
+    <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
 <body>
     <!-- Site Navigation-->
-    <div class="zuc-nav-wrapper" data-nav-height>
+    <div class="zuc-nav-wrapper" data-nav-height="">
         <!-- Mobile Navigation-->
         <!-- User Navigation-->
         <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
             <!-- Slogan-->
-            <div class="zuc-nav-slogan u-normal">CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span></div>
-            <!--Nav Links-->
+            <div class="zuc-nav-slogan u-normal">
+                CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
+            </div><!--Nav Links-->
             <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a>
-                <a href="#/" style="text-transform: uppercase;color:white;">Blog</a>
-                <!-- Login - Logged Out State-->
-                <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">
-                    <!-- Logged Out State-->
-                    <!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a>
-                <!-- Account - Logged In State-->
-                <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account">
-                    <!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
+                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> <!-- Login - Logged Out State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login"><!-- Logged Out State-->
+                 <!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a> <!-- Account - Logged In State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account"><!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
             </div>
-        </div>
-        <!-- Main Navigation-->
-        <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation>
+        </div><!-- Main Navigation-->
+        <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
             <!-- Nav Branding-->
-            <a class="zuc-nav-brand" href="/Zuc/index"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
-            <!-- Nav Links-->
+            <a class="zuc-nav-brand" href="/Zuc/index"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Nav Links-->
             <div class="zuc-nav-links flex flex-hor-end flex-hor-between flex-no-wrap flex-vert-center">
-                <!-- Nav Dropdown--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
-                <!-- Smarter Living Link -------------------------------->
-                <div class="zuc-nav-dropdown"><span class="u-uppercase">What Is Smarter Living?</span>
-                    <!-- Drop Down-->
-                    <div class="zuc-hidden-menu" data-hidden-menu aria-hidden="true" aria-role="menu">
+                <!-- Nav Dropdown--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a> <!-- Smarter Living Link ==============================-->
+                <div class="zuc-nav-dropdown">
+                    <span class="u-uppercase">What Is Smarter Living?</span> <!-- Drop Down-->
+                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
                         <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
                             <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column"><a href="/Zuc/smarterliving" title="Learn more about smarter living." aria-role="menuitem">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living." aria-role="menuitem">Smarter Living Benefits</a>
-                                <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>--></div>
-                            <!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images">
-                                <!-- Column Content-->
-                                <p>Smarter Living is about making choices that make life more comfortable and convenient.</p><img src="../../Images/Zuc/images/nav/smarter-living.png" alt="A smiling couple">
-                            </div>
+                            <div class="zuc-dropdown-column">
+                                <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a> <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+                            </div><!-- Dropdown Images-->
+                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+                            <p>Smarter Living is about making choices that make life more comfortable and convenient.</p><img alt="A smiling couple" src="../../Images/Zuc/images/nav/smarter-living.png"></div>
                         </div>
                     </div>
-                </div>
-                <!-- Service Plans --------------------------------------->
-                <div class="zuc-nav-dropdown"><span class="u-uppercase">Service Plans</span>
-                    <!-- Drop Down-->
-                    <div class="zuc-hidden-menu" data-hidden-menu aria-hidden="true" aria-role="menu">
+                </div><!-- Service Plans =====================================-->
+                <div class="zuc-nav-dropdown">
+                    <span class="u-uppercase">Service Plans</span> <!-- Drop Down-->
+                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
                         <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
                             <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column"><a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage" aria-role="menuitem">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage" aria-role="menuitem">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage" aria-role="menuitem">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos" aria-role="menuitem">See all Bundles &amp; Combos</a></div>
-                            <!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images">
-                                <!-- Column Content-->
-                                <p>The Smarter Living Plan offers you comprehensive, budget friendly service coverage for your furniture, major appliances, and home-comfort systems.</p><img src="../../Images/Zuc/images/nav/service-plans.png" alt="A service person with toolbag">
-                            </div>
+                            <div class="zuc-dropdown-column">
+                                <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+                            </div><!-- Dropdown Images-->
+                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+                            <p>The Smarter Living Plan offers you comprehensive, budget friendly service coverage for your furniture, major appliances, and home-comfort systems.</p><img alt="A service person with toolbag" src="../../Images/Zuc/images/nav/service-plans.png"></div>
                         </div>
                     </div>
-                </div>
-                <!-- Smarter Home Products --------------------------------->
-                <div class="zuc-nav-dropdown"><span class="u-uppercase">SMARTER HOME PRODUCTS</span>
-                    <!-- Drop Down-->
-                    <div class="zuc-hidden-menu" data-hidden-menu aria-hidden="true" aria-role="menu">
+                </div><!-- Smarter Home Products ===============================-->
+                <div class="zuc-nav-dropdown">
+                    <span class="u-uppercase">SMARTER HOME PRODUCTS</span> <!-- Drop Down-->
+                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
                         <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
                             <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column"><a href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness" aria-role="menuitem">Smarter Living Solutions</a><a href="/Zuc/zucollection" title="View our line of home care products" aria-role="menuitem">ZU Collection</a><a href="/Zuc/purecare" title="View our line of sleep wellness products" aria-role="menuitem">PureCare</a><a href="/Zuc/furniturecare" title="Learn more about our home wellness care kits" aria-role="menuitem">Furniture Care</a><a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop All Products" aria-role="menuitem">Shop all products</a></div>
-                            <!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images">
-                                <!-- Column Content-->
-                                <p>Empower your quest for a clean home and healthy family with Zucora Home's environmentally-responsible products.</p><img src="../../Images/Zuc/images/nav/smarter-home-products.png" alt="A furnished living room">
-                            </div>
+                            <div class="zuc-dropdown-column">
+                                <a href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop All Products">Shop all products</a>
+                            </div><!-- Dropdown Images-->
+                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+                            <p>Empower your quest for a clean home and healthy family with Zucora Home's environmentally-responsible products.</p><img alt="A furnished living room" src="../../Images/Zuc/images/nav/smarter-home-products.png"></div>
                         </div>
                     </div>
+                </div><!-- Shop Now ===============================-->
+                <div class="zuc-nav-dropdown --clickme">
+                    <a class=" u-uppercase" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Zucora Home Products">Shop Now</a>
                 </div>
-                <!-- Shop Now --------------------------------->
-                <div class="zuc-nav-dropdown --clickme"><a class=" u-uppercase" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Zucora Home Products">Shop Now</a></div>
-            </div>
-            <!-- Mobile Nav Button-->
+            </div><!-- Mobile Nav Button-->
             <div class="zuc-menu">
-                <div class="zuc-menu-open" role="button" data-open-menu aria-label="Mobile Navigation"><span class="hidden" aria-hidden="true" aria-label="Open mobile menu">Mobile Menu</span></div>
+                <div aria-label="Mobile Navigation" class="zuc-menu-open" data-open-menu="" role="button">
+                    <span aria-hidden="true" aria-label="Open mobile menu" class="hidden">Mobile Menu</span>
+                </div>
             </div>
-        </nav>
-        <!-- Member center, will show up memeber have logged in. -->
+        </nav><!-- Member center, will show up memeber have logged in. -->
         <div class="member-navigation flex">
             <div class="member-links">
-                <a href="#/" class="active">Profile</a><span class="divider">|</span>
-                <a href="#/">Plans</a><span class="divider">|</span>
-                <a href="#/">Billing</a><span class="divider">|</span>
-                <a href="#/">Rewards</a><span class="divider">|</span>
-                <a href="#/">Shop</a><span class="divider">|</span>
-                <a href="#/">FAQ</a>
+                <a class="active" href="#/">Profile</a><span class="divider">|</span> <a href="#/">Plans</a><span class="divider">|</span> <a href="#/">Billing</a><span class="divider">|</span> <a href="#/">Rewards</a><span class="divider">|</span> <a href="#/">Shop</a><span class="divider">|</span> <a href="#/">FAQ</a>
             </div>
-        </div>
-        <!-- Mobile Navigation-->
-        <!-- Mobile Only Nav ------------------------>
-        <div class="zuc-mobile-nav" data-mobile-menu>
+        </div><!-- Mobile Navigation-->
+        <!-- Mobile Only Nav ======================-->
+        <div class="zuc-mobile-nav" data-mobile-menu="">
             <!-- Top Branding CTA-->
             <div class="zuc-mobile-nav-content">
-                <a href="/Zuc/index" title="Zucora Home"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg" alt="Zucora Home"></a>
-                <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
-            </div>
-            <!-- Accordion Nav ------------------------------------------>
-            <div class="zuc-accordion-nav" role="menu" aria-role="menu">
-                <!--About Links ---------------------------------->
-                <div class="zuc-accordion-item" data-accordion-item>
-                    <div class="zuc-accordion-title">About Us<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
-                    <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true"><a class="zuc-accordion-link" href="/Zuc/ourstory" title="About Zucora Home" aria-role="menuitem">Our Story</a><a class="zuc-accordion-link" href="/Zuc/formcontactus" title="Contact us" aria-role="menuitem">Contact Us</a><a class="zuc-accordion-link" href="/Zuc/ourstory" title="Our team" aria-role="menuitem">Our Team</a></div>
-                </div>
-                <!-- Smarter Living Links ---------------------------------->
-                <div class="zuc-accordion-item" data-accordion-item>
-                    <div class="zuc-accordion-title">What Is Smarter Living?<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
-                    <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true"><a href="/Zuc/smarterliving" title="Learn more about smarter living." aria-role="menuitem">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living." aria-role="menuitem">Smarter Living Benefits</a>
-                        <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>--></div>
-                </div>
-                <!-- Service Plans Links ---------------------------------->
-                <div class="zuc-accordion-item" data-accordion-item>
-                    <div class="zuc-accordion-title">Service Plans<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
-                    <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true"><a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage" aria-role="menuitem">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage" aria-role="menuitem">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage" aria-role="menuitem">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos" aria-role="menuitem">See all Bundles &amp; Combos</a></div>
-                </div>
-                <!-- Home Care Links ---------------------------------->
-                <div class="zuc-accordion-item" data-accordion-item>
-                    <div class="zuc-accordion-title">Smarter Home Products<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
-                    <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true"><a class="zuc-accordion-link" href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness" aria-role="menuitem">Smarter Living Solutions</a><a class="zuc-accordion-link" href="/Zuc/zucollection" title="View our line of home care products" aria-role="menuitem">ZU Collection</a><a class="zuc-accordion-link" href="/Zuc/purecare" title="View our line of sleep wellness products" aria-role="menuitem">PureCare</a><a class="zuc-accordion-link" href="/Zuc/furniturecare" title="Learn more about our home wellness care kits" aria-role="menuitem">Furniture Care</a><a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="View our whole line of offerings" aria-role="menuitem">Shop all products</a></div>
-                </div>
-                <!-- Member Centre Links ---------------------------------->
-                <div class="zuc-accordion-item" data-accordion-item>
-                    <div class="zuc-accordion-title">Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
-                    <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true">
-                        <a class="zuc-accordion-link" href="#" title="Learn more about smarter living." aria-role="menuitem">Profile</a>
-                        <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
-      -->
-                        <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
-      --><a class="zuc-accordion-link" href="#/" title="Member's Plans" aria-role="menuitem">Plans</a>
-                        <a class="zuc-accordion-link" href="#/" title="Member's Billing options" aria-role="menuitem">Billing</a>
-                        <a class="zuc-accordion-link" href="#/" title="Member's Rewards" aria-role="menuitem">Rewards</a>
-                        <a class="zuc-accordion-link" href="#/" title="Frequently Asked Questions" aria-role="menuitem">Shop</a>
-                        <a class="zuc-accordion-link" href="/Zuc/faq" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
+                <a href="/Zuc/index" title="Zucora Home"><img alt="Zucora Home" src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
+            </div><!-- Accordion Nav ========================================-->
+            <div class="zuc-accordion-nav" role="menu">
+                <!--About Links ================================-->
+                <div class="zuc-accordion-item" data-accordion-item="">
+                    <div class="zuc-accordion-title">
+                        About Us<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+                    </div><!-- Hidden Content-->
+                    <div aria-hidden="true" class="zuc-accordion-hidden">
+                        <a class="zuc-accordion-link" href="/Zuc/ourstory" title="About Zucora Home">Our Story</a><a class="zuc-accordion-link" href="/Zuc/formcontactus" title="Contact us">Contact Us</a><a class="zuc-accordion-link" href="/Zuc/ourstory" title="Our team">Our Team</a>
                     </div>
-                </div>
-                <!-- Shop Now ---------------------------------->
+                </div><!-- Smarter Living Links ================================-->
+                <div class="zuc-accordion-item" data-accordion-item="">
+                    <div class="zuc-accordion-title">
+                        What Is Smarter Living?<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+                    </div><!-- Hidden Content-->
+                    <div aria-hidden="true" class="zuc-accordion-hidden">
+                        <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a> <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+                    </div>
+                </div><!-- Service Plans Links ================================-->
+                <div class="zuc-accordion-item" data-accordion-item="">
+                    <div class="zuc-accordion-title">
+                        Service Plans<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+                    </div><!-- Hidden Content-->
+                    <div aria-hidden="true" class="zuc-accordion-hidden">
+                        <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+                    </div>
+                </div><!-- Home Care Links ================================-->
+                <div class="zuc-accordion-item" data-accordion-item="">
+                    <div class="zuc-accordion-title">
+                        Smarter Home Products<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+                    </div><!-- Hidden Content-->
+                    <div aria-hidden="true" class="zuc-accordion-hidden">
+                        <a class="zuc-accordion-link" href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a class="zuc-accordion-link" href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a class="zuc-accordion-link" href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a class="zuc-accordion-link" href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="View our whole line of offerings">Shop all products</a>
+                    </div>
+                </div><!-- Member Centre Links ================================-->
+                <div class="zuc-accordion-item" data-accordion-item="">
+                    <div class="zuc-accordion-title">
+                        Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+                    </div><!-- Hidden Content-->
+                    <div aria-hidden="true" class="zuc-accordion-hidden">
+                        <a class="zuc-accordion-link" href="#" title="Learn more about smarter living.">Profile</a> <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
+      -->
+                         <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
+      --><a class="zuc-accordion-link" href="#/" title="Member's Plans">Plans</a> <a class="zuc-accordion-link" href="#/" title="Member's Billing options">Billing</a> <a class="zuc-accordion-link" href="#/" title="Member's Rewards">Rewards</a> <a class="zuc-accordion-link" href="#/" title="Frequently Asked Questions">Shop</a> <a class="zuc-accordion-link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
+                    </div>
+                </div><!-- Shop Now ================================-->
                 <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
-                <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a>
-                <!-- </div> -->
+                <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a> <!-- </div> -->
             </div>
-            <div class="zuc-menu" data-open-menu>
-                <div class="zuc-menu-open close" role="button" aria-label="Mobile Navigation Toggle"><span class="hidden" aria-hidden="true" aria-label="Click to toggle mobile menu">Mobile Menu</span></div>
-            </div>
-            <!-- Social Icons-->
+            <div class="zuc-menu" data-open-menu="">
+                <div aria-label="Mobile Navigation Toggle" class="zuc-menu-open close" role="button">
+                    <span aria-hidden="true" aria-label="Click to toggle mobile menu" class="hidden">Mobile Menu</span>
+                </div>
+            </div><!-- Social Icons-->
             <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                <!-- Facebook--><a class="zuc-social-link" target="_blank" href="https://www.facebook.com/zucorahomesmarterliving/" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                <!-- Instagram--><a class="zuc-social-link" target="_blank" href="https://www.instagram.com/zucorahome/" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                <!-- LinkedIn--><a class="zuc-social-link" target="_blank" href="https://www.linkedin.com/company/zucora-inc-/" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div><!-- Broadcast Banner-->
+        <div class="zuc-nav-broadcast flex flex-hor-between flex-vert-center" data-broadcast-banner="">
+            <div class="zuc-broadcast-text u-truncate u-bold">
+                Suggested editable broadcast banner that you can turn on/off for promos &amp; customer care outages.
+            </div>
+            <div class="zuc-broadcast-close" onclick="closeBroadcast()">
+                <i class="fas fa-times"></i>
             </div>
         </div>
-        <!-- Broadcast Banner-->
-        <div class="zuc-nav-broadcast flex flex-hor-between flex-vert-center" data-broadcast-banner>
-            <div class="zuc-broadcast-text u-truncate u-bold">Suggested editable broadcast banner that you can turn on/off for promos &amp; customer care outages.</div>
-            <div class="zuc-broadcast-close" onclick="closeBroadcast()"><i class="fas fa-times"></i></div>
-        </div>
-    </div>
-    <!-- Login Modal-->
+    </div><!-- Login Modal-->
     <!-- Modal Container-->
-    <div class="zuc-modal" data-modal-login onclick="toggleModal('[data-modal-login]')">
+    <div class="zuc-modal" data-modal-login="" onclick="toggleModal('[data-modal-login]')">
         <!-- Modal Content-->
         <div class="zuc-modal-content member-login" onclick="event.stopPropagation()">
             <!-- Place Modal Content Here-->
-            <div><img src="../../Images/Zuc/images/homepage/SmarterLivingLogo_small.png" alt="Smarter Living logo with house icon on the left." class="smarterLiving-logo center"></div>
-            <div class="zuc-modal-subtitle u-text-center">Member login</div>
-            <!-- User Email-->
+            <div><img alt="Smarter Living logo with house icon on the left." class="smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_small.png"></div>
+            <div class="zuc-modal-subtitle u-text-center">
+                Member login
+            </div><!-- User Email-->
             <div class="zuc-input-group center">
-                <div class="zuc-input-name">Email address</div>
-                <label class="u-screenreader" for="field-email">Email address</label>
-                <input type="text" required data-required id="field-email" name="email" placeholder="Email address">
-            </div>
-            <!-- User Password-->
+                <div class="zuc-input-name">
+                    Email address
+                </div><label class="u-screenreader" for="field-email">Email address</label> <input data-required="" id="field-email" name="email" placeholder="Email address" required="" type="text">
+            </div><!-- User Password-->
             <div class="zuc-input-group center">
-                <div class="zuc-input-name">Password</div>
-                <label class="u-screenreader" for="field-password">User Password</label>
-                <input type="password" required data-required name="password" placeholder="Password"><a style="font-size:0.85em;" class="zuc-input-link" href="/Zuc/formforgotpassword" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
-            </div>
-            <!-- Remember me radio button -->
+                <div class="zuc-input-name">
+                    Password
+                </div><label class="u-screenreader" for="field-password">User Password</label> <input data-required="" name="password" placeholder="Password" required="" type="password"><a class="zuc-input-link" href="/Zuc/formforgotpassword" style="font-size:0.85em;" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
+            </div><!-- Remember me radio button -->
             <div class="remember-me">
-                <input type="checkbox" value="remember-me-checked" name="remember-me"> Remember me
-            </div>
-            <!-- Submit Button-->
+                <input name="remember-me" type="checkbox" value="remember-me-checked"> Remember me
+            </div><!-- Submit Button-->
             <div class="form-buttons">
-                <button class="zuc-btn zuc-btn-secondary --full-width">Login</button>
-                <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button>
-                <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
-            </div>
-            <!-- Button div ends-->
+                <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./memberProfile_afterConfirmation.html">Login</a></button> 
+                <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button> <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
+            </div><!-- Button div ends-->
         </div>
-    </div>
-    <!-- Main page content-->
+    </div><!-- Main page content-->
     <section class="member-info-boxed">
         <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
         <div class="memberInfo-table">
@@ -252,107 +232,196 @@
                 <p class="light-grey">10,900</p>
             </div>
         </div>
-    </section>
-    <!-- Profile form, populating the existing settings and information -->
+    </section><!-- Profile form, populating the existing settings and information -->
     <section class="zuc-service-form" style="margin-top:2% !important;">
         <h2 class="sr-only">Smarter living user's payment options.</h2>
         <section class="inner-width">
-            <div>
-                <img src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png" alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center">
-            </div>
+            <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
             <div class="memberProfile-title">
-                <h3>My payment options</h3></div>
-            <!-- Address -->
+                <h3>My payment options</h3>
+            </div><!-- Address -->
             <div class="payment-container">
-                <div class="two-row margin-top-1 ">
+                <div class="two-row margin-top-1">
                     <p class="strong padding-10">Credit cards</p>
                     <p class="strong padding-10">Expiry date</p>
                 </div>
                 <div class="payment-box">
                     <div class="two-row paymentCard-name flex-vert-center padding-10">
                         <div class="flex flex-vert-center">
-                            <img src="../../Images/Zuc/images/member-portal/visa-logo.png" alt="verified by visa logo.">
+                            <img alt="verified by visa logo." src="../../Images/Zuc/images/member-portal/visa-logo.png">
                             <p>Visa ending with xxxxx</p>
                         </div>
-                        <p class="">12/2022 <a href="#/" class="chevron"><i class="fa fa-chevron-up"></i></a></p>
+                        <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-up"></i></a></p>
                     </div>
                     <div class="two-row paymentCard-info padding-10">
                         <div class="info-name">
-                            <p class="light-grey"><span class="strong dark-grey">Name on card</span>
-                                <br>J Smith</p>
+                            <p class="light-grey"><span class="strong dark-grey">Name on card</span><br>
+                            J Smith</p>
                         </div>
                         <div class="info-address">
-                            <p class="light-grey"><span class="strong dark-grey">Billing address<br></span><span class="strong">Jenna Smith</span>
-                                <br> 552 Clarke Road
-                                <br>London, ON N5V 3K5
-                                <br>Canada
-                            </p>
+                            <p class="light-grey"><span class="strong dark-grey">Billing address<br></span><span class="strong">Jenna Smith</span><br>
+                            552 Clarke Road<br>
+                            London, ON N5V 3K5<br>
+                            Canada</p>
                             <div class="two-row mobile-column margin-top-1 margin-bottom-1">
-                                <button class="zuc-btn zuc-memberForm-button">Remove</button>
+                                <!-- <button class="zuc-btn zuc-memberForm-button">Remove</button>  -->
                                 <button class="zuc-btn zuc-memberForm-button">Edit</button>
                             </div>
-                        </div>
-                        <!--info-address ends -->
-                    </div>
-                    <!--paymentCard-info ends -->
-                </div>
-                <!--payment box ends -->
-
-            </div>
-            <!-- Payment container ends-->
+                        </div><!--info-address ends -->
+                    </div><!--paymentCard-info ends -->
+                </div><!--payment box ends -->
+            </div><!-- Payment container ends-->
             <!-- Second payment billing box -->
             <div class="payment-container">
-                <div class="two-row margin-top-1 ">
+                <div class="two-row margin-top-1">
                     <p class="strong padding-10">Credit cards</p>
                     <p class="strong padding-10">Expiry date</p>
                 </div>
                 <div class="payment-box">
                     <div class="two-row paymentCard-name flex-vert-center padding-10">
                         <div class="flex flex-vert-center">
-                            <img src="../../Images/Zuc/images/member-portal/visa-logo.png" alt="verified by visa logo.">
+                            <img alt="verified by visa logo." src="../../Images/Zuc/images/member-portal/visa-logo.png">
                             <p>Visa ending with xxxxx</p>
                         </div>
-                        <p class="">12/2022 <a href="#/" class="chevron"><i class="fa fa-chevron-down"></i></a></p>
+                        <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-down"></i></a></p>
                     </div>
                     <div class="two-row paymentCard-info padding-10" style="display: none;">
                         <div class="info-name">
-                            <p class="light-grey"><span class="strong dark-grey">Name on card</span>
-                                <br>J Smith</p>
+                            <p class="light-grey"><span class="strong dark-grey">Name on card</span><br>
+                            J Smith</p>
                         </div>
                         <div class="info-address">
-                            <p class="light-grey"><span class="strong dark-grey">Billing address<br></span><span class="strong">Jenna Smith</span>
-                                <br> 552 Clarke Road
-                                <br>London, ON N5V 3K5
-                                <br>Canada
-                            </p>
+                            <p class="light-grey"><span class="strong dark-grey">Billing address<br></span><span class="strong">Jenna Smith</span><br>
+                            552 Clarke Road<br>
+                            London, ON N5V 3K5<br>
+                            Canada</p>
                             <div class="two-row mobile-column margin-top-1 margin-bottom-1">
-                                <button class="zuc-btn zuc-memberForm-button">Remove</button>
+                                <!-- <button class="zuc-btn zuc-memberForm-button">Remove</button>  -->
                                 <button class="zuc-btn zuc-memberForm-button">Edit</button>
                             </div>
-                        </div>
-                        <!--info-address ends -->
-                    </div>
-                    <!--paymentCard-info ends -->
-                </div>
-                <!--payment box ends -->
-
-            </div>
-            <!-- Payment container ends-->
+                        </div><!--info-address ends -->
+                    </div><!--paymentCard-info ends -->
+                </div><!--payment box ends -->
+            </div><!-- Payment container ends-->
             <!-- div 3  -->
             <div class="two-row margin-top-5 flex-vert-center">
                 <div>
                     <h3 class="uppercase-text">We accept the following credit cards</h3>
                 </div>
-
-                <div class="two-row flex-vert-center flex-hor-center payment-logos">
-                    <img src="../../Images/Zuc/images/member-portal/visa-logo.png" alt="Visa logo." class="center">
-                    <img src="../../Images/Zuc/images/member-portal/master-card-logo.png" alt="Master card logo." class="center">
-                </div>
+                <div class="two-row flex-vert-center flex-hor-center payment-logos"><img alt="Visa logo." class="center" src="../../Images/Zuc/images/member-portal/visa-logo.png"> <img alt="Master card logo." class="center" src="../../Images/Zuc/images/member-portal/master-card-logo.png"></div>
             </div><!--div 3 ends-->
-        </section>
-        <!--Inner section ends-->
-    </section>
-    <!-- main page content ends -->
+            <!-- Div add new cards -->
+            <div class="margin-top-1 addNewCard-container">
+                <div class="strong dark-grey">
+                    <i class="fa fa-chevron-up"></i> Add new card
+                </div>
+                <form class="addNewCard-form">
+                    <div class="zuc-form-row">
+                        <div class="zuc-form-group">
+                            <div class="zuc-input-name light-grey strong">
+                                Name on card
+                            </div><label class="u-screenreader" for="field-card-name">Name on card</label> <input name="card-name" placeholder="Name written on the card" type="text" value="card-name">
+                        </div>
+                        <div class="zuc-form-group">
+                            <div class="zuc-input-name light-grey strong">
+                                Card #
+                            </div><label class="u-screenreader" for="field-card-name">Card number</label> <input name="card-number" placeholder="0000 0000 00000" type="text" value="card-number">
+                        </div>
+                        <div class="zuc-form-group">
+                            <div class="zuc-input-name light-grey strong">
+                                Expiration date
+                            </div><label class="u-screenreader" for="field-card-name">Expiration date</label> <select name="exp-month">
+                                <option value="01">
+                                    01
+                                </option>
+                                <option value="02">
+                                    02
+                                </option>
+                                <option value="03">
+                                    03
+                                </option>
+                                <option value="04">
+                                    04
+                                </option>
+                                <option value="05">
+                                    05
+                                </option>
+                                <option value="06">
+                                    06
+                                </option>
+                                <option value="07">
+                                    07
+                                </option>
+                                <option value="08">
+                                    08
+                                </option>
+                                <option value="09">
+                                    09
+                                </option>
+                                <option value="10">
+                                    10
+                                </option>
+                                <option value="11">
+                                    11
+                                </option>
+                                <option value="12">
+                                    12
+                                </option>
+                            </select> <select name="exp-year">
+                                <option value="16">
+                                    2020
+                                </option>
+                                <option value="17">
+                                    2021
+                                </option>
+                                <option value="18">
+                                    2022
+                                </option>
+                                <option value="19">
+                                    2023
+                                </option>
+                                <option value="20">
+                                    2024
+                                </option>
+                                <option value="21">
+                                    2025
+                                </option>
+                            </select>
+                        </div>
+                        <div class="zuc-form-action">
+                            <div class="zuc-form-group auto-width padding-10">
+                                <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Add card</span></strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!--add new card container ends -->
+            <!-- Address box for choosing address -->
+            <div class="selectAddress-box">
+                <form class="">
+                    <div class="zuc-form-row">
+                        <div class="zuc-form-group">
+                            <div class="zuc-radio-group-container address-list">
+                                <div class="zuc-radio-group memberForm-radioButtons">
+                                    <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input checked="checked" name="address-1" type="radio" value="address-1"> <span class="radio-checkmark"></span></label> <!-- second -->
+                                     <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input name="address-2" type="radio" value="address-2"> <span class="radio-checkmark"></span></label> <!-- third address -->
+                                     <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input name="address-3" type="radio" value="address-3"> <span class="radio-checkmark"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--radio button div ends -->
+                   <div class="zuc-form-row">
+                        <div class="zuc-form-group auto-width padding-10">
+                           <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Add a new address</span></strong></button>
+                        </div>
+                        <div class="zuc-form-group auto-width padding-10">
+                           <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Use this address</span></strong></button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </section><!--Inner section ends-->
+    </section><!-- main page content ends -->
     <!-- Site Footer-->
     <footer class="zuc-footer-wrapper">
         <!-- - Footer Links-->
@@ -361,9 +430,7 @@
                 <a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
                 <div class="zuc-footer--social-icons-primary">
                     <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                        <!-- Facebook--><a class="zuc-social-link" target="_blank" href="https://www.facebook.com/zucorahomesmarterliving/" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <!-- Instagram--><a class="zuc-social-link" target="_blank" href="https://www.instagram.com/zucorahome/" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                        <!-- LinkedIn--><a class="zuc-social-link" target="_blank" href="https://www.linkedin.com/company/zucora-inc-/" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -373,40 +440,43 @@
                         <h4 class="zuc-footer--header u-uppercase">About Us</h4><a class="zuc-footer--link" href="/Zuc/formcontactus" title="Contact Us">Contact Us</a><a class="zuc-footer--link" href="/Zuc/ourstory" title="About Us">Our Story</a><a class="zuc-footer--link" href="/Zuc/ourstory#our-team" title="Our Team">Our Team</a><a class="zuc-footer--link" href="/Zuc/ourstory#join-us" title="Join Us">Join Us</a>
                     </div>
                     <div class="flex flex-column flex-vert-start zuc-footer--column">
-                        <h4 class="zuc-footer--header u-uppercase">Member Centre</h4><a class="zuc-footer--link" href="/Zuc/smarterliving" title="What is Smarter Living?">What is Smarter Living?</a><a class="zuc-footer--link" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">Member Login</a><a class="zuc-footer--link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
+                        <h4 class="zuc-footer--header u-uppercase">Member Centre</h4><a class="zuc-footer--link" href="/Zuc/smarterliving" title="What is Smarter Living?">What is Smarter Living?</a><a class="zuc-footer--link" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">Member Login</a><a class="zuc-footer--link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
                     </div>
                 </div>
                 <div class="zuc-footer-row flex">
                     <div class="flex flex-column flex-vert-start zuc-footer--column">
-                        <h4 class="zuc-footer--header u-uppercase">Products &amp; Services</h4><a class="zuc-footer--link" href="/Zuc/serviceplans" title="Service Plans Parent">Service Plans</a>
-                        <!--<a class="zuc-footer--link" href="/Zuc/smarterhomecontrol" title="Smarter Home Control">Smarter Home Control</a>--><a class="zuc-footer--link" href="/Zuc/smarterhomeproducts" title="Smarter Home Products">Smarter Home Products</a><a class="zuc-footer--link" href="/Zuc/formordersshipping" title="Orders and Returns">Orders &amp; Returns</a><a class="zuc-footer--link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now">Shop Now</a>
+                        <h4 class="zuc-footer--header u-uppercase">Products &amp; Services</h4><a class="zuc-footer--link" href="/Zuc/serviceplans" title="Service Plans Parent">Service Plans</a> <!--<a class="zuc-footer==link" href="/Zuc/smarterhomecontrol" title="Smarter Home Control">Smarter Home Control</a>--><a class="zuc-footer--link" href="/Zuc/smarterhomeproducts" title="Smarter Home Products">Smarter Home Products</a><a class="zuc-footer--link" href="/Zuc/formordersshipping" title="Orders and Returns">Orders &amp; Returns</a><a class="zuc-footer--link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now">Shop Now</a>
                     </div>
                 </div>
-                <div class="zuc-footer--zuc-footer-right zuc-footer--column"><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
+                <div class="zuc-footer--zuc-footer-right zuc-footer--column">
+                    <a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
                     <div class="zuc-footer--social-icons-secondary">
                         <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                            <!-- Facebook--><a class="zuc-social-link" target="_blank" href="https://www.facebook.com/zucorahomesmarterliving/" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <!-- Instagram--><a class="zuc-social-link" target="_blank" href="https://www.instagram.com/zucorahome/" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                            <!-- LinkedIn--><a class="zuc-social-link" target="_blank" href="https://www.linkedin.com/company/zucora-inc-/" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="zuc-shipping-blurb"><span class="u-zuc-platinum">CANADA-WIDE SHIPPING AVAILABLE.<br/>FREE ON ORDERS OVER</span><span class="u-zuc-mint">&nbsp; $39*</span></div>
+                    <div class="zuc-shipping-blurb">
+                        <span class="u-zuc-platinum">CANADA-WIDE SHIPPING AVAILABLE.<br>
+                        FREE ON ORDERS OVER</span><span class="u-zuc-mint">&nbsp; $39*</span>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <!-- - Footer SubLinks-->
+        </footer><!-- - Footer SubLinks-->
         <!-- Footer Sub Links-->
         <div class="zuc-footer--copyright flex flex-vert-center">
-            <div class="zuc-footer--copyright-title"><span class="zuc-footer--copyright-text">Copyright&nbsp;&copy;&nbsp;</span><a class="zuc-footer--copyright-text" href="/Zuc/index" title="Zucora Home">Zucora Inc.</a><span class="zuc-footer--copyright-text">&nbsp;2018</span></div>
-            <div class="zuc-footer--copyright-menu flex flex-hor-start"><a class="zuc-footer--copyright-text" href="/Zuc/privacypolicy" title="View our Privacy Policy">Privacy Policy</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/termsservice" title="View our Terms of Service">Terms of Service</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/sitemap" title="View our Sitemap">Sitemap</a></div>
+            <div class="zuc-footer--copyright-title">
+                <span class="zuc-footer--copyright-text">Copyright&nbsp;&copy;&nbsp;</span><a class="zuc-footer--copyright-text" href="/Zuc/index" title="Zucora Home">Zucora Inc.</a><span class="zuc-footer--copyright-text">&nbsp;2018</span>
+            </div>
+            <div class="zuc-footer--copyright-menu flex flex-hor-start">
+                <a class="zuc-footer--copyright-text" href="/Zuc/privacypolicy" title="View our Privacy Policy">Privacy Policy</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/termsservice" title="View our Terms of Service">Terms of Service</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/sitemap" title="View our Sitemap">Sitemap</a>
+            </div>
         </div>
     </footer>
-    <div class="zuc-footer--btm-trim"></div>
-    <!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
+    <div class="zuc-footer--btm-trim"></div><!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
     <script>
-        new LTPublicUtils().ShowUI();
+           new LTPublicUtils().ShowUI();
+    </script> 
+    <script src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js" type="text/javascript">
     </script>
-    <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
 </body>
-
 </html>

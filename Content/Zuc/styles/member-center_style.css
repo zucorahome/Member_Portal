@@ -55,6 +55,10 @@
 	color:#54565A;
 }
 
+.middle-grey{
+	color:#898A8D;
+}
+
 .text-left{
 	text-align: left;
 }
@@ -148,7 +152,7 @@
 }
 
 .memberProfile-title> h3{
-	font-size: 30px;
+	font-size: 2em;
     font-family:'aktiv-grotesk',Helvetica,sans-serif;
     font-weight: 500;
 }
@@ -442,10 +446,45 @@
     color: #54565A;
     font-weight: 600;
     margin-bottom: 0px;
+    font-size: 1.25em;
 }
 
-.payment-logos > img{
-	width:40%;
+.payment-logos{
+	grid-template-columns: 20% 20%;
+}
+.payment-logos img{
+	width:100%;
+}
+
+.addNewCard-form{
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.addNewCard-form > .zuc-form-row > .zuc-form-group{
+	width:25%;
+	padding-right:10px;
+}
+
+.addNewCard-form >.zuc-form-row > .zuc-form-group>select{
+	width: 35%;
+    height: 50px;
+    border: 2px solid #54565A;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    color: #54565A;
+    margin: .41667vw 0 0;
+}
+
+.selectAddress-box{
+	margin-top: 2vw;
+    border: 2px solid #54565A;
+    padding: 0 2em;
+}
+
+.address-list> .memberForm-radioButtons >.radio-container {
+	margin:30px 0;
+
 }
 @media screen and (max-width:767px){
 	
@@ -453,12 +492,47 @@
 		grid-template-columns: auto;
 		grid-gap:10px;
 	}
-	.payment-logos > img{
-		width:60%;
+	.payment-logos{
+		grid-template-columns: 50% 50%;
 	}
 
-	.paymentCard-name > div> img{
+	.paymentCard-name img{
 		width:60%;
+	}
+	.addNewCard-form > .zuc-form-row > .zuc-form-group{
+		width:100%;
+	}
+	.addNewCard-form >.zuc-form-row > .zuc-form-group>select{
+		width:40%;
+		margin:2.1875vw 0;
 	}
 }
 
+/*Plans Screen*/
+.planDetails-container> h3{
+	color:#898A8D;
+	font-weight: 600;
+}
+
+.planDetails-table,.serviceHistory-table{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.planDetails-table-row{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.row-heading > p>span{
+	padding:0 2em;
+}
+
+.row-data{
+	margin-top:10px;
+}
+
+.row-data a{
+	text-decoration: underline;
+}
+
+.
