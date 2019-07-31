@@ -351,7 +351,7 @@
 	border-bottom: 2px solid #54565A;
 	color:#54565A;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
-	background-color: #E4E4E4;
+	background-color: #C8C8C8;
 }
 
 .address-box >p{
@@ -409,9 +409,18 @@
 
 .payment-box{
 	border:2px solid #54565A;
-	padding:10px;
+	/*padding:10px;*/
 }
 
+.paymentCard-name{
+	border-bottom:2px solid #54565A;
+	background-color: #C8C8C8;
+}
+
+.paymentCard-name > div> img{
+	width:20%;
+	padding:10px;
+}
 .chevron{
 	float: right;
 	cursor: pointer;
@@ -422,8 +431,34 @@
 		grid-template-columns: 50% 50%;
 	}
 
-@media screen and (min-width:768px){
-	
+.two-row> .zuc-memberForm-button{
+	min-width: auto;
+}
 
+.uppercase-text{
+	font-family: aktiv-grotesk,Helvetica,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #54565A;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.payment-logos > img{
+	width:40%;
+}
+@media screen and (max-width:767px){
+	
+	.mobile-column{
+		grid-template-columns: auto;
+		grid-gap:10px;
+	}
+	.payment-logos > img{
+		width:60%;
+	}
+
+	.paymentCard-name > div> img{
+		width:60%;
+	}
 }
 
