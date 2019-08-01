@@ -509,22 +509,34 @@
 }
 
 /*Plans Screen*/
-.planDetails-container> h3{
+.planDetails-container{
+	margin-top:2em;
+}
+.planDetails-container> h5{
 	color:#898A8D;
 	font-weight: 600;
+	font-size:24px;
+	font-weight:600;
 }
 
 .planDetails-table,.serviceHistory-table{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
+	display: grid;	
+}
+
+.row-heading, .historyTable-heading{
+	display:grid;
+	/*grid-template-columns: auto auto auto auto;*/
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-content: center;
 }
 
 .planDetails-table-row{
 	display: grid;
+	/*grid-template-columns: auto auto auto auto;*/
 	grid-template-columns: 25% 25% 25% 25%;
 }
-.row-heading > p>span{
-	padding:0 2em;
+.row-heading > p>span, .historyTable-heading >p>span{
+	padding:0 5em;
 }
 
 .row-data{
@@ -535,4 +547,102 @@
 	text-decoration: underline;
 }
 
-.
+.serviceHistory-table{
+	border:2px solid #54565A;
+}
+.historyTable-heading{
+	   
+	    background: #54565A;
+	    padding: 15px;
+	
+}
+.historyTable-heading p{
+	 color: #fff;
+}
+.planDetails-table-row{
+	padding:10px;
+}
+
+.tableRow-borderBottom{
+	border-bottom: 1px solid #54565A;
+}
+.detailsPane-open{
+	background-color: white;
+}
+
+.detailsPane-closed{
+	background-color: #C8C8C8; 
+}
+@media screen and (max-width:767px){
+	.row-heading > p>span, .historyTable-heading >p>span{
+		padding:0 2em;
+	}
+}
+@media screen and (min-width:768px){
+
+}
+
+/*Transaction History page*/
+
+.transactionHistory-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #C8C8C8;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.transactionHistory-table tr{
+	border:1px solid #54565A;
+	padding:0.35em;	
+}
+
+.transactionHistory-table th, .transactionHistory-table td{
+	padding:0.625em;
+	text-align: center;
+	border:1px solid #54565A;
+}
+
+.transactionHistory-table td, .paymentInfo-table td{
+	color:#898A8D;
+}
+
+.paymentInfo-table{
+	width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #54565A;
+    padding:0;
+    table-layout: fixed;
+}
+
+.paymentInfo-table tr{
+	padding:0.35em;
+}
+
+.paymentInfo-table th, .paymentInfo-table td{
+	padding:0.625em;
+	text-align: center;
+}
+
+.pagination{
+	width:auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.pagination a {
+	color:#898A8D;
+	padding:8px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.pagination>.active{
+	border:1px solid #898A8D;
+}
+
+.pagination a:hover{
+	background-color: #898A8D;
+	color:white;
+}
