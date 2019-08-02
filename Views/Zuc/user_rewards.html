@@ -105,7 +105,17 @@
                 </div>
             </div>
         </nav>
-       
+        <!-- Member center, will show up memeber have logged in. -->
+       <div class="member-navigation flex">
+        <div class="member-links">
+          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+          <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
+          <a href="./user_rewards.html" class="active">Rewards</a><span class="divider">|</span>
+          <a href="#/">Shop</a><span class="divider">|</span>
+          <a href="#/">FAQ</a>
+        </div>
+      </div>
         <!-- Mobile Navigation-->
         <!-- Mobile Only Nav ======================-->
         <div class="zuc-mobile-nav" data-mobile-menu="">
@@ -157,7 +167,11 @@
                       <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
                       -->
                       <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
-                      -->
+                      --><a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
+                      <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
+                      <a class="zuc-accordion-link" href="#/" title="Member's Rewards" aria-role="menuitem">Rewards</a>
+                      <a class="zuc-accordion-link" href="#/" title="Frequently Asked Questions" aria-role="menuitem">Shop</a>
+                      <a class="zuc-accordion-link" href="/Zuc/faq" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
                      </div>
                 </div><!-- Shop Now ================================-->
                 <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
@@ -208,21 +222,94 @@
             </div><!-- Button div ends-->
         </div>
     </div><!-- Main page content-->
-    <!-- Profile form, populating the existing settings and information -->
+    <section class="member-info-boxed">
+        <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
+        <div class="memberInfo-table">
+            <div>
+                <p>Smarter Living Memeber Number</p>
+            </div>
+            <div>
+                <p class="light-grey">111</p>
+            </div>
+            <div>
+                <p>Member Since</p>
+            </div>
+            <div>
+                <p class="light-grey">2019/10/29</p>
+            </div>
+            <div>
+                <p>Rewards Balance</p>
+            </div>
+            <div>
+                <p class="light-grey">10,900</p>
+            </div>
+        </div>
+    </section><!-- Profile form, populating the existing settings and information -->
     <section class="zuc-service-form" style="margin-top:2% !important;">
         <h2 class="sr-only">Smarter living user's payment options.</h2>
         <section class="inner-width">
             <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
             <div class="memberProfile-title">
-                <h3>Welcome back, First Name</h3>
+                <h3>My Smarter Living Rewards account profile</h3>
             </div>
-            
-            <div class="menu-tiles-container">
-              <div class="menu-tile">
-                <h6>Shop</h6>
-                <div class="tile-image"><img src="https://www.zucorahome.com/Images/Zuc/images/smarter-products/hero-family-kitchen.png" alt=""></div>
-              </div>
-
+            <!-- Transaction History table -->
+            <div class="description margin-top-1 text-center">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            </div>
+           <table class="rewards-table margin-top-2">
+            <caption class="sr-only">Table displaying all the rewards earned in the past.</caption>
+               <thead>
+                   <tr>
+                       <th class="strong dark-grey" scope="col">Date</th>
+                       <th class="strong dark-grey" scope="col">Description</th>
+                       <th class="strong dark-grey" scope="col">Amount</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td data-label="Date"> Month 10, year</td>
+                       <td data-label="Description"><span class="dark-grey">Earned</span> -monthly subscription fee</td>
+                       <td data-label="Amount">700</td>
+                   </tr>
+                    <tr>
+                       <td data-label="Date"> Month 10, year</td>
+                       <td data-label="Description"><span class="dark-grey">Earned</span> - monthly subscription fee</td>
+                       <td data-label="Amount">500</td>
+                   </tr>
+                    <tr>
+                       <td data-label="Date"> Month 10, year</td>
+                       <td data-label="Description"><span class="dark-grey">Earned</span> - monthly subscription fee</td>
+                       <td data-label="Amount">200</td>
+                   </tr>
+                   <!-- Details pane -->
+                    <tr>
+                       <td data-label="Date"> Month 10, year</td>
+                       <td data-label="Description"><span class="dark-grey">Redeemed</span> - monthly subscription fee</td>
+                       <td data-label="Amount">200</td>
+                       <!-- info table -->
+                       <div>
+                       
+                   </div>
+                   </tr>
+               </tbody>
+           </table>
+           <div class="pagination margin-top-2">
+              <a href="#">Previous</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">Next</a>
+            </div>
+            <div class="zuc-form-row">
+                <div class="zuc-form-group auto-width padding-10">
+                   <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Redeem rewards</span></strong></button>
+                </div>
+                <div class="zuc-form-group auto-width padding-10">
+                   <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Faq</span></strong></button>
+                </div>
             </div>
         </section><!--Inner section ends-->
     </section><!-- main page content ends -->

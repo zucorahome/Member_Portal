@@ -584,7 +584,7 @@
 
 /*Transaction History page*/
 
-.transactionHistory-table {
+.transactionHistory-table,.rewards-table {
     width: 100%;
     border-collapse: collapse;
     border: 3px solid #C8C8C8;
@@ -615,11 +615,11 @@
     table-layout: fixed;
 }
 
-.paymentInfo-table tr{
+.paymentInfo-table tr, .rewards-table tr{
 	padding:0.35em;
 }
 
-.paymentInfo-table th, .paymentInfo-table td{
+.paymentInfo-table th, .paymentInfo-table td, .rewards-table th, .rewards-table td{
 	padding:0.625em;
 	text-align: center;
 }
@@ -645,4 +645,15 @@
 .pagination a:hover{
 	background-color: #898A8D;
 	color:white;
+}
+
+/*Rewards screen*/
+
+.rewards-table th{
+	border:1px solid #54565A;
+}
+
+.rewards-table td{
+	border-right:1px solid #54565A;
+	color:#898A8D;
 }
