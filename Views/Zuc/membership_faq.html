@@ -105,7 +105,17 @@
                 </div>
             </div>
         </nav>
-       
+        <!-- Member center, will show up memeber have logged in. -->
+       <div class="member-navigation flex">
+        <div class="member-links">
+          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+          <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
+          <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
+          <a href="./user_member_shop.html">Shop</a><span class="divider">|</span>
+          <a href="./membership_faq.html" class="active">FAQ</a>
+        </div>
+      </div>
         <!-- Mobile Navigation-->
         <!-- Mobile Only Nav ======================-->
         <div class="zuc-mobile-nav" data-mobile-menu="">
@@ -157,7 +167,11 @@
                       <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
                       -->
                       <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
-                      -->
+                      --><a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
+                      <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
+                      <a class="zuc-accordion-link" href="#/" title="Member's Rewards" aria-role="menuitem">Rewards</a>
+                      <a class="zuc-accordion-link" href="#/" title="Frequently Asked Questions" aria-role="menuitem">Shop</a>
+                      <a class="zuc-accordion-link" href="/Zuc/faq" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
                      </div>
                 </div><!-- Shop Now ================================-->
                 <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
@@ -208,41 +222,104 @@
             </div><!-- Button div ends-->
         </div>
     </div><!-- Main page content-->
-    <!-- Profile form, populating the existing settings and information -->
-    <section class="zuc-service-form">
+    <section class="member-info-boxed">
+        <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
+        <div class="memberInfo-table">
+            <div>
+                <p>Smarter Living Memeber Number</p>
+            </div>
+            <div>
+                <p class="light-grey">111</p>
+            </div>
+            <div>
+                <p>Member Since</p>
+            </div>
+            <div>
+                <p class="light-grey">2019/10/29</p>
+            </div>
+            <div>
+                <p>Rewards Balance</p>
+            </div>
+            <div>
+                <p class="light-grey">10,900</p>
+            </div>
+        </div>
+    </section><!-- Profile form, populating the existing settings and information -->
+    <section class="zuc-service-form" style="margin-top:2% !important;">
         <h2 class="sr-only">Smarter living user's payment options.</h2>
         <section class="inner-width">
             <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
             <div class="memberProfile-title">
-                <h3>Welcome back, Jenna.</h3>
+                <h3>FAQ</h3>
             </div>
-            
-            <div class="menu-tiles-container">
-              <a href="./member_shop.html"><div class="menu-tile">
-                <h6 class="strong">Shop</h6>
-                <div class="tile-image image-1"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
-              <a href="./user_rewards.html"><div class="menu-tile">
-                <h6 class="strong">Rewards</h6>
-                <div class="tile-image image-2"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
-              <a href="./user_plans.html"><div class="menu-tile">
-                <h6 class="strong">Plans</h6>
-                <div class="tile-image image-3"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
-              <a href="./user_payment_options.html"><div class="menu-tile">
-                <h6 class="strong">Billing</h6>
-                <div class="tile-image image-4"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
-              <a href="./membership_faq.html"><div class="menu-tile">
-                <h6 class="strong">FAQ</h6>
-                <div class="tile-image image-5"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
-              <a href="./memberProfile_afterConfirmation.html"><div class="menu-tile">
-                <h6 class="strong">Profile</h6>
-                <div class="tile-image image-6"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
-              </div></a>
+            <!-- FAQ page content -->
+            <!-- div class="category-box-container">
+                <div class="category-box">
+                    <img src="../../Images/Zuc/images/member-portal/questions.png" alt="question mark icon." class="center">
+                    <h4 class="margin-top-1"><a href="#general">General questions</a></h4>
+                </div>
+                <div class="category-box">
+                    <img src="../../Images/Zuc/images/member-portal/questions.png" alt="question mark icon." class="center">
+                    <h4 class="margin-top-1"><a href="#rewards">Pay with rewards</a></h4>
+                </div>
+                <div class="category-box">
+                    <img src="../../Images/Zuc/images/member-portal/questions.png" alt="question mark icon." class="center">
+                    <h4 class="margin-top-1"><a href="#bonus-rewards">Bonus rewards</a></h4>
+                </div>
+            </div> -->
+            <!-- Accordions -->
+           <!--  <div class="faq-accordion margin-top-2">
+                <hr>
+               
+                    <div class="accordion">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adbore et dolore commodo?</h4>
+                    </div>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipa pariatur. Excepteur sint occaecat .</p>
+                    </div>
+                 
+                <hr>
+                
+                     <div class="accordion">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adbore et dolore commodo?</h4>
+                    </div>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipa pariatur. Excepteur sint occaecat .</p>
+                    </div>
+                
+                <hr>
+               
+                     <div class="accordion">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adbore et dolore commodo?</h4>
+                    </div>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipa pariatur. Excepteur sint occaecat .</p>
+                    </div>
+               
+                <hr>
+            </div> --> <!--accordion ends-->
+            <!-- contact us box -->
+            <!-- <div class="memberProfile-title margin-top-2">
+                <h3>Can't find what you're looking for?</h3>
             </div>
+            <div class="helpBox-container">
+                <div class="help-box">
+                    <h6 class="dark-grey strong padding-10">Call us</h6>
+                    <img src="../../Images/Zuc/images/member-portal/call.png" alt="Call center icon, displaying headphones." class="center">
+                    <p class="middle-grey strong margin-top-1 padding-10">1.866.667.6695</p>
+                </div>
+                 <div class="help-box">
+                    <h6 class="dark-grey strong padding-10">Email us</h6>
+                    <img src="../../Images/Zuc/images/member-portal/email.png" alt="Email icon, displaying a cover." class="center" style="padding:1.3em 0;">
+                    <p class="middle-grey strong margin-top-1 padding-10">smarterliving@zucora.com</p>
+                </div>
+                 <div class="help-box">
+                    <h6 class="dark-grey strong padding-10">smarterliving@zucora.com</h6>
+                    <img src="../../Images/Zuc/images/member-portal/address.png" alt="Call center icon, displaying headphones." class="center">
+                    <p class="middle-grey strong margin-top-1 padding-10">ZucoraHome</p>
+                    <p class="light-grey text-center">552 Clarke Road<br>London, ON N5V 3K5<br>Canada</p>
+                </div>
+            </div> -->
         </section><!--Inner section ends-->
     </section><!-- main page content ends -->
     <!-- Site Footer-->

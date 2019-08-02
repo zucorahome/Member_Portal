@@ -335,35 +335,82 @@
     width: auto;
 }
 
- /*Address list screen*/
+ /*Address list screen and Welcome back screen*/
 
-.mainAddress-container{
+.mainAddress-container, .menu-tiles-container{
 	display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
     grid-gap: 2em 5em;
 
 }
+.menu-tiles-container{
+	grid-gap:1em;
+}
 
-.address-box{
+.address-box, .menu-tile{
 	border: 2px solid #54565A;
 	min-height: 223px;
 	height:auto;
 }
 
-.address-box> h6{
+.menu-tile{
+	min-height: 250px;
+	cursor: pointer;
+}
+
+.address-box> h6, .menu-tile h6{
 	border-bottom: 2px solid #54565A;
 	color:#54565A;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
 	background-color: #C8C8C8;
 }
 
+.menu-tile h6{
+	margin-bottom:0px;
+	padding:1em;
+	font-size:20px;
+}
+
 .address-box >p{
 	color:#898A8D;
 }
 
+.tile-image{
+    width: 100%;
+    background-size: cover;
+    background-repeat-y: no-repeat;
+    height: 300px;
+}
+.image-1{
+	    background-image: url('https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png');
+	     background-position: right center;
+}
+
+.image-2{
+	background-image:url('https://www.zucorahome.com/Images/Zuc/images/shared/happy-family-laughing-746x536.png');
+	 background-position: right center;
+}
+
+.image-3{
+	background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/man-tool-bag.png);
+	 background-position: right center;
+}
+.image-4{
+	background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/woman-online-purchase.png);
+	 background-position: center center;
+}
+.image-5{
+	background-image: url(https://www.zucorahome.com/Images/Zuc/images/shared/interior-house.png);
+	background-position: right center;
+}
+
+.image-6{
+	background-image:url(https://www.zucorahome.com/Images/Zuc/images/shared/couple-on-computer.png);
+	background-position: center center;
+}
 @media screen and (max-width: 768px){
-	.mainAddress-container{
+	.mainAddress-container, .menu-tiles-container{
 		grid-template-columns: auto;
 	}
 }
@@ -656,4 +703,100 @@
 .rewards-table td{
 	border-right:1px solid #54565A;
 	color:#898A8D;
+}
+
+/*FAQ screen*/
+
+.category-box-container, .helpBox-container{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-gap: 15px 1.5em;
+}
+
+.category-box, .help-box{
+	border: 3px solid #54565A;
+	padding:2em;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.help-box{
+	padding:0;
+	min-height:250px;
+	height:auto;
+}
+.help-box h6{
+	text-align: left;
+	border-bottom: 2px solid;
+	background-color: #C8C8C8;
+}
+@media screen and (max-width:767px){
+
+	.category-box{
+		padding:10px;
+	}
+
+	.category-box > img{
+		width:20%;
+	}
+	.category-box-container,.helpBox-container {
+		grid-template-columns: auto;
+	}
+}
+.faq-accordion{
+	width:100%;
+	/*display: grid;
+	grid-template-columns: auto;*/
+}
+
+.faq-accordion hr{
+	margin:1em 0;
+}
+
+.faq-accordion .accordion{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+}
+
+.accordion h4{
+	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+	color:#54565A;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size:20px;
+	margin-bottom: 0px;
+}
+ .accordion:after{
+    content: '\002B';
+    color:#54565A;
+    font-size:3rem;
+    margin-left:1.5em;
+    float: right;
+    font-weight: bold;
+    border: 5px solid;
+    /*width: 5%;*/
+    padding:0 8px;
+    border-radius: 50%;
+  }
+
+    .faq-accordion> .active:after{
+    content: "\2212";
+  }
+
+  .faq-accordion .panel p{
+ 	font-family: aktiv-grotesk, Helvetica, sans-serif;
+   font-size:1.15rem;
+   color:#6C6C6C;
+}
+
+.panel{
+   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  -webkit-transition: max-height 0.4s ease-out;
+
 }
