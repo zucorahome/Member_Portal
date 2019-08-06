@@ -20,6 +20,16 @@
 .strong{
 	font-weight:700;
 }
+
+
+.non-visible{
+	display: none;
+}
+
+p{
+	  font-family:'aktiv-grotesk',Helvetica,sans-serif;
+}
+
 /*Member navigation*/
 .member-navigation{
 	background-color: #54565A;
@@ -138,6 +148,12 @@
 		}	
 }
 
+@media screen and (min-width:1400px){
+	.member-setup-page{
+		width:50%;
+	}
+}
+
 .member-setup-page>.inner-width{
     position: relative;
     width: 90%;
@@ -186,7 +202,18 @@
 	padding-right: 1em;
 }
 
+.form-links{
+	text-transform: uppercase;
+	color:#54565A;
+	font-weight: 600;
+	font-size:16px;
+}
 
+a.form-links:hover{
+	color: #898A8D;
+	text-decoration: underline;
+	transition: all 0.4s ease-in;
+}
 /* The container */
 .checkmark-container,.radio-container {
   display: block;
@@ -277,8 +304,8 @@
 }
 
 .radio-container .radio-checkmark:after{
-	top: 5px;
-    left: 5px;
+    top: 5.25px;
+    left: 4.85px;
     width: 11px;
     height: 11px;
 	border-radius: 50%;
@@ -335,8 +362,8 @@
     width: auto;
 }
 
- /*Address list screen and Welcome back screen*/
 
+/*Address list screen and Welcome back screen*/
 .mainAddress-container, .menu-tiles-container{
 	display: grid;
     grid-template-columns: auto auto auto;
@@ -543,7 +570,7 @@
 		grid-template-columns: 50% 50%;
 	}
 
-	.paymentCard-name img{
+	.paymentCard-name>div>img{
 		width:60%;
 	}
 	.addNewCard-form > .zuc-form-row > .zuc-form-group{
@@ -631,7 +658,7 @@
 
 /*Transaction History page*/
 
-.transactionHistory-table,.rewards-table {
+.transactionHistory-table,.rewards-table,.usePoints-table {
     width: 100%;
     border-collapse: collapse;
     border: 3px solid #C8C8C8;
@@ -639,18 +666,18 @@
     table-layout: fixed;
 }
 
-.transactionHistory-table tr{
+.transactionHistory-table tr, .usePoints-table tr{
 	border:1px solid #54565A;
 	padding:0.35em;	
 }
 
-.transactionHistory-table th, .transactionHistory-table td{
+.transactionHistory-table th, .transactionHistory-table td, .usePoints-table th, .usePoints-table td{
 	padding:0.625em;
 	text-align: center;
 	border:1px solid #54565A;
 }
 
-.transactionHistory-table td, .paymentInfo-table td{
+.transactionHistory-table td, .paymentInfo-table td, .usePoints-table td{
 	color:#898A8D;
 }
 
@@ -670,6 +697,8 @@
 	padding:0.625em;
 	text-align: center;
 }
+
+
 
 .pagination{
 	width:auto;
@@ -711,6 +740,7 @@
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	grid-gap: 15px 1.5em;
+	justify-content: center;
 }
 
 .category-box, .help-box{
@@ -742,6 +772,10 @@
 	}
 	.category-box-container,.helpBox-container {
 		grid-template-columns: auto;
+	}
+
+	.pagination{
+		justify-content: center;
 	}
 }
 .faq-accordion{
@@ -799,4 +833,75 @@
   transition: max-height 0.4s ease-out;
   -webkit-transition: max-height 0.4s ease-out;
 
+}
+
+/*Membership shop screen*/
+.gift-card-radioButtons>label{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.gift-card-radioButtons>label>img{
+	width:15%;
+}
+.gift-card-radioButtons >label> .radio-checkmark{
+	top:1.65em;
+}
+
+.imageText-component{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em 3em;
+}
+
+.image-content{
+	border:2px solid #54565A;
+}
+
+.image-content h6{
+    width: auto;
+    padding: 10px;
+    border-bottom: 2px solid #54565A;
+    background-color: #c8c8c8;
+
+}
+.image-content >img{
+	width:80%;
+
+}
+
+.text-content{
+	text-align: center;
+}
+
+.text-content p{
+	font-weight: 500;
+}
+
+.usePoints-table th, .usePoints-table td{
+	text-align: left;
+}
+@media screen and (max-width:767px){
+		.gift-card-radioButtons>label>img{
+		width:40%;
+	}
+	.gift-card-radioButtons >label> .radio-checkmark{
+		top:1em;
+	}
+
+	.imageText-component{
+		grid-template-columns: auto;
+	}
+}
+
+.quantity >input[type="number"]{
+    width: 20%;
+    margin-bottom: 0;
+    height: 26px;
+    text-align: center;
+    padding:0;
+      -moz-appearance: textfield;
+  -webkit-appearance: none;
 }

@@ -16,7 +16,17 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+$('#change-password').click(function(){
+	console.log("clicked");
+	$('.password-field').toggleClass('non-visible');
+});
 
+// check if radio button is checked
+	$('input[type="radio"]').change(function(){
+		if($('.radio-container').attr('checked')){
+			console.log("found the checked one");
+		}else{
 
-
+		}
+	});
 });

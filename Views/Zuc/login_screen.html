@@ -200,14 +200,43 @@
         </div>
         <!-- Submit Button-->
         <div class="form-buttons">
-          <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./memberProfile_afterConfirmation.html">Login</a></button>
+          <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button>
           <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button>
           <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
         </div><!-- Button div ends-->
       </div>
     </div>
     <!-- Main page content-->
-      
+      <section class="zuc-hero-header-mask">
+  <!-- Media container-->
+  <div class="zuc-hero-media-container" aria-describedby="header-caption">
+    <!-- Video or Image ( Image can also be added as BKG to above container )-->
+    <video class="zuc-hero-video" poster="https://i.vimeocdn.com/video/745093176_1920x994.jpg" style="background-image: url('https://i.vimeocdn.com/video/745093176_1920x994.jpg'); background-size: cover;" preload="auto" autoplay muted loop>
+      <source src="https://player.vimeo.com/external/305557023.hd.mp4?s=edaaf15df6220a3de3f04c18c1ea37ba4a0a06d1&profile_id=175" type="video/mp4">
+      <source src="https://player.vimeo.com/external/305557023.hd.mp4?s=edaaf15df6220a3de3f04c18c1ea37ba4a0a06d1&profile_id=165" type="video/mp4">
+    </video>
+  </div>
+  <!-- Header Shield-->
+  <div class="zuc-shield zuc-icon--primary">
+    <div class="zuc-shield-content u-text-center">
+      <h1 class="zuc-shield-title">Welcome to Smarter Living</h1>
+      <div class="zuc-shield-subtitle u-uppercase">Convenient. Intelligent. Innovative.</div><a class="zuc-btn zuc-btn-secondary" href="javascript:void(0)" title="Smarter Living" onclick="toggleModal('[data-smarter-video]')">Watch Video</a>
+    </div>
+  </div>
+  <div class="u-screenreader" id="header-caption">BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO</div>
+</section>
+<!-- Modal Container-->
+<div class="zuc-modal --video-modal" data-smarter-video onclick="toggleModal('[data-smarter-video]')">
+  <!-- Modal Content-->
+  <div class="zuc-modal-content" onclick="event.stopPropagation()">
+    <!-- Zucora Home Introductory Video-->
+    <video class="zuc-modal-video" poster="https://i.vimeocdn.com/video/745108186_1920x1080.jpg" style="background-image: url('https://i.vimeocdn.com/video/745108186_1920x1080.jpg'); background-size: cover;" preload="auto" controls>
+      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=175&autoplay=1" type="video/mp4">
+      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=174&autoplay=1" type="video/mp4">
+      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=165&autoplay=1" type="video/mp4">
+    </video>
+  </div>
+</div>
     <!-- main page content ends -->
          <!-- Site Footer-->
     <footer class="zuc-footer-wrapper">
