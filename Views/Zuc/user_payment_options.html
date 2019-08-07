@@ -244,11 +244,11 @@
             </div>
         </div>
     </section><!-- Profile form, populating the existing settings and information -->
-    <section class="zuc-service-form" style="margin-top:2% !important;">
+    <section class="zuc-service-form member-center-container" style="margin-top:2% !important;">
         <h2 class="sr-only">Smarter living user's payment options.</h2>
         <section class="inner-width">
             <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
-            <div class="memberProfile-title">
+            <div class="memberProfile-title margin-bottom-2">
                 <h3>My payment options</h3>
             </div><!-- Address -->
             <div class="payment-container">
@@ -262,9 +262,9 @@
                             <img alt="verified by visa logo." src="../../Images/Zuc/images/member-portal/visa-logo.png">
                             <p>Visa ending with xxxxx</p>
                         </div>
-                        <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-up"></i></a></p>
+                        <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-down"></i></a></p>
                     </div>
-                    <div class="two-row paymentCard-info padding-10">
+                    <div class="two-row paymentCard-info padding-10 non-visible">
                         <div class="info-name">
                             <p class="light-grey"><span class="strong dark-grey">Name on card</span><br>
                             J Smith</p>
@@ -276,7 +276,7 @@
                             Canada</p>
                             <div class="two-row mobile-column margin-top-1 margin-bottom-1">
                                 <!-- <button class="zuc-btn zuc-memberForm-button">Remove</button>  -->
-                                <button class="zuc-btn zuc-memberForm-button edit-link">Edit</button>
+                                <button class="zuc-btn zuc-memberForm-button primaryButton-color edit-link">Edit</button>
                             </div>
                         </div><!--info-address ends -->
                     </div><!--paymentCard-info ends -->
@@ -296,7 +296,7 @@
                         </div>
                         <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-down"></i></a></p>
                     </div>
-                    <div class="two-row paymentCard-info padding-10" style="display: none;">
+                    <div class="two-row paymentCard-info padding-10 non-visible">
                         <div class="info-name">
                             <p class="light-grey"><span class="strong dark-grey">Name on card</span><br>
                             J Smith</p>
@@ -308,7 +308,7 @@
                             Canada</p>
                             <div class="two-row mobile-column margin-top-1 margin-bottom-1">
                                 <!-- <button class="zuc-btn zuc-memberForm-button">Remove</button>  -->
-                                <button class="zuc-btn zuc-memberForm-button">Edit</button>
+                                <button class="zuc-btn zuc-memberForm-button primaryButton-color">Edit</button>
                             </div>
                         </div><!--info-address ends -->
                     </div><!--paymentCard-info ends -->
@@ -319,29 +319,34 @@
                 <div>
                     <h3 class="uppercase-text">We accept the following credit cards</h3>
                 </div>
-                <div class="two-row flex-vert-center flex-hor-center payment-logos"><img alt="Visa logo." class="center" src="../../Images/Zuc/images/member-portal/visa-logo.png"> <img alt="Master card logo." class="center" src="../../Images/Zuc/images/member-portal/master-card-logo.png"></div>
+                <div class="two-row flex-vert-center flex-hor-end payment-logos"><img alt="Visa logo." class="center" src="../../Images/Zuc/images/member-portal/visa-logo.png"> <img alt="Master card logo." class="center" src="../../Images/Zuc/images/member-portal/master-card-logo.png"></div>
             </div><!--div 3 ends-->
             <!-- Div add new cards -->
             <div class="margin-top-1 addNewCard-container">
                 <div class="strong dark-grey">
-                    <i class="fa fa-chevron-up"></i> Add new card
+                    <a class="chevron" href="#/"><i class="fa fa-chevron-up"></i> Add new card</a>
                 </div>
                 <form class="addNewCard-form">
                     <div class="zuc-form-row">
                         <div class="zuc-form-group">
                             <div class="zuc-input-name light-grey strong">
                                 Name on card
-                            </div><label class="u-screenreader" for="field-card-name">Name on card</label> <input name="card-name" placeholder="Name written on the card" type="text" value="card-name">
+                            </div><label class="u-screenreader" for="field-card-name">Name on card</label> <input name="card-name" placeholder="Name as written on the card" type="text" value="">
                         </div>
                         <div class="zuc-form-group">
                             <div class="zuc-input-name light-grey strong">
                                 Card #
-                            </div><label class="u-screenreader" for="field-card-name">Card number</label> <input name="card-number" placeholder="0000 0000 00000" type="text" value="card-number">
+                            </div><label class="u-screenreader" for="field-card-name">Card number</label> <input name="card-number" placeholder="0000 0000 00000" type="text" value="">
                         </div>
                         <div class="zuc-form-group">
                             <div class="zuc-input-name light-grey strong">
                                 Expiration date
-                            </div><label class="u-screenreader" for="field-card-name">Expiration date</label> <select name="exp-month">
+                            </div>
+                            <label class="u-screenreader" for="field-card-name">Expiration date</label> 
+                            <input name="exp-month" placeholder="01" type="text" value="" style="width:40%;">
+                            <input name="exp-year" placeholder="2019" type="text" value="" style="width:50%;">
+
+             <!--                <select name="exp-month">
                                 <option value="01">
                                     01
                                 </option>
@@ -378,55 +383,59 @@
                                 <option value="12">
                                     12
                                 </option>
-                            </select> <select name="exp-year">
-                                <option value="16">
-                                    2020
-                                </option>
-                                <option value="17">
-                                    2021
-                                </option>
-                                <option value="18">
-                                    2022
-                                </option>
+                            </select> 
+                            <select name="exp-year">
                                 <option value="19">
-                                    2023
+                                    2019
                                 </option>
                                 <option value="20">
-                                    2024
+                                    2020
                                 </option>
                                 <option value="21">
+                                    2021
+                                </option>
+                                <option value="22">
+                                    2022
+                                </option>
+                                <option value="23">
+                                    2023
+                                </option>
+                                <option value="24">
+                                    2024
+                                </option>
+                                <option value="25">
                                     2025
                                 </option>
-                            </select>
+                            </select> -->
                         </div>
                         <div class="zuc-form-action">
-                            <div class="zuc-form-group auto-width padding-10">
-                                <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Add card</span></strong></button>
+                            <div class="zuc-form-group auto-width padding-10-onlyMedium">
+                                <a class="zuc-btn zuc-memberForm-button secondaryButton-color addCard-link" type="submit" href="#/"><strong><span>Add card</span></strong></a>
                             </div>
                         </div>
                     </div>
                 </form>
             </div><!--add new card container ends -->
             <!-- Address box for choosing address -->
-            <div class="selectAddress-box">
+            <div class="selectAddress-box non-visible">
                 <form class="">
                     <div class="zuc-form-row">
                         <div class="zuc-form-group">
                             <div class="zuc-radio-group-container address-list">
                                 <div class="zuc-radio-group memberForm-radioButtons">
-                                    <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input checked="checked" name="address-1" type="radio" value="address-1"> <span class="radio-checkmark"></span></label> <!-- second -->
-                                     <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input name="address-2" type="radio" value="address-2"> <span class="radio-checkmark"></span></label> <!-- third address -->
-                                     <label class="radio-container"><span class="strong">First Last name</span>,Street address with unit number, city,Province, Postal code, Canada. <input name="address-3" type="radio" value="address-3"> <span class="radio-checkmark"></span></label>
+                                    <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, city, Province, Postal code, Canada. <input name="address" type="radio" value="address-1"> <span class="radio-checkmark"></span></label> <!-- second -->
+                                     <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, city, Province, Postal code, Canada. <input name="address" type="radio" value="address-2"> <span class="radio-checkmark"></span></label> <!-- third address -->
+                                     <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, city, Province, Postal code, Canada. <input name="address" type="radio" value="address-3"> <span class="radio-checkmark"></span></label>
                                 </div>
                             </div>
                         </div>
                     </div><!--radio button div ends -->
                    <div class="zuc-form-row">
                         <div class="zuc-form-group auto-width padding-10">
-                           <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span><a href="#/" class="edit-link">Add a new address</a></span></strong></button>
+                           <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><strong><span><a href="#/" class="edit-link">Add a new address</a></span></strong></button>
                         </div>
                         <div class="zuc-form-group auto-width padding-10">
-                           <button class="zuc-btn zuc-memberForm-button" type="submit"><strong><span>Use this address</span></strong></button>
+                           <a class="zuc-btn zuc-memberForm-button secondaryButton-color addCard-link" type="submit"><strong><span>Use this address</span></strong></a>
                         </div>
                       </div>
                 </form>

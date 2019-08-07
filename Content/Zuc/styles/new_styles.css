@@ -15,7 +15,9 @@
 .margin-bottom-1{
 	margin-bottom:1em;
 }
-
+.margin-bottom-2{
+	margin-bottom: 2em;
+}
 .margin-top-1{
 	margin-top:1em;
 }
@@ -52,6 +54,7 @@
     background-color: #fbfbfb;
     color: #54565A;
     font-family: aktiv-grotesk,Helvetica,sans-serif;
+    padding:10px;
 }
 
 .member-login > .zuc-input-group> .zuc-input-link{

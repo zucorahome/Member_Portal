@@ -19,6 +19,7 @@
     <script src="../../Scripts/Zuc/js/modals.js"></script>
     <script src="../../Scripts/Zuc/js/display-jobPostings.js"></script>
     <script src="../../Scripts/Zuc/js/Controllers/Utils.js"></script>
+      <script src="../../Scripts/Zuc/js/member-center.js"></script>
     <!-- [ Alerts ]-->
     <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css">
@@ -38,7 +39,7 @@
           <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a>
           <a href="#/" style="text-transform: uppercase;color:white;">Blog</a>
           <!-- Login - Logged Out State--><a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">
-          <!-- Logged Out State--><!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a>
+          <!-- Logged Out State--><!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Centre</span></a>
           <!-- Account - Logged In State--><a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account">
           <!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
         </div>
@@ -275,11 +276,11 @@
         <div class="zuc-radio-group-container">
           <div class="zuc-radio-group memberForm-radioButtons">
             <label class="radio-container">I would like to receive promotional emails about Smarter Living by Zucora Home.*
-              <input type="radio"  name="email-notifications" value="Yes" checked="checked">
+              <input type="radio"  name="email-notifications" value="Yes">
               <span class="radio-checkmark"></span>
             </label>
             <!-- light grey class added when the radio button is not selected -->
-            <label class="radio-container light-grey">I do not want to receive promotional emails about Smarter Living by Zucora Home.*
+            <label class="radio-container">I do not want to receive promotional emails about Smarter Living by Zucora Home.*
               <input type="radio" name="email-notifications" value="No">
               <span class="radio-checkmark"></span>
             </label>
@@ -302,10 +303,10 @@
     
     <div class="zuc-form-row zuc-form-action">
       <div class="zuc-form-group zuc-form-33 padding-10">
-        <button class="zuc-btn zuc-memberForm-button center" type="submit"><strong><span><a href="./register-confirmtion.html">SUBMIT</a></span></strong></button>
+        <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><strong><span><a href="./register-confirmtion.html">SUBMIT</a></span></strong></button>
       </div>
       <div class="zuc-form-group zuc-form-33 padding-10">
-        <button class="zuc-btn zuc-memberForm-button center" type="submit"><strong><span>Cancel</span></strong></button>
+        <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><strong><span>Cancel</span></strong></button>
       </div>
       <div class="zuc-form-group zuc-form-33 padding-10">
         <a href="#/"><img src="http://www.hacy.org/art/google-recaptcha.png" style="width:auto;max-width:100%;"></a>

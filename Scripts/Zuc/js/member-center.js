@@ -17,7 +17,6 @@ for (i = 0; i < acc.length; i++) {
 }
 
 $('#change-password').click(function(){
-	console.log("clicked");
 	$('.password-field').toggleClass('non-visible');
 });
 
@@ -47,4 +46,38 @@ $('#change-password').click(function(){
 
   $('.edit-link').click(openModal);
   $('.cross-close').click(closeModal);
+
+  // Payment options screen
+  $('.addCard-link').click(function(){
+
+  	// $('.selectAddress-box').toggleClass("non-visible", 1500);
+  	$('.selectAddress-box').toggle(1000)
+  });
+
+  // $('.chevron').click(function(){
+  // 	$(this).each
+  // 	$('.paymentCard-info').toggle(1000);
+  // 	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+  // });
+
+$('.chevron').each(function(){
+	$(this).click(function(){
+		$('.paymentCard-info').toggle(1000);
+  		$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+	});
+});
+
+  // var chevron = $('.chevron');
+
+  // var i;
+
+
+  // for(i=0;i<chevron.length;i++){
+  // 	console.log(chevron[i],i);
+  // 	chevron[i].click(function(){
+  // 		console.log("function called");
+  // 	});	
+  	
+  // }
+
 });

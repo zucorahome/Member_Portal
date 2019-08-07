@@ -30,6 +30,13 @@ p{
 	  font-family:'aktiv-grotesk',Helvetica,sans-serif;
 }
 
+@media screen and (max-width:1024px){
+.padding-10-onlyMedium{
+	padding:10px;	
+}
+
+}
+
 /*Member navigation*/
 .member-navigation{
 	background-color: #54565A;
@@ -159,7 +166,7 @@ p{
     width: 90%;
     display: block;
     margin: 0 auto;
-    padding: 4vw 2vw;
+    padding: 4vw 1vw;
 }
 .memberProfile-title{
 	color: #54565A;
@@ -232,7 +239,7 @@ a.form-links:hover{
 }
 
 .radio-container{
-	/*margin-top:13px;*/
+	margin:18px 0;
 	/*color:#898A8D;*/
 }
 
@@ -304,8 +311,8 @@ a.form-links:hover{
 }
 
 .radio-container .radio-checkmark:after{
-    top: 5.25px;
-    left: 4.85px;
+    top: 5px;
+    left: 5px;
     width: 11px;
     height: 11px;
 	border-radius: 50%;
@@ -354,26 +361,45 @@ a.form-links:hover{
 }
 
 .zuc-memberForm-button{
-    background-color: #898A8D;
     color: white;
     letter-spacing: 1px;
     border: none;
     min-width: 15em;
     width: auto;
+    text-align: center;
 }
 
+.primaryButton-color{
+	background-color: #898A8D;
+}
+
+.secondaryButton-color{
+	background-color: #54565A;
+}
+
+/*Member screen containers*/
+@media screen and (min-width:1400px){
+	.member-center-container{
+		width:50%;
+	}
+
+	.page-smarterLiving-logo{
+		width:25%;
+	}
+}
 
 /*Address list screen and Welcome back screen*/
 
 .address-modal{
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(0,0,0,0.9);
 	position: absolute;
 	top:0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 1000px;
+    /*height: 1000px;*/
+    height:110%;
     z-index: 1000;
 }
 
@@ -589,7 +615,7 @@ a.form-links:hover{
 }
 
 .addNewCard-form > .zuc-form-row > .zuc-form-group{
-	width:25%;
+	width:20%;
 	padding-right:10px;
 }
 
@@ -607,6 +633,7 @@ a.form-links:hover{
 	margin-top: 2vw;
     border: 2px solid #54565A;
     padding: 0 2em;
+    transition: visible 0.4s ease-out;
 }
 
 .address-list> .memberForm-radioButtons >.radio-container {
@@ -635,6 +662,12 @@ a.form-links:hover{
 	}
 }
 
+@media screen and (min-width:1400px){
+	.payment-logos img{
+		width:75%;
+	}
+
+}
 /*Plans Screen*/
 .planDetails-container{
 	margin-top:2em;
@@ -667,7 +700,7 @@ a.form-links:hover{
 }
 
 .row-data{
-	margin-top:10px;
+	/*margin-top:10px;*/
 }
 
 .row-data a{
@@ -726,7 +759,7 @@ a.form-links:hover{
 
 .transactionHistory-table th, .transactionHistory-table td, .usePoints-table th, .usePoints-table td{
 	padding:0.625em;
-	text-align: center;
+	text-align: left;
 	border:1px solid #54565A;
 }
 
@@ -748,7 +781,7 @@ a.form-links:hover{
 
 .paymentInfo-table th, .paymentInfo-table td, .rewards-table th, .rewards-table td{
 	padding:0.625em;
-	text-align: center;
+	text-align: left;
 }
 
 
@@ -791,9 +824,11 @@ a.form-links:hover{
 
 .category-box-container, .helpBox-container{
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
 	grid-gap: 15px 1.5em;
 	justify-content: center;
+}
+.category-box-container{
+	grid-template-columns: 25% 25% 25%;
 }
 
 .category-box, .help-box{
@@ -802,18 +837,30 @@ a.form-links:hover{
 	text-align: center;
 	cursor: pointer;
 }
+.category-box img{
+	width:30%;
+}
 
-
+.help-box img{
+	width:25%;
+	margin-top:3em;
+}
+.helpBox-container{
+	grid-template-columns: 30% 30% 30%;
+}
 .help-box{
 	padding:0;
 	min-height:250px;
 	height:auto;
+	max-width:100%;
+	overflow: hidden;
 }
 .help-box h6{
 	text-align: left;
 	border-bottom: 2px solid;
 	background-color: #C8C8C8;
 }
+
 @media screen and (max-width:767px){
 
 	.category-box{
@@ -830,15 +877,27 @@ a.form-links:hover{
 	.pagination{
 		justify-content: center;
 	}
-}
-.faq-accordion{
-	width:100%;
-	/*display: grid;
-	grid-template-columns: auto;*/
+	.category-box img, .help-box img{
+		width:50%;
+	}
+
+	.faq-accordion{
+		width:100%;
+		margin:0 auto;
+	}
 }
 
+@media screen and (min-width:1024px){
+	.faq-accordion{
+		width:80%;
+		margin:0 auto;
+	}
+}
 .faq-accordion hr{
 	margin:1em 0;
+    border: 0;
+    /*border-top: 2px solid #E7E8E6;*/
+    border-bottom: 3px solid #E7E8E6;
 }
 
 .faq-accordion .accordion{
@@ -847,6 +906,8 @@ a.form-links:hover{
 	align-items: center;
 	transition: all 0.4s ease-in;
 	-webkit-transition: all 0.4s ease-in;
+	justify-content: center;
+	margin-bottom: 0px;
 }
 
 .accordion h4{
@@ -860,13 +921,13 @@ a.form-links:hover{
  .accordion:after{
     content: '\002B';
     color:#54565A;
-    font-size:3rem;
+    font-size:2rem;
     margin-left:1.5em;
     float: right;
     font-weight: bold;
     border: 5px solid;
     /*width: 5%;*/
-    padding:0 8px;
+    padding:0 6px;
     border-radius: 50%;
   }
 
@@ -878,6 +939,7 @@ a.form-links:hover{
  	font-family: aktiv-grotesk, Helvetica, sans-serif;
    font-size:1.15rem;
    color:#6C6C6C;
+   margin-top:10px;
 }
 
 .panel{
