@@ -248,7 +248,7 @@
             <span class="strong">First Last Name</span>
             <br>552 Clarke Road<br>London, ON N5V3K5<br>Canada
           </p>
-          <p class="strong padding-10"><a href="#/">Edit</a></p>
+          <p class="strong padding-10"><a href="#/" class="edit-link">Edit</a></p>
         </div>
         <div class="address-box">
           <h6 class="strong padding-10">Service</h6>
@@ -264,15 +264,19 @@
             <span class="strong">First Last Name</span>
             <br>552 Clarke Road<br>London, ON N5V3K5<br>Canada
           </p>
-          <p class="strong padding-10"><a href="#/">Edit</a></p>
+          <p class="strong padding-10"><a href="#/" class="edit-link">Edit</a></p>
         </div>
         
     </div>
   </section> <!--Inner section ends-->
 </section>
+ 
   <!-- Edit address Modal --><!--This should fetch data of address same as edit link clicked -->
-  <section class="address-modal address-modal-active">
+  <section class="address-modal address-modal-active non-visible">
     <p class="sr-only">Opening address form on a modal to edit.</p>
+    <div class="cross-close">
+      <a href="#/">&times;</a>
+    </div>
     <section class="address-modal-content member-setup-page zuc-service-form">
          <div class="zuc-forms-container flex flex-column --service inner-width">
            <div class="memberProfile-title"><h3>Edit the address</h3></div>

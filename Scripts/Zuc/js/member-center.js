@@ -22,11 +22,29 @@ $('#change-password').click(function(){
 });
 
 // check if radio button is checked
-	$('input[type="radio"]').change(function(){
-		if($('.radio-container').attr('checked')){
-			console.log("found the checked one");
-		}else{
+ function radioText(){
+  $('input[type=radio]').parent().addClass('light-grey');
+    // if($('input[type=radio]').is(':checked')){
+      if($("input[type=radio][checked]")){
+      $(this).parent().removeClass('light-grey');
+    }
+ }
 
-		}
-	});
+	$('input[type=radio]').change(radioText);
+
+  radioText();
+
+  // address screen
+
+  function openModal(){
+    $('.address-modal').removeClass('non-visible');
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  }
+
+  function closeModal(className){
+    $('.address-modal').addClass('non-visible');
+  }
+
+  $('.edit-link').click(openModal);
+  $('.cross-close').click(closeModal);
 });
