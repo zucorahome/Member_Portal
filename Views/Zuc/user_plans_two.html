@@ -38,6 +38,7 @@
     <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+
   <body>
         <!-- Site Navigation-->
     <div class="zuc-nav-wrapper" data-nav-height>
@@ -46,8 +47,8 @@
       <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
         <!-- Slogan-->
         <div class="zuc-nav-slogan u-normal">CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span></div>
-         <!--Nav Links-->
-            <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
+        <!--Nav Links-->
+        <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
                 <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> 
                 <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> 
                 <!-- Login - Logged Out State-->
@@ -121,10 +122,10 @@
         </div>
       </nav>
       <!-- Member center, will show up memeber have logged in. -->
-     <div class="member-navigation flex">
+       <div class="member-navigation flex">
         <div class="member-links">
-          <a href="./memberProfile_afterConfirmation.html" class="active">Profile</a><span class="divider">|</span>
-          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+          <a href="./user_plans.html" class="active">Plans</a><span class="divider">|</span>
           <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
           <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
           <a href="./member_shop.html">Shop</a><span class="divider">|</span>
@@ -169,17 +170,17 @@
             <div class="zuc-accordion-title">Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i></div>
             <!-- Hidden Content-->
              <div class="zuc-accordion-hidden" aria-hidden="true">
-                      <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
-                      <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
-                      <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
-                      <a class="zuc-accordion-link" href="./user_rewards.html" title="Member's Rewards" aria-role="menuitem">Rewards</a>
-                      <a class="zuc-accordion-link" href="./member_shop.html" title="Gift card screen a user can buy." aria-role="menuitem">Shop</a>
-                      <a class="zuc-accordion-link" href="./membership_faq.html" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
-               </div>
+                <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
+                <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
+                <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
+                <a class="zuc-accordion-link" href="./user_rewards.html" title="Member's Rewards" aria-role="menuitem">Rewards</a>
+                <a class="zuc-accordion-link" href="./member_shop.html" title="Gift card screen a user can buy." aria-role="menuitem">Shop</a>
+                <a class="zuc-accordion-link" href="./membership_faq.html" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
+             </div>
           </div>
           <!-- Shop Now ---------------------------------->
           <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
-            <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;">Shop Now</a>
+            <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a>
           <!-- </div> -->
         </div>
         <div class="zuc-menu" data-open-menu>
@@ -232,147 +233,103 @@
       </div>
     </div>
     <!-- Main page content-->
-        <section class="member-info-boxed">
-          <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
-          <div class="memberInfo-table">
-            <div><p>Smarter Living Memeber Number</p></div>
-            <div><p class="light-grey">111</p></div>
-            <div><p>Member Since</p></div>
-            <div><p class="light-grey">2019/10/29</p></div>
-            <div><p>Rewards Balance</p></div>
-            <div><p class="light-grey">10,900</p></div>
-          </div>
-        </section>
+      <section class="member-info-boxed">
+  <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
+  <div class="memberInfo-table">
+    <div><p>Smarter Living Memeber Number</p></div>
+    <div><p class="light-grey">111</p></div>
+    <div><p>Member Since</p></div>
+    <div><p class="light-grey">2019/10/29</p></div>
+    <div><p>Rewards Balance</p></div>
+    <div><p class="light-grey">10,900</p></div>
+  </div>
+</section>
 
 <!-- Profile form, populating the existing settings and information -->
-<section class="member-setup-page zuc-service-form" style="margin-top:2% !important;">
-  <h2 class="sr-only">Smarter living memeber account set-up form.</h2>
+<section class="zuc-service-form member-center-container" style="margin-top:2% !important;">
+  <h2 class="sr-only">Smarter living users address list.</h2>
   <section class="inner-width">
     <div>
       <img src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png" alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center">
     </div>
-    <div class="memberProfile-title"><h3>My Smarter Living Member profile.</h3></div>
-    <!-- Form starts -->
-    <div class="zuc-forms-container flex flex-column --service">
-        <form class="flex flex-column memberPortal-login">
-          <div class="zuc-form-row">
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>First name *</strong></div>
-              <label class="u-screenreader" for="field-first-name">First name</label>
-              <input type="text" required="" name="firstname" placeholder="First name" id="field-first-name" value="Jenna">
-            </div>
-            <div class="zuc-form-group zuc-form-50">
-                <div class="zuc-input-name"><strong>Last name *</strong></div>
-                <label class="u-screenreader" for="field-last-name">Last name</label>
-                <input type="text" required="" name="lastname" placeholder="Last name" id="field-last-name" value="Smith">
-            </div>
-          </div>
- 
-          <div class="zuc-form-row">
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Preferred phone number *</strong></div>
-              <label class="u-screenreader" for="field-current-phone">Current phone number</label>
-              <input type="tel" required="" name="current-phone" placeholder="Phone number where we can reach you" id="field-current-phone" value="555-555-5555">
-            </div>
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Alternate phone number</strong></div>
-              <label class="u-screenreader" for="field-order-phone">Alternate phone number</label>
-              <input type="tel" name="order-phone" placeholder="Alternate phone number" id="field-order-phone">
-            </div>
-          </div>
-           <div class="zuc-form-row">
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Email address *</strong></div>
-              <label class="u-screenreader" for="field-email">Email address</label>
-              <input type="email" required="" name="email" placeholder="Email address" id="profile-email" value="jsmith@zucora.com">
-            </div>
-             <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Alternate email address </strong></div>
-              <label class="u-screenreader" for="field-email">Alternate email address</label>
-              <input type="email" required="" name="alternate-email" placeholder="Alternate email address" id="alternate-field-email">
-            </div>
-          </div>
-           <!-- Checkmarks -->
-          <div class="zuc-form-row">
-            <div class="memberForm-checkmark">
-               <h3>Preferred method of contact</h3>
-
-              <label class="checkmark-container">Phone
-                  <input type="checkbox" checked="" name="phone" value="Phone">
-                  <span class="checkmark"></span>
-              </label>
-            
-             <label class="checkmark-container">Text
-                  <input type="checkbox" name="text" value="Text">
-                  <span class="checkmark"></span>
-              </label>
-                
-                <label class="checkmark-container">Email
-                  <input type="checkbox" name="email" value="Email">
-                  <span class="checkmark"></span>
-              </label>
-
-            </div>
-          </div>
-          <!-- New buttons added when user's account is setup -->
-          <div class="zuc-form-row">
-            <div class="zuc-form-group zuc-form-50 padding-10">
-              <button class="memberForm-button zuc-btn zuc-memberForm-button primaryButton-color center"><a href="./user_addresses.html">My addresses</a></button>
-            </div>
-            <div class="zuc-form-group zuc-form-50 padding-10">
-              <button class="memberForm-button zuc-btn zuc-memberForm-button primaryButton-color center"><a href="./user_payment_options.html">My payment options</a></button>
-            </div>
-          </div>
-           <!-- Radio buttons -->
-        <div class="zuc-form-row">
-            <div class="zuc-form-group">
-              <div class="zuc-radio-group-container">
-                <div class="zuc-radio-group memberForm-radioButtons">
-                  <label class="radio-container">I would like to receive promotional emails about Smarter Living by ZucoraHome.*
-                  <input type="radio"  name="email-notifications" value="Yes" checked>
-                  <span class="radio-checkmark"></span>
-                  </label>
-                  <!-- light grey class added when the radio button is not selected -->
-                    <label class="radio-container">I do not want to receive promotional emails about Smarter Living by ZucoraHome.*
-                   <input type="radio" name="email-notifications" value="No">
-                   <span class="radio-checkmark"></span>
-                 </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="zuc-form-row zuc-form-action">
-            <div class="zuc-form-group auto-width padding-10">
-               <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><strong><span>Save</span></strong></button>
-            </div>
-            <div class="zuc-form-group auto-width padding-10">
-               <!-- <button class="zuc-btn zuc-memberForm-button" id="change-password" type="submit"><strong><span>Change Password</span></strong></button> -->
-               <a href="#/" id="change-password" class="form-links">Change Password</a>
-            </div>
-          </div>
-
-           <div class="zuc-form-row password-field non-visible">
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Password</strong></div>
-              <label class="u-screenreader" for="password">Password*</label>
-              <input type="text" name="new-member-password" placeholder="Password" id="password">
-            </div>
-            <div class="zuc-form-group zuc-form-50">
-              <div class="zuc-input-name"><strong>Confirm password *</strong></div>
-              <label class="u-screenreader" for="confirm-password">Confirm Passowrd</label>
-              <input type="text" name="new-member-confirm-password" placeholder="Confirm Passowrd" id="confirm-passowrd">
-            </div>
-             <div class="zuc-form-group auto-width padding-10 margin-top-1">
-               <button class="zuc-btn zuc-memberForm-button primaryButton-color" type="submit"><strong><span>Save</span></strong></button>
-            </div>
-          </div>
-          
-        </form>
+    <div class="memberProfile-title margin-bottom-2"><h3>My Smarter Living service plans</h3></div>
+    <div class="description margin-top-1 text-center">
+      <p>The Smarter Living Plan you’ve selected will help take the stress out of home management and protect your budget. When a covered item requires service, we’re ready to help. Contact us by phone or 24/7 online. If a service technician is required you’ll pay a small Trade Service Fee and we’ll arrange for priority service and pay for parts, labour, or replacement of the covered item. </p>
+      <p class="margin-top-1">We offer a range of Smarter Living Plans to help protect your appliances, home furnishings, or home systems. They can be purchased individually, combined, or packaged together to ensure your monthly subscription is the right service plan for your family. </p>
+    </div>
+     <div class="margin-top-2 margin-bottom-1">
+       <button class="center zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><a href="https://www.zucorahome.com/Zuc/serviceplans">Learn more</a></button>
+     </div>
+    <!-- Else show plan details pane -->
+    <div class="planDetails-container margin-top-1">
+      <h5>Type of Smarter Living Service Plan in my account</h5>
+      <div class="planDetails-table margin-top-2">
+        <div class="row-heading">
+          <p class="dark-grey strong">Plan type</p>
+          <p class="dark-grey strong">Start date</p>
+          <p class="dark-grey strong">Renewal date</p>
+          <p class="dark-grey strong">Terms & conditions</p>
+        </div>
       </div>
-      <!-- Form ends -->
+      <div class="planDetails-table-row">
+        <div class="row-data"><p class="middle-grey">Combo plan<br>(furniture/appliance)</p></div>
+        <div class="row-data"><p class="middle-grey">2017/05/28</p></div>
+        <div class="row-data"><p class="middle-grey">2018/05/27</p></div>
+        <div class="row-data"><p class="middle-grey"><a href="#/">Combo plan</a></p></div>
+      </div>
+       
+    </div>
+    <div class="margin-top-2">
+       <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><a href="https://www.zucorahome.com/Zuc/serviceplans">Upgrage my plan</a></button>
+    </div>
+    <!-- This div will show up if they have any history for service request only.  -->
+    <!-- Service request history section -->
+    <div class="planDetails-container">
+      <h5>Service Request history</h5>
+      <div class="serviceHistory-table margin-top-2">
+        <div class="historyTable-heading">
+          <p class="strong">Reference No.<span>|</span></p>
+          <p class="strong">Start date<span>|</span></p>
+          <p class="strong">Last update<span>|</span></p>
+          <p class="strong">Status</p>
+        </div>
+        <div class="planDetails-table-row detailsPane-open tableRow-borderBottom">
+          <div class="row-data"><p class="dark-grey strong"><!-- <a href="#/" class="chevron"> --><i class="fa fa-chevron-down"></i> F2114<!-- </a> --></p></div>
+          <div class="row-data"><p class="middle-grey">2019/07/10</p></div>
+          <div class="row-data"><p class="middle-grey">2019/05/27</p></div>
+          <div class="row-data"><p class="middle-grey">Couriered  OxyTough</p></div>
+          
+            <div class="row-data"><p class="dark-grey"></p></div>
+            <div class="row-data"><p class="middle-grey">2019/07/25</p></div>
+            <div class="row-data"><p class="middle-grey"></p></div>
+            <div class="row-data"><p class="middle-grey">Waiting for registration</p></div>
+            <div class="row-data"><p class="dark-grey"></p></div>
+            <div class="row-data"><p class="middle-grey">2019/08/05</p></div>
+            <div class="row-data"><p class="middle-grey"></p></div>
+            <div class="row-data"><p class="middle-grey">Requested pop/pictures</p></div>
+          
+        </div>
+        <div class="planDetails-table-row detailsPane-closed tableRow-borderBottom">
+          <div class="row-data"><p class="dark-grey strong"><i class="fa fa-chevron-down"></i> F1998</p></div>
+          <div class="row-data"><p class="middle-grey">2018/04/02</p></div>
+          <div class="row-data"><p class="middle-grey">2018/05/27</p></div>
+          <div class="row-data"><p class="middle-grey">Resolved</p></div>
+        </div>
+         <div class="planDetails-table-row detailsPane-closed tableRow-borderBottom">
+          <div class="row-data"><p class="dark-grey strong"><i class="fa fa-chevron-down"></i> F1998</p></div>
+          <div class="row-data"><p class="middle-grey">2018/02/01</p></div>
+          <div class="row-data"><p class="middle-grey">2018/02/25</p></div>
+          <div class="row-data"><p class="middle-grey">Resolved</p></div>
+        </div>
+      </div>
+       <div class="margin-top-2">
+       <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><a href="https://www.zucorahome.com/Zuc/formservicerequest">Submit Service Request</a></button>
+       <p class="margin-top-2 dark-grey strong">Call 1.866.667.6695 if you have questions or would like to make changes to your Smarter Living Plans.</p>
+    </div>
+    </div><!--Service request table ends-->
   </section> <!--Inner section ends-->
 </section>
+  
     <!-- main page content ends -->
          <!-- Site Footer-->
     <footer class="zuc-footer-wrapper">

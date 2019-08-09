@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Zucora Home: Event page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/new_styles.css">
-    <link rel="stylesheet" href="../../Content/Zuc/styles/member-center_style.css">
-    <!--[if lt IE 9]>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet"><!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!-- [ FONTS ]-->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
     <!-- [ JQUERY ]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../../Scripts/Zuc/js/navigation.js"></script>
-    <script src="../../Scripts/Zuc/js/modals.js"></script>
-    <script src="../../Scripts/Zuc/js/display-jobPostings.js"></script>
-    <script src="../../Scripts/Zuc/js/Controllers/Utils.js"></script>
-      <script src="../../Scripts/Zuc/js/member-center.js"></script>
-    <!-- [ Alerts ]-->
-    <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css">
-    <!-- [ RESPONSIVE VIEWPORT ]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/navigation.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/modals.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/display-jobPostings.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
+    </script>
+    <script src="../../Scripts/Zuc/js/member-center.js">
+    </script><!-- [ Alerts ]-->
+
+    <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
   <body>
     <!-- Site Navigation-->
     <div class="zuc-nav-wrapper" data-nav-height>
@@ -149,7 +158,7 @@
 </div>
 <!-- Shop Now ---------------------------------->
 <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
-<a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now" style="display: block;">Shop Now</a>
+<a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now</a> 
 <!-- </div> -->
 </div>
 <div class="zuc-menu" data-open-menu>
@@ -231,7 +240,7 @@
         <input type="tel" required="" name="current-phone" placeholder="Phone number where we can reach you" id="field-current-phone">
       </div>
       <div class="zuc-form-group zuc-form-50">
-        <div class="zuc-input-name"><strong>Alternate Phone number</strong></div>
+        <div class="zuc-input-name"><strong>Alternate phone number</strong></div>
         <label class="u-screenreader" for="field-order-phone">Alternate phone number</label>
         <input type="tel" name="order-phone" placeholder="Alternate phone number" id="field-order-phone">
       </div>
@@ -275,12 +284,12 @@
       <div class="zuc-form-group">
         <div class="zuc-radio-group-container">
           <div class="zuc-radio-group memberForm-radioButtons">
-            <label class="radio-container">I would like to receive promotional emails about Smarter Living by Zucora Home.*
-              <input type="radio"  name="email-notifications" value="Yes">
+            <label class="radio-container">I would like to receive promotional emails about Smarter Living by ZucoraHome.*
+              <input type="radio"  name="email-notifications" value="Yes" checked>
               <span class="radio-checkmark"></span>
             </label>
             <!-- light grey class added when the radio button is not selected -->
-            <label class="radio-container">I do not want to receive promotional emails about Smarter Living by Zucora Home.*
+            <label class="radio-container">I do not want to receive promotional emails about Smarter Living by ZucoraHome.*
               <input type="radio" name="email-notifications" value="No">
               <span class="radio-checkmark"></span>
             </label>
@@ -290,7 +299,7 @@
     </div>
     <div class="zuc-form-row">
       <div class="zuc-form-group zuc-form-50">
-        <div class="zuc-input-name"><strong>Password</strong></div>
+        <div class="zuc-input-name"><strong>Password*</strong></div>
         <label class="u-screenreader" for="password">Password</label>
         <input type="text" name="new-member-password" placeholder="Password" id="password">
       </div>

@@ -38,6 +38,10 @@ p{
 }
 
 /*Member navigation*/
+
+.zuc-user-login:hover{
+
+}
 .member-navigation{
 	background-color: #54565A;
 	width:100%;
@@ -236,6 +240,7 @@ a.form-links:hover{
   width:auto;
   font-family: aktiv-grotesk,Helvetica,sans-serif;
   color:#54565A;
+  line-height: 20px;
 }
 
 .radio-container{
@@ -255,7 +260,7 @@ a.form-links:hover{
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: -5px;
+  top: 0;
   left: 0;
   height: 25px;
   width: 25px;
@@ -357,7 +362,7 @@ a.form-links:hover{
 	margin-top: 2em;
 	color:#54565A;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
-	font-size:20px;
+	/*font-size:20px;*/
 }
 
 .zuc-memberForm-button{
@@ -403,11 +408,14 @@ a.form-links:hover{
     z-index: 1000;
 }
 
+.address-modal-content{
+	background-color:white;
+}
 .mainAddress-container, .menu-tiles-container{
 	display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
-    grid-gap: 2em 5em;
+    grid-gap: 2em;
 
 }
 .menu-tiles-container{
@@ -602,6 +610,10 @@ a.form-links:hover{
     font-size: 1.25em;
 }
 
+.paymentCard-info{
+
+}
+
 .payment-logos{
 	grid-template-columns: 20% 20%;
 }
@@ -609,9 +621,23 @@ a.form-links:hover{
 	width:100%;
 }
 
+.addNewCard-container{
+	padding-bottom:2em;
+}
+
+.showForm a{
+	float: left;
+	font-size: 20px;
+	padding-bottom:1em;
+}
 .addNewCard-form{
 	display: grid;
 	grid-template-columns: auto;
+	padding-top:1em;
+}
+
+.addNewCard-form > .zuc-form-row {
+	justify-content: space-evenly;
 }
 
 .addNewCard-form > .zuc-form-row > .zuc-form-group{
@@ -695,12 +721,19 @@ a.form-links:hover{
 	/*grid-template-columns: auto auto auto auto;*/
 	grid-template-columns: 25% 25% 25% 25%;
 }
+
+.row-heading> p{
+	text-align: center;
+	border-right:2px solid #54565A;
+}
+
 .row-heading > p>span, .historyTable-heading >p>span{
 	padding:0 5em;
 }
 
-.row-data{
+.row-data>p {
 	/*margin-top:10px;*/
+	text-align: center;
 }
 
 .row-data a{

@@ -14,7 +14,8 @@
     <![endif]-->
     <!-- [ FONTS ]-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet"><!-- [ JQUERY ]-->
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+    <!-- [ JQUERY ]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
@@ -43,12 +44,19 @@
             <!-- Slogan-->
             <div class="zuc-nav-slogan u-normal">
                 CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
-            </div><!--Nav Links-->
+            </div>
+            <!--Nav Links-->
             <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> <!-- Login - Logged Out State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login"><!-- Logged Out State-->
-                 <!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a> <!-- Account - Logged In State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account"><!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
+                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> 
+                <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> 
+                <!-- Login - Logged Out State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">
+                <!-- Logged Out State-->
+                 <!-- <i class="fas fa-lock u-auth-hide"></i> -->
+                 <span class="u-auth-hide">Member Centre</span></a> 
+                 <!-- Account - Logged In State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold" href="#" title="Logout"><!-- Logged In state-->
+                    <i class="fas fa-user u-auth-show"></i><span class="u-auth-hide">Logout</span></a>
             </div>
         </div><!-- Main Navigation-->
         <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
@@ -152,16 +160,23 @@
                         Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
                     </div>
                     <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true">
-                      <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="Learn more about smarter living." aria-role="menuitem">Profile</a>
-                      <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
-                      -->
-                      <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
-                      -->
-                     </div>
+                    <!-- Member Centre Links ---------------------------------->
+                  <div class="zuc-accordion-item" data-accordion-item>
+                    <!-- <div class="zuc-accordion-title">Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i></div> -->
+                    <!-- Hidden Content-->
+                     <div class="zuc-accordion-hidden" aria-hidden="true">
+                              <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
+                              <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
+                              <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
+                              <a class="zuc-accordion-link" href="./user_rewards.html" title="Member's Rewards" aria-role="menuitem">Rewards</a>
+                              <a class="zuc-accordion-link" href="./member_shop.html" title="Gift card screen a user can buy." aria-role="menuitem">Shop</a>
+                              <a class="zuc-accordion-link" href="./membership_faq.html" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
+                              <a class="zuc-accordion-link" href="#/" title="Logout from member account." aria-role="menuitem">Logout</a>
+                       </div>
+                  </div>
                 </div><!-- Shop Now ================================-->
                 <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
-                <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a> <!-- </div> -->
+                <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now</a> <!-- </div> -->
             </div>
             <div class="zuc-menu" data-open-menu="">
                 <div aria-label="Mobile Navigation Toggle" class="zuc-menu-open close" role="button">
@@ -207,7 +222,8 @@
                 <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button> <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button> <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
             </div><!-- Button div ends-->
         </div>
-    </div><!-- Main page content-->
+    </div>
+    <!-- Main page content-->
     <!-- Profile form, populating the existing settings and information -->
     <section class="zuc-service-form member-center-container">
         <h2 class="sr-only">Smarter living user's payment options.</h2>
@@ -218,7 +234,7 @@
             </div>
             
             <div class="menu-tiles-container">
-              <a href="./member_shop.html"><div class="menu-tile">
+              <a href="https://www.zucorahome.com/Zuc/ecomplan"><div class="menu-tile">
                 <h6 class="strong">Shop</h6>
                 <div class="tile-image image-1"><!-- <img src="https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png" alt=""> --></div>
               </div></a>

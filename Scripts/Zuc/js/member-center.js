@@ -16,68 +16,59 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-$('#change-password').click(function(){
-	$('.password-field').toggleClass('non-visible');
-});
+//Make hide and show a section
+function showDiv(className){
+	// console.log(className.data.key);
+	$(className.data.key).toggleClass('non-visible');
+}
+
+$('#change-password').bind('click', {key:'.password-field'},showDiv);
 
 // check if radio button is checked
  function radioText(){
-  $('input[type=radio]').parent().addClass('light-grey');
-    // if($('input[type=radio]').is(':checked')){
-      if($("input[type=radio][checked]")){
-      $(this).parent().removeClass('light-grey');
-    }
+ 	let radioContainer = $('.radio-container');
+ 	let inputRadio = $('input[type=radio]');
+ 	
+ 	for(i=0;i<inputRadio.length;i++){
+
+ 		if($(inputRadio[i]).is(':checked')){
+ 			$(radioContainer[i]).removeClass('light-grey');
+ 		}else{
+ 			$(radioContainer[i]).addClass('light-grey');
+ 		}
+ 	}
  }
 
-	$('input[type=radio]').change(radioText);
-
+$('input[type=radio]').change(radioText);
   radioText();
 
   // address screen
-
-  function openModal(){
-    $('.address-modal').removeClass('non-visible');
+  function openModal(className){
+    $(className.data.key).removeClass('non-visible');
     $("html, body").animate({ scrollTop: 0 }, "slow");
   }
 
   function closeModal(className){
-    $('.address-modal').addClass('non-visible');
+    $(className.data.key).addClass('non-visible');
   }
 
-  $('.edit-link').click(openModal);
-  $('.cross-close').click(closeModal);
+  $('.edit-link').bind('click',{key:'.address-modal'},openModal);
+  $('.cross-close').bind('click',{key:'.address-modal'},closeModal);
 
   // Payment options screen
-  $('.addCard-link').click(function(){
 
-  	// $('.selectAddress-box').toggleClass("non-visible", 1500);
-  	$('.selectAddress-box').toggle(1000)
-  });
+  function openInfo(e){
+  	e.preventDefault();
+  	var $this = $(this);
+  	$this.next().toggle(1000);
+  	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+  }
 
-  // $('.chevron').click(function(){
-  // 	$(this).each
-  // 	$('.paymentCard-info').toggle(1000);
-  // 	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
-  // });
+  $('.paymentCard-name').click(openInfo);
 
-$('.chevron').each(function(){
-	$(this).click(function(){
-		$('.paymentCard-info').toggle(1000);
-  		$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
-	});
-});
+  $('.showForm').click(openInfo);
 
-  // var chevron = $('.chevron');
-
-  // var i;
-
-
-  // for(i=0;i<chevron.length;i++){
-  // 	console.log(chevron[i],i);
-  // 	chevron[i].click(function(){
-  // 		console.log("function called");
-  // 	});	
-  	
-  // }
-
+  // Show address field options
+  $('.addCard-link').bind('click', {key:'.selectAddress-box'},showDiv);
+  
 });
