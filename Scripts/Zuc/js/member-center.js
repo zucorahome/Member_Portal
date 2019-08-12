@@ -71,13 +71,14 @@ $('input[type=radio]').change(radioText);
   $('.paymentCard-name').click(openInfo);
 
   $('.showForm').click(openInfo);
+  $('.showForm').click(function(){$('.selectAddress-box').hide()});
 
   // Show address field options
   $('.addCard-link').bind('click', {key:'.selectAddress-box'},toggleMethod);
 
   $('.chevron').click(function(){
   	var $this = $(this);
-  	$this.parent().next().toggle(1000);
+  	$this.parent().next().toggle(500);
   	$this.parent('div').toggleClass("detailsPane-open detailsPane-closed");
   	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
   });
