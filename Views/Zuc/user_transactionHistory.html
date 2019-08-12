@@ -9,15 +9,19 @@
     <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
     <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet"><!--[if lt IE 9]>
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
+    <!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet"> -->
+    <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- [ FONTS ]-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet"><!-- [ JQUERY ]-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+    <!-- [ JQUERY ]-->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery ui -->
+    <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script> -->
     <script src="../../Scripts/Zuc/js/navigation.js">
     </script>
     <script src="../../Scripts/Zuc/js/modals.js">
@@ -34,6 +38,7 @@
     <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+
 <body>
     <!-- Site Navigation-->
     <div class="zuc-nav-wrapper" data-nav-height="">
@@ -43,12 +48,19 @@
             <!-- Slogan-->
             <div class="zuc-nav-slogan u-normal">
                 CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
-            </div><!--Nav Links-->
-            <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> <!-- Login - Logged Out State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login"><!-- Logged Out State-->
-                 <!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a> <!-- Account - Logged In State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account"><!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
+            </div>
+            <!--Nav Links-->
+             <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
+                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> 
+                <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> 
+                <!-- Login - Logged Out State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">
+                <!-- Logged Out State-->
+                 <!-- <i class="fas fa-lock u-auth-hide"></i> -->
+                 <span class="u-auth-hide">Member Centre</span></a> 
+                 <!-- Account - Logged In State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold" href="#" title="Logout"><!-- Logged In state-->
+                    <i class="fas fa-user u-auth-show"></i><span class="u-auth-hide">Logout</span></a>
             </div>
         </div><!-- Main Navigation-->
         <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
@@ -106,15 +118,15 @@
             </div>
         </nav>
         <!-- Member center, will show up memeber have logged in. -->
-       <div class="member-navigation flex">
-        <div class="member-links">
-          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
-          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
-          <a href="./user_transactionHistory.html" class="active">Billing</a><span class="divider">|</span>
-          <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
-          <a href="./member_shop.html">Shop</a><span class="divider">|</span>
-          <a href="./membership_faq.html">FAQ</a>
-        </div>
+        <div class="member-navigation flex">
+            <div class="member-links">
+              <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+              <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+              <a href="./user_transactionHistory.html" class="active">Billing</a><span class="divider">|</span>
+              <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
+              <a href="./member_shop.html">Shop</a><span class="divider">|</span>
+              <a href="./membership_faq.html">FAQ</a>
+            </div>
       </div>
         <!-- Mobile Navigation-->
         <!-- Mobile Only Nav ======================-->

@@ -134,7 +134,7 @@ p{
 
 @media screen and (max-width: 767px){
 	.member-setup-page{
-		margin-top:20%;
+		margin-top:25%;
 	}
 
 	.memberForm-checkmark{
@@ -580,6 +580,7 @@ a.form-links:hover{
 .paymentCard-name{
 	border-bottom:2px solid #54565A;
 	background-color: #C8C8C8;
+	max-width:99.99%;
 }
 
 .paymentCard-name > div> img{
@@ -695,6 +696,14 @@ a.form-links:hover{
 
 }
 /*Plans Screen*/
+
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}
 .planDetails-container{
 	margin-top:2em;
 }
@@ -705,21 +714,19 @@ a.form-links:hover{
 	font-weight:600;
 }
 
-.planDetails-table,.serviceHistory-table{
+.serviceHistory-table{
 	display: grid;	
 }
 
-.row-heading, .historyTable-heading{
-	display:grid;
-	/*grid-template-columns: auto auto auto auto;*/
-	grid-template-columns: 25% 25% 25% 25%;
+.planDetails-table > .row-heading{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
 	justify-content: center;
 }
-
-.planDetails-table-row{
-	display: grid;
-	/*grid-template-columns: auto auto auto auto;*/
+ .historyTable-heading, .planDetails-table-row{
+	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
+	justify-content: center;
 }
 
 .row-heading> p{
@@ -737,23 +744,25 @@ a.form-links:hover{
 }
 
 .row-data a{
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .serviceHistory-table{
 	border:2px solid #54565A;
 }
+.planDetails-table-row{
+	max-width:99.99%;
+	min-height:46px;
+}
+
 .historyTable-heading{
-	   
 	    background: #54565A;
 	    padding: 15px;
-	
 }
 .historyTable-heading p{
 	 color: #fff;
-}
-.planDetails-table-row{
-	padding:10px;
+	 text-align: center;
+	 border-right:2px solid white;
 }
 
 .tableRow-borderBottom{
@@ -761,10 +770,12 @@ a.form-links:hover{
 }
 .detailsPane-open{
 	background-color: white;
+	padding: 10px;
 }
 
 .detailsPane-closed{
 	background-color: #C8C8C8; 
+	padding: 10px;
 }
 @media screen and (max-width:767px){
 	.row-heading > p>span, .historyTable-heading >p>span{

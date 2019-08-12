@@ -17,12 +17,16 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //Make hide and show a section
-function showDiv(className){
+function toggleClassMethod(className){
 	// console.log(className.data.key);
 	$(className.data.key).toggleClass('non-visible');
 }
 
-$('#change-password').bind('click', {key:'.password-field'},showDiv);
+function toggleMethod(className){
+	$(className.data.key).toggle(1000);
+}
+
+$('#change-password').bind('click', {key:'.password-field'},toggleClassMethod);
 
 // check if radio button is checked
  function radioText(){
@@ -69,6 +73,12 @@ $('input[type=radio]').change(radioText);
   $('.showForm').click(openInfo);
 
   // Show address field options
-  $('.addCard-link').bind('click', {key:'.selectAddress-box'},showDiv);
-  
+  $('.addCard-link').bind('click', {key:'.selectAddress-box'},toggleMethod);
+
+  $('.chevron').click(function(){
+  	var $this = $(this);
+  	$this.parent().next().toggle(1000);
+  	$this.parent('div').toggleClass("detailsPane-open detailsPane-closed");
+  	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+  });
 });
