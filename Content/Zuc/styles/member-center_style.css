@@ -781,6 +781,30 @@ a.form-links:hover{
 	.row-heading > p>span, .historyTable-heading >p>span{
 		padding:0 2em;
 	}
+
+	.planDetails-table > .row-heading:nth-child(1){
+		grid-template-columns: auto;
+	    float: left;
+	    grid-template-rows: auto;
+	    grid-gap: 15px;
+	    padding-bottom: 1em;
+	}
+	.planDetails-table > .row-heading> p{
+		text-align: left;
+		border-right:none;
+	}
+	.planDetails-table > .row-heading:nth-child(2){
+		float:right;
+		 grid-template-rows: auto;
+	    grid-gap: 15px;
+	    grid-template-columns: auto;
+	    margin-top:0px;
+	    padding-bottom:1em;
+	}
+
+	.planDetails-table > .row-heading:nth-child(2) > .row-data >p{
+		text-align: left;
+	}
 }
 @media screen and (min-width:768px){
 

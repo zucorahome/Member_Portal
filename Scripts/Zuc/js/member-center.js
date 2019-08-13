@@ -82,4 +82,13 @@ $('input[type=radio]').change(radioText);
   	$this.parent('div').toggleClass("detailsPane-open detailsPane-closed");
   	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
   });
+
+
+  // Transaction History screen
+
+  $('.details-link').click(function(){
+    var $this = $(this);
+    // var table = $this.parent().parent();
+
+  });
 });
