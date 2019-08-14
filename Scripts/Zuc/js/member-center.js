@@ -49,6 +49,7 @@ $('input[type=radio]').change(radioText);
   function openModal(className){
     $(className.data.key).removeClass('non-visible');
     $("html, body").animate({ scrollTop: 0 }, "slow");
+      getHeight();
   }
 
   function closeModal(className){
@@ -65,6 +66,7 @@ $('input[type=radio]').change(radioText);
   	var $this = $(this);
   	$this.next().toggle(1000);
   	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+  	  getHeight();
   }
 
   $('.paymentCard-name').click(openInfo);
@@ -110,8 +112,8 @@ $('input[type=radio]').change(radioText);
   $('input[type=radio]').change(showcard);
 
   function getHeight(){
+  	// console.log("get height called");
     var newHeight = $(document).height();
-    // console.log(newHeight);
     $('.address-modal').css({'height':newHeight});
   }
 
