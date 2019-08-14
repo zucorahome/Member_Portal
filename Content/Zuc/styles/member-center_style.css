@@ -403,8 +403,7 @@ a.form-links:hover{
     right: 0;
     bottom: 0;
     width: 100%;
-    /*height: 1000px;*/
-    height:110%;
+    min-height:100%;
     z-index: 1000;
 }
 
@@ -663,6 +662,7 @@ a.form-links:hover{
     transition: visible 0.4s ease-out;
 }
 
+
 .address-list> .memberForm-radioButtons >.radio-container {
 	margin:30px 0;
 
@@ -820,18 +820,17 @@ a.form-links:hover{
     table-layout: fixed;
 }
 
-.transactionHistory-table tr, .usePoints-table tr{
+	.usePoints-table tr{
 	border:1px solid #54565A;
 	padding:0.35em;	
 }
 
-.transactionHistory-table th, .transactionHistory-table td, .usePoints-table th, .usePoints-table td{
+ .usePoints-table th, .usePoints-table td{
 	padding:0.625em;
 	text-align: left;
 	border:1px solid #54565A;
 }
-
-.transactionHistory-table td, .paymentInfo-table td, .usePoints-table td{
+ .paymentInfo-table td, .usePoints-table td{
 	color:#898A8D;
 }
 
@@ -850,10 +849,28 @@ a.form-links:hover{
 .paymentInfo-table th, .paymentInfo-table td, .rewards-table th, .rewards-table td{
 	padding:0.625em;
 	text-align: left;
+	word-wrap: break-word;
+}
+/*New Transaction Histry table styling*/
+
+.transactionHistory-heading, .transactionHistory-row{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.4%;
+
+}
+
+.transactionHistory-heading p, .transactionHistory-row p{
+	border-right: 1px solid #54564A;
+	border-bottom: 1px solid #54564A;
+	padding:5px;
+}
+
+.transactionHistory-heading p:nth-child(3), .transactionHistory-row p:nth-child(3){
+	border-right:none;
 }
 
 
-
+	/*Pagination*/
 .pagination{
 	width:auto;
 	display: flex;
@@ -875,6 +892,7 @@ a.form-links:hover{
 .pagination a:hover{
 	background-color: #898A8D;
 	color:white;
+	cursor: pointer;
 }
 
 /*Rewards screen*/
@@ -892,11 +910,11 @@ a.form-links:hover{
 
 .category-box-container, .helpBox-container{
 	display: grid;
-	grid-gap: 15px 1.5em;
+	grid-gap: 2em;
 	justify-content: center;
 }
 .category-box-container{
-	grid-template-columns: 25% 25% 25%;
+	grid-template-columns: 30% 30% 30%;
 }
 
 .category-box, .help-box{
@@ -914,7 +932,7 @@ a.form-links:hover{
 	margin-top:3em;
 }
 .helpBox-container{
-	grid-template-columns: 30% 30% 30%;
+	grid-template-columns: 33.3% 33.3% 33.4%;
 }
 .help-box{
 	padding:0;
@@ -939,7 +957,7 @@ a.form-links:hover{
 		width:20%;
 	}
 	.category-box-container,.helpBox-container {
-		grid-template-columns: auto;
+		grid-template-columns: 33.3% 33.3% 33.4%;
 	}
 
 	.pagination{
@@ -957,8 +975,8 @@ a.form-links:hover{
 
 @media screen and (min-width:1024px){
 	.faq-accordion{
-		width:80%;
-		margin:0 auto;
+		width:100%;
+		/*margin:0 auto;*/
 	}
 }
 .faq-accordion hr{
@@ -974,7 +992,7 @@ a.form-links:hover{
 	align-items: center;
 	transition: all 0.4s ease-in;
 	-webkit-transition: all 0.4s ease-in;
-	justify-content: center;
+	justify-content: space-between;
 	margin-bottom: 0px;
 }
 
@@ -1018,24 +1036,25 @@ a.form-links:hover{
 
 }
 
-/*Membership shop screen*/
+/*Membership redeem screen*/
 .gift-card-radioButtons>label{
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
+	width:50%;
 }
 
 .gift-card-radioButtons>label>img{
-	width:15%;
+	width:50%;
 }
 .gift-card-radioButtons >label> .radio-checkmark{
-	top:1.65em;
+	top:2.65em;
 }
 
 .imageText-component{
     display: grid;
     align-items: center;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 60%;
     grid-gap: 1em 3em;
 }
 
@@ -1087,4 +1106,12 @@ a.form-links:hover{
     padding:0;
       -moz-appearance: textfield;
   -webkit-appearance: none;
+}
+
+.quantity > input[type="button"]{
+	border:2px solid #54565A;
+	background-color: white;
+	color:#54565A;
+	border-radius: 50%;
+	width:25px;
 }

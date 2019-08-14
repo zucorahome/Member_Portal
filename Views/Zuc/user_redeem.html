@@ -9,15 +9,19 @@
     <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
     <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet"><!--[if lt IE 9]>
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
+    <!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet"> -->
+    <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- [ FONTS ]-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet"><!-- [ JQUERY ]-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+    <!-- [ JQUERY ]-->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery ui -->
+    <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script> -->
     <script src="../../Scripts/Zuc/js/navigation.js">
     </script>
     <script src="../../Scripts/Zuc/js/modals.js">
@@ -43,12 +47,19 @@
             <!-- Slogan-->
             <div class="zuc-nav-slogan u-normal">
                 CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
-            </div><!--Nav Links-->
+            </div>
+            <!--Nav Links-->
             <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> <!-- Login - Logged Out State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login"><!-- Logged Out State-->
-                 <!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Center</span></a> <!-- Account - Logged In State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account"><!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
+                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> 
+                <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> 
+                <!-- Login - Logged Out State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">
+                <!-- Logged Out State-->
+                 <!-- <i class="fas fa-lock u-auth-hide"></i> -->
+                 <span class="u-auth-hide">Member Centre</span></a> 
+                 <!-- Account - Logged In State-->
+                 <a class="zuc-user-login flex flex-vert-center u-bold" href="#" title="Logout"><!-- Logged In state-->
+                    <i class="fas fa-user u-auth-show"></i><span class="u-auth-hide">Logout</span></a>
             </div>
         </div><!-- Main Navigation-->
         <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
@@ -106,16 +117,16 @@
             </div>
         </nav>
         <!-- Member center, will show up memeber have logged in. -->
-       <div class="member-navigation flex">
-        <div class="member-links">
-          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
-          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
-          <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
-          <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
-          <a href="./member_shop.html" class="active">Shop</a><span class="divider">|</span>
-          <a href="./membership_faq.html">FAQ</a>
-        </div>
-      </div>
+        <div class="member-navigation flex">
+            <div class="member-links">
+              <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+              <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+              <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
+              <a href="./user_rewards.html" class="active">Rewards</a><span class="divider">|</span>
+              <a href="https://www.zucorahome.com/Zuc/ecomplan">Shop</a><span class="divider">|</span>
+              <a href="./membership_faq.html">FAQ</a>
+            </div>
+         </div>
         <!-- Mobile Navigation-->
         <!-- Mobile Only Nav ======================-->
         <div class="zuc-mobile-nav" data-mobile-menu="">
@@ -162,7 +173,7 @@
                         Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
                     </div>
                     <!-- Hidden Content-->
-                    <div class="zuc-accordion-hidden" aria-hidden="true">
+                  <div class="zuc-accordion-hidden" aria-hidden="true">
                       <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
                       <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
                       <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
@@ -247,25 +258,25 @@
         <section class="inner-width">
             <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
             <div class="memberProfile-title margin-bottom-2">
-                <h3>My Smarter Living Rewards account profile</h3>
+                <h3>Exclusive Smarter Living Rewards</h3>
             </div>
             <!-- Transaction History table -->
             <div class="description margin-top-1 text-center">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                  <p>When you become a Smarter Living Member you immediately begin earning valuable reward points. This means with every $1 spent for your monthly service plan, or on products and services, you earn 10 points. These points  that can be exchanged for gift cards with our retail partners or spent on rewards like Smarter Home Products.</p>
             </div>
             <!-- Radio button to select gift cards -->
             <div class="">
                 <div class="zuc-form-row">
                     <div class="zuc-form-group">
                       <div class="zuc-radio-group-container">
-                        <div class="zuc-radio-group memberForm-radioButtons gift-card-radioButtons">
+                        <div class="zuc-radio-group memberForm-radioButtons gift-card-radioButtons flex ">
                           <label class="radio-container"><img src="../../Images/Zuc/images/member-portal/ZH_Logo_Vert_Colour.png" alt="Coloured ZucoraHome vertical logo."> ZucoraHome gift card
-                          <input type="radio"  name="email-notifications" value="Yes">
+                          <input type="radio"  name="giftcard-choice" value="Zucora card" checked>
                           <span class="radio-checkmark"></span>
                           </label>
                           <!-- light grey class added when the radio button is not selected -->
                             <label class="radio-container light-grey"><img src="../../Images/Zuc/images/member-portal/leons-logo.png" alt="Leon's logo.">Leon's gift card
-                           <input type="radio" name="email-notifications" value="No">
+                           <input type="radio" name="giftcard-choice" value="Retailer card">
                            <span class="radio-checkmark"></span>
                          </label>
                         </div>
@@ -274,13 +285,22 @@
                 </div>
             </div>
             <!-- Gift card explanation -->
-            <div class="imageText-component margin-top-2">
+            <div class="imageText-component margin-top-2 zucoraCard-block">
                 <div class="image-content">
                     <h6 class="dark-grey">ZucoraHome gift card</h6>
-                    <img src="../../Images/Zuc/images/member-portal/ZH_Logo_Vert_Colour.png" alt="Coloured ZucoraHome vertical logo." class="center">
+                    <img src="../../Images/Zuc/images/member-portal/ZH_Logo_Vert_Colour.png" alt="Coloured ZucoraHome vertical logo." class="center padding-10">
                 </div>
                 <div class="text-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <p>A ZucoraHome gift card offers you flexibility and choice in your purchasing decisions. It can be redeemed at any of our Smarter Living Retail Partners (link to page that lists the retailers) or shop online with us and use it to purchase from our collection of naturally inspired home care products, sleep essentials, and furniture care products.</p>
+                </div>
+            </div>
+            <div class="imageText-component margin-top-2 retialerCard-block">
+                <div class="image-content">
+                    <h6 class="dark-grey">Retailer gift card</h6>
+                    <img src="../../Images/Zuc/images/member-portal/leons-logo.png" alt="Leon's logo." class="center padding-10">
+                </div>
+                <div class="text-content">
+                    <p>Smarter Living Reward Points allow you to continue shopping with retailers of your choice and build on your relationship of trust. Simply redeem your Smarter Living Reward points for a Leon’s gift card and shop within any of their stores across the country.</p>
                 </div>
             </div>
            <table class="usePoints-table margin-top-5">

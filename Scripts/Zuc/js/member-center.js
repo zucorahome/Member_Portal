@@ -18,7 +18,6 @@ for (i = 0; i < acc.length; i++) {
 
 //Make hide and show a section
 function toggleClassMethod(className){
-	// console.log(className.data.key);
 	$(className.data.key).toggleClass('non-visible');
 }
 
@@ -86,9 +85,37 @@ $('input[type=radio]').change(radioText);
 
   // Transaction History screen
 
-  $('.details-link').click(function(){
+  $('.show-table').click(function(){
     var $this = $(this);
-    // var table = $this.parent().parent();
-
+    $this.parent().parent().next().toggle(1000);
+    $("i",this).toggleClass("fa-chevron-up fa-chevron-down");
   });
+
+  //Redeem screen
+
+  function showcard(){
+    var cardChecked = $('input[name=giftcard-choice]:checked').val();
+
+    if(cardChecked == 'Retailer card'){
+      $('.zucoraCard-block').hide(1000);
+      $('.retialerCard-block').show(1200);
+    }else{
+       $('.retialerCard-block').hide(1000);
+        $('.zucoraCard-block').show(1200);
+       
+    }
+  }
+
+  showcard();
+  $('input[type=radio]').change(showcard);
+
+  function getHeight(){
+    var newHeight = $(document).height();
+    // console.log(newHeight);
+    $('.address-modal').css({'height':newHeight});
+  }
+
+  $(window).resize(getHeight);
+
+  getHeight();
 });
