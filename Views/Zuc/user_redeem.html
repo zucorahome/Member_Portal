@@ -261,7 +261,7 @@
                 <h3>Exclusive Smarter Living Rewards</h3>
             </div>
             <!-- Transaction History table -->
-            <div class="description margin-top-1 text-center">
+            <div class="description margin-top-1">
                   <p>When you become a Smarter Living Member you immediately begin earning valuable reward points. This means with every $1 spent for your monthly service plan, or on products and services, you earn 10 points. These points  that can be exchanged for gift cards with our retail partners or spent on rewards like Smarter Home Products.</p>
             </div>
             <!-- Radio button to select gift cards -->
@@ -270,15 +270,15 @@
                     <div class="zuc-form-group">
                       <div class="zuc-radio-group-container">
                         <div class="zuc-radio-group memberForm-radioButtons gift-card-radioButtons flex ">
+                          <label class="radio-container light-grey"><img src="../../Images/Zuc/images/member-portal/leons-logo.png" alt="Leon's logo.">Leon's gift card
+                                <input type="radio" name="giftcard-choice" value="Retailer card" checked>
+                                <span class="radio-checkmark"></span>
+                            </label>
+                          <!-- light grey class added when the radio button is not selected -->
                           <label class="radio-container"><img src="../../Images/Zuc/images/member-portal/ZH_Logo_Vert_Colour.png" alt="Coloured ZucoraHome vertical logo."> ZucoraHome gift card
-                          <input type="radio"  name="giftcard-choice" value="Zucora card" checked>
+                          <input type="radio"  name="giftcard-choice" value="Zucora card">
                           <span class="radio-checkmark"></span>
                           </label>
-                          <!-- light grey class added when the radio button is not selected -->
-                            <label class="radio-container light-grey"><img src="../../Images/Zuc/images/member-portal/leons-logo.png" alt="Leon's logo.">Leon's gift card
-                           <input type="radio" name="giftcard-choice" value="Retailer card">
-                           <span class="radio-checkmark"></span>
-                         </label>
                         </div>
                       </div>
                     </div>
@@ -287,7 +287,7 @@
             <!-- Gift card explanation -->
             <div class="imageText-component margin-top-2 zucoraCard-block">
                 <div class="image-content">
-                    <h6 class="dark-grey">ZucoraHome gift card</h6>
+                    <!-- <h6 class="dark-grey">ZucoraHome gift card</h6> -->
                     <img src="../../Images/Zuc/images/member-portal/ZH_Logo_Vert_Colour.png" alt="Coloured ZucoraHome vertical logo." class="center padding-10">
                 </div>
                 <div class="text-content">
@@ -296,7 +296,7 @@
             </div>
             <div class="imageText-component margin-top-2 retialerCard-block">
                 <div class="image-content">
-                    <h6 class="dark-grey">Retailer gift card</h6>
+                    <!-- <h6 class="dark-grey">Retailer gift card</h6> -->
                     <img src="../../Images/Zuc/images/member-portal/leons-logo.png" alt="Leon's logo." class="center padding-10">
                 </div>
                 <div class="text-content">
@@ -317,38 +317,38 @@
                        <td data-label="Denomination"> $10</td>
                        <td data-label="Quantity" class="quantity">
                             <input type="button" value="-" class="button-minus" data-field="quantity">
-                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="number" step="1" max="10" value="0" name="quantity" class="quantity-field">
                             <input type="button" value="+" class="button-plus" data-field="quantity">
                        </td>
-                       <td data-label="Points">1000</td>
+                       <td data-label="Points">10000</td>
                    </tr>
                     <tr>
-                        <td data-label="Date"> $20</td>
+                        <td data-label="Date"> $25</td>
                         <td data-label="Quantity" class="quantity">
                             <input type="button" value="-" class="button-minus" data-field="quantity">
-                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="number" step="1" max="10" value="0" name="quantity" class="quantity-field">
                             <input type="button" value="+" class="button-plus" data-field="quantity">
                         </td>
-                        <td data-label="Points">2000</td>
+                        <td data-label="Points">25000</td>
                    </tr>
-                    <tr>
-                       <td data-label="Date"> $30</td>
-                        <td data-label="Quantity" class="quantity">
-                            <input type="button" value="-" class="button-minus" data-field="quantity">
-                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-                            <input type="button" value="+" class="button-plus" data-field="quantity">
-                        </td>
-                        <td data-label="Points">3000</td>
-                   </tr>
-                   <!-- Details pane -->
                     <tr>
                        <td data-label="Date"> $50</td>
                         <td data-label="Quantity" class="quantity">
                             <input type="button" value="-" class="button-minus" data-field="quantity">
-                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="number" step="1" max="10" value="0" name="quantity" class="quantity-field">
                             <input type="button" value="+" class="button-plus" data-field="quantity">
                         </td>
-                        <td data-label="Points">5000</td>
+                        <td data-label="Points">50000</td>
+                   </tr>
+                   <!-- Details pane -->
+                    <tr>
+                       <td data-label="Date"> $100</td>
+                        <td data-label="Quantity" class="quantity">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="10" value="0" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </td>
+                        <td data-label="Points">100000</td>
                        <!-- info table -->
                        <div>
                        

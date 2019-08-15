@@ -1,21 +1,5 @@
 $(document).ready(function(){
 
-// console.log("DOM function called");
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-  	this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
 //Make hide and show a section
 function toggleClassMethod(className){
 	$(className.data.key).toggleClass('non-visible');
@@ -120,4 +104,32 @@ $('input[type=radio]').change(radioText);
   $(window).resize(getHeight);
 
   getHeight();
+
+  // faq screen
+
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+  	this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+var faqLinks = $('.category-box').find('a');
+for(i=0;i<faqLinks.length;i++){
+	$(faqLinks[i]).click(function(){
+			var id= $(this).attr('id');
+			var showClass = '.faq-'+id;
+			console.log(id, showClass);
+			$(showClass).toggle(1000);
+		});
+	}
 });

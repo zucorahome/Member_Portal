@@ -732,6 +732,8 @@ a.form-links:hover{
 .row-heading> p{
 	text-align: center;
 	border-right:2px solid #54565A;
+	word-wrap:break-word;
+	padding:0 8px;
 }
 
 .row-heading > p>span, .historyTable-heading >p>span{
@@ -757,7 +759,7 @@ a.form-links:hover{
 
 .historyTable-heading{
 	    background: #54565A;
-	    padding: 15px;
+	    padding: 10px;
 }
 .historyTable-heading p{
 	 color: #fff;
@@ -770,18 +772,23 @@ a.form-links:hover{
 }
 .detailsPane-open{
 	background-color: white;
-	padding: 10px;
+	padding-top: 5px;
 }
 
 .detailsPane-closed{
 	background-color: #C8C8C8; 
 	padding: 10px;
 }
+
 @media screen and (max-width:767px){
 	.row-heading > p>span, .historyTable-heading >p>span{
 		padding:0 2em;
 	}
 
+	.planDetails-table{
+		width:100%;
+		height:250px;
+	}
 	.planDetails-table > .row-heading:nth-child(1){
 		grid-template-columns: auto;
 	    float: left;
@@ -789,6 +796,11 @@ a.form-links:hover{
 	    grid-gap: 15px;
 	    padding-bottom: 1em;
 	}
+
+	.planDetails-table > .row-heading:nth-child(1)>p{
+		min-height:40px;
+	}
+
 	.planDetails-table > .row-heading> p{
 		text-align: left;
 		border-right:none;
@@ -800,10 +812,20 @@ a.form-links:hover{
 	    grid-template-columns: auto;
 	    margin-top:0px;
 	    padding-bottom:1em;
+	     width:50%;
 	}
 
 	.planDetails-table > .row-heading:nth-child(2) > .row-data >p{
 		text-align: left;
+		min-height:40px;
+	}
+	.historyTable-heading{
+		padding:5px;
+	}
+
+	.historyTable-heading p{
+		word-wrap: break-word;
+		padding:0 5px;
 	}
 }
 @media screen and (min-width:768px){
@@ -1040,15 +1062,15 @@ a.form-links:hover{
 .gift-card-radioButtons>label{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	width:50%;
 }
 
 .gift-card-radioButtons>label>img{
-	width:50%;
+	width:25%;
 }
 .gift-card-radioButtons >label> .radio-checkmark{
-	top:2.65em;
+	top:2em;
 }
 
 .imageText-component{
@@ -1059,7 +1081,7 @@ a.form-links:hover{
 }
 
 .image-content{
-	border:2px solid #54565A;
+	/*border:2px solid #54565A;*/
 }
 
 .image-content h6{
@@ -1070,12 +1092,12 @@ a.form-links:hover{
 
 }
 .image-content >img{
-	width:80%;
+	width:100%;
 
 }
 
 .text-content{
-	text-align: center;
+	text-align: left;
 }
 
 .text-content p{
@@ -1114,4 +1136,12 @@ a.form-links:hover{
 	color:#54565A;
 	border-radius: 50%;
 	width:25px;
+}
+
+/*Remove once you get content for faq*/
+
+.faq-rewards, .faq-bonus{
+	width:100%;
+	border:2px solid #54565A;
+	height:500px;
 }
