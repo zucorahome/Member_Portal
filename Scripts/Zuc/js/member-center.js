@@ -128,8 +128,11 @@ for(i=0;i<faqLinks.length;i++){
 	$(faqLinks[i]).click(function(){
 			var id= $(this).attr('id');
 			var showClass = '.faq-'+id;
-			console.log(id, showClass);
+			// console.log(id, showClass);
 			$(showClass).toggle(1000);
+			$('html,body').animate({
+				scrollTop:$(showClass).offset().top - 200,
+			},1000, 'linear');
 		});
 	}
 });

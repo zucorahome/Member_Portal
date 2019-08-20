@@ -389,7 +389,7 @@ a.form-links:hover{
 	}
 
 	.page-smarterLiving-logo{
-		width:25%;
+		width:39%;
 	}
 }
 
@@ -1025,6 +1025,7 @@ a.form-links:hover{
 	text-transform: uppercase;
 	font-size:20px;
 	margin-bottom: 0px;
+	line-height: 1.55em;
 }
  .accordion:after{
     content: '\002B';
@@ -1056,6 +1057,10 @@ a.form-links:hover{
   transition: max-height 0.4s ease-out;
   -webkit-transition: max-height 0.4s ease-out;
 
+}
+
+.faq-accordion a{
+	text-decoration: underline;
 }
 
 /*Membership redeem screen*/
@@ -1139,9 +1144,3 @@ a.form-links:hover{
 }
 
 /*Remove once you get content for faq*/
-
-.faq-rewards, .faq-bonus{
-	width:100%;
-	border:2px solid #54565A;
-	height:500px;
-}

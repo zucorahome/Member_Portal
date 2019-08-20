@@ -8,7 +8,7 @@
 if (!$('title').length) {
     $('head').append('<title>Zucora</title>');
 }
-$('html').css('opacity', 0);
+// $('html').css('opacity', 0);
 $(document).on('click', '.LTAddToCart', function () {
     var Btn = $(this);
     LT.Cart.AddItem(
@@ -18,7 +18,7 @@ $(document).on('click', '.LTAddToCart', function () {
     );
 });
 window.onbeforeunload = function () {
-    $('html').animate({ opacity: 0 }, 60);
+    // $('html').animate({ opacity: 0 }, 60);
 };
 
 function LTPublicUtils() {
