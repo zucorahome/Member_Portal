@@ -421,7 +421,7 @@ a.form-links:hover{
 	grid-gap:1em;
 }
 
-.address-box, .menu-tile{
+.address-box{
 	border: 2px solid #54565A;
 	min-height: 250px;
 	height:auto;
@@ -432,17 +432,22 @@ a.form-links:hover{
 	cursor: pointer;
 }
 
-.address-box> h6, .menu-tile h6{
+.address-box> h6{
 	border-bottom: 2px solid #54565A;
 	color:#54565A;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
 	background-color: #C8C8C8;
 }
 
+
 .menu-tile h6{
 	margin-bottom:0px;
 	padding:1em;
 	font-size:20px;
+	color:#54565A;
+	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
+	background-color: #C8C8C8;
+
 }
 
 .address-box >p{
@@ -453,7 +458,7 @@ a.form-links:hover{
     width: 100%;
     background-size: cover;
     background-repeat-y: no-repeat;
-    height: 300px;
+    height: 250px;
 }
 .image-1{
 	    background-image: url('https://www.zucorahome.com/Images/Zuc/images/shared/mom-boy-kitchen.png');
