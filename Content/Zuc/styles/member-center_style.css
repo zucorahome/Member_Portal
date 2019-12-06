@@ -32,7 +32,7 @@ p{
 
 @media screen and (max-width:1024px){
 .padding-10-onlyMedium{
-	padding:10px;	
+	padding:10px;
 }
 
 }
@@ -73,7 +73,9 @@ p{
 }
 
 .dark-grey{
-	color:#54565A;
+	/* color:#54565A; */
+	color:#36384B !important;
+	/* This is zucora deep indigo color */
 }
 
 .middle-grey{
@@ -101,7 +103,7 @@ p{
 		display: none;
 		visibility: hidden;
 	}
-}	
+}
 @media screen and (min-width:768px){
 	.member-info-boxed,.member-navigation{
 		display: flex;
@@ -122,7 +124,8 @@ p{
 		.memberInfo-table > div> p{
 			font-weight: 700;
 			text-transform: uppercase;
-			color:#54565A;
+			/* color:#54565A; */
+			color:#FEB9A6;
 		}
 }
 /*Member Account set up page*/
@@ -143,12 +146,12 @@ p{
 
 	.memberForm-checkmark > label:nth-child(3n){
 		margin-left:-17px;
-		
+
 	}
 
 	.memberForm-checkmark > label:nth-child(4n){
 		margin-left:-6px;
-		
+
 	}
 
 }
@@ -156,7 +159,7 @@ p{
 @media screen and (min-width:768px){
 	.memberForm-checkmark{
 			flex-direction: row;
-		}	
+		}
 }
 
 @media screen and (min-width:1400px){
@@ -173,14 +176,16 @@ p{
     padding: 4vw 1vw;
 }
 .memberProfile-title{
-	color: #54565A;
+	/* color: #54565A; */
+	color:#434DA0;
     text-align: center;
     font-weight: 500;
 }
 
 .memberProfile-title> h3{
-	font-size: 2em;
-    font-family:'aktiv-grotesk',Helvetica,sans-serif;
+		font-size: 2em;
+    /* font-family:'aktiv-grotesk',Helvetica,sans-serif; */
+		font-family:'PublicoHeadline',aktiv-grotesk,Helvetica,sans-serif;
     font-weight: 500;
 }
 
@@ -330,7 +335,7 @@ a.form-links:hover{
 /*After registration */
 
 .page-smarterLiving-logo{
-	
+
 	margin-bottom: 1em;
 }
 
@@ -444,9 +449,9 @@ a.form-links:hover{
 	margin-bottom:0px;
 	padding:1em;
 	font-size:20px;
-	color:#54565A;
+	color:white;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
-	background-color: #C8C8C8;
+	background-color: #434da0;
 
 }
 
@@ -673,7 +678,7 @@ a.form-links:hover{
 
 }
 @media screen and (max-width:767px){
-	
+
 	.mobile-column{
 		grid-template-columns: auto;
 		grid-gap:10px;
@@ -720,7 +725,7 @@ a.form-links:hover{
 }
 
 .serviceHistory-table{
-	display: grid;	
+	display: grid;
 }
 
 .planDetails-table > .row-heading{
@@ -781,7 +786,7 @@ a.form-links:hover{
 }
 
 .detailsPane-closed{
-	background-color: #C8C8C8; 
+	background-color: #C8C8C8;
 	padding: 10px;
 }
 
@@ -849,7 +854,7 @@ a.form-links:hover{
 
 	.usePoints-table tr{
 	border:1px solid #54565A;
-	padding:0.35em;	
+	padding:0.35em;
 }
 
  .usePoints-table th, .usePoints-table td{
@@ -926,6 +931,8 @@ a.form-links:hover{
 
 .rewards-table th{
 	border:1px solid #54565A;
+	color:#434DA0;
+	font-family:'aktiv-grotesk',Helvetica,sans-serif;
 }
 
 .rewards-table td{
