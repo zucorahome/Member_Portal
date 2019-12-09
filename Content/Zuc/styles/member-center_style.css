@@ -29,6 +29,9 @@
 p{
 	  font-family:'aktiv-grotesk',Helvetica,sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+	font-family: PublicoHeadline,Helvetica,sans-serif
+}
 
 @media screen and (max-width:1024px){
 .padding-10-onlyMedium{
@@ -43,10 +46,10 @@ p{
 
 }
 .member-navigation{
-	background-color: #54565A;
+	background-color:#A3ACFF ;
 	width:100%;
 	max-width:100%;
-    color: white;
+  color: #36384B;
     /*display: flex;*/
     padding: 1.5em;
     justify-content: flex-end;
@@ -65,7 +68,8 @@ p{
 }
 
 .member-links> .active{
-	color:#898A8D;
+	/* color:#898A8D; */
+	font-weight: 700;
 }
 
 .light-grey{
@@ -115,23 +119,23 @@ p{
 		    display: grid;
 		    width: auto;
 		    max-width: 100%;
-		    border: 2px solid #54565A;
+		    border: 2px solid #36384B;
 		    grid-template-columns: auto auto;
 		    padding: 1em;
 		    grid-gap: 1em 2em;
 		}
 
 		.memberInfo-table > div> p{
-			font-weight: 700;
+			/* font-weight: 700; */
 			text-transform: uppercase;
-			/* color:#54565A; */
-			color:#FEB9A6;
+			color:#36384B;
+
 		}
 }
 /*Member Account set up page*/
 
 .member-setup-page{
-	border: 4px solid #C8C8C8;
+	border: 4px solid #36384B;
 	margin-top:10%;
 }
 
@@ -196,7 +200,7 @@ p{
 }
 
 .memberPortal-login>.zuc-form-row >.zuc-form-group >.zuc-input-name{
-	color: #898A8D;
+	color: #36384B;
     font-weight: 600;
     /*font-size: 20px;*/
 }
@@ -220,7 +224,7 @@ p{
 
 .form-links{
 	text-transform: uppercase;
-	color:#54565A;
+	color:#36384B;
 	font-weight: 600;
 	font-size:16px;
 }
@@ -244,13 +248,12 @@ a.form-links:hover{
   user-select: none;
   width:auto;
   font-family: aktiv-grotesk,Helvetica,sans-serif;
-  color:#54565A;
+  color:#434DA0;
   line-height: 20px;
 }
 
 .radio-container{
 	margin:18px 0;
-	/*color:#898A8D;*/
 }
 
 /* Hide the browser's default checkbox */
@@ -359,13 +362,13 @@ a.form-links:hover{
 	}
 }
 .registration-border{
-	border: 4px solid #C8C8C8;
+	border: 4px solid #36384B;
 	padding:5vw;
 }
 
 .registration-para{
 	margin-top: 2em;
-	color:#54565A;
+	color:#36384B;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
 	/*font-size:20px;*/
 }
@@ -380,11 +383,15 @@ a.form-links:hover{
 }
 
 .primaryButton-color{
-	background-color: #898A8D;
+	/* background-color: #898A8D; */
+background-color: #A3ACFF;
 }
 
 .secondaryButton-color{
-	background-color: #54565A;
+
+	background: linear-gradient(90deg,#434da0 34%,#a2acff);
+	background-position: 50%;
+		background-size: cover;
 }
 
 /*Member screen containers*/
@@ -427,7 +434,7 @@ a.form-links:hover{
 }
 
 .address-box{
-	border: 2px solid #54565A;
+	border: 2px solid #36384B;
 	min-height: 250px;
 	height:auto;
 }
@@ -438,10 +445,10 @@ a.form-links:hover{
 }
 
 .address-box> h6{
-	border-bottom: 2px solid #54565A;
-	color:#54565A;
+	/* border-bottom: 2px solid #36384B; */
+	color:white;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
-	background-color: #C8C8C8;
+	background-color: #434DA0;
 }
 
 
@@ -456,7 +463,8 @@ a.form-links:hover{
 }
 
 .address-box >p{
-	color:#898A8D;
+	/* color:#898A8D; */
+	color:#36384B;
 }
 
 .tile-image{
@@ -718,7 +726,7 @@ a.form-links:hover{
 	margin-top:2em;
 }
 .planDetails-container> h5{
-	color:#898A8D;
+	color:#434DA0;
 	font-weight: 600;
 	font-size:24px;
 	font-weight:600;
@@ -768,7 +776,7 @@ a.form-links:hover{
 }
 
 .historyTable-heading{
-	    background: #54565A;
+	    background: #434DA0;
 	    padding: 10px;
 }
 .historyTable-heading p{
@@ -847,7 +855,7 @@ a.form-links:hover{
 .transactionHistory-table,.rewards-table,.usePoints-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid #C8C8C8;
+    border: 3px solid #36384B;
     padding: 0;
     table-layout: fixed;
 }
@@ -856,14 +864,17 @@ a.form-links:hover{
 	border:1px solid #54565A;
 	padding:0.35em;
 }
-
+.usePoints-table th{
+	color:white;
+	background-color:#434DA0;
+}
  .usePoints-table th, .usePoints-table td{
 	padding:0.625em;
 	text-align: left;
-	border:1px solid #54565A;
+	border:1px solid #36384B;
 }
  .paymentInfo-table td, .usePoints-table td{
-	color:#898A8D;
+	color:#36384B;
 }
 
 .paymentInfo-table{
@@ -883,6 +894,10 @@ a.form-links:hover{
 	text-align: left;
 	word-wrap: break-word;
 }
+
+.paymentInfo-table th{
+	color:#434DA0;
+}
 /*New Transaction Histry table styling*/
 
 .transactionHistory-heading, .transactionHistory-row{
@@ -892,9 +907,15 @@ a.form-links:hover{
 }
 
 .transactionHistory-heading p, .transactionHistory-row p{
-	border-right: 1px solid #54564A;
-	border-bottom: 1px solid #54564A;
+	border-right: 1px solid #36384B;
+	border-bottom: 1px solid #36384B;
 	padding:5px;
+
+}
+
+.transactionHistory-heading p{
+	background-color:#434DA0;
+	color:white;
 }
 
 .transactionHistory-heading p:nth-child(3), .transactionHistory-row p:nth-child(3){
@@ -911,18 +932,22 @@ a.form-links:hover{
 }
 
 .pagination a {
-	color:#898A8D;
+	/* color:#898A8D; */
+	color:#36384B;
 	padding:8px 16px;
 	text-decoration: none;
 	transition: background-color 0.3s ease;
 }
 
 .pagination>.active{
-	border:1px solid #898A8D;
+	/* border:1px solid #434DA0; */
+	background-color: #434DA0;
+	color: white;
+	transition: all ease-in;
 }
 
 .pagination a:hover{
-	background-color: #898A8D;
+	background-color: #434DA0;
 	color:white;
 	cursor: pointer;
 }
@@ -930,14 +955,16 @@ a.form-links:hover{
 /*Rewards screen*/
 
 .rewards-table th{
-	border:1px solid #54565A;
-	color:#434DA0;
+	border:1px solid #36384B;
+	background-color:#434DA0;
+	color:white;
 	font-family:'aktiv-grotesk',Helvetica,sans-serif;
 }
 
 .rewards-table td{
-	border-right:1px solid #54565A;
-	color:#898A8D;
+	border-right:1px solid #36384B;
+	/* color:#898A8D; */
+	color:#36384B;
 }
 
 /*FAQ screen*/
@@ -1159,3 +1186,7 @@ a.form-links:hover{
 }
 
 /*Remove once you get content for faq*/
+
+.mint-color{
+	color:#70E9B2 !important;
+}
