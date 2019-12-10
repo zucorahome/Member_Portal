@@ -1,545 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Zucora Home: Event page</title>
-    <meta content="" name="description">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
-    <!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet"> -->
-    <!--[if lt IE 9]>
+  <meta charset="UTF-8">
+  <title>Zucora Home: Event page</title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
+  <!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet"> -->
+  <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- [ FONTS ]-->
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
-    <!-- [ JQUERY ]-->
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Jquery ui -->
-    <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script> -->
-    <script src="../../Scripts/Zuc/js/navigation.js">
-    </script>
-    <script src="../../Scripts/Zuc/js/modals.js">
-    </script>
-    <script src="../../Scripts/Zuc/js/display-jobPostings.js">
-    </script>
-    <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
-    </script>
-    <script src="../../Scripts/Zuc/js/member-center.js">
-    </script><!-- [ Alerts ]-->
+  <!-- [ FONTS ]-->
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+  <!-- [ JQUERY ]-->
 
-    <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
-    </script>
-    <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Jquery ui -->
+  <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script> -->
+  <script src="../../Scripts/Zuc/js/navigation.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/modals.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/display-jobPostings.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/member-center.js">
+  </script><!-- [ Alerts ]-->
+
+  <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
+  </script>
+  <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+
 <body>
-    <!-- Site Navigation-->
-    <div class="zuc-nav-wrapper" data-nav-height="">
-        <!-- Mobile Navigation-->
-        <!-- User Navigation-->
-        <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
-            <!-- Slogan-->
-            <div class="zuc-nav-slogan u-normal">
-                CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
+  <!-- Site Navigation-->
+  <div class="zuc-nav-wrapper" data-nav-height="">
+    <!-- Mobile Navigation-->
+    <!-- User Navigation-->
+    <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
+      <!-- Slogan-->
+      <div class="zuc-nav-slogan u-normal">
+        CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
+      </div>
+      <!--Nav Links-->
+      <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
+        <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a>
+        <a href="#/" style="text-transform: uppercase;color:white;">Blog</a>
+        <!-- Login - Logged Out State-->
+        <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">
+          <!-- Logged Out State-->
+          <!-- <i class="fas fa-lock u-auth-hide"></i> -->
+          <span class="u-auth-hide">Member Centre</span></a>
+        <!-- Account - Logged In State-->
+        <a class="zuc-user-login flex flex-vert-center u-bold" href="#" title="Logout">
+          <!-- Logged In state-->
+          <i class="fas fa-user u-auth-show"></i><span class="u-auth-hide">Logout</span></a>
+      </div>
+    </div><!-- Main Navigation-->
+    <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
+      <!-- Nav Branding-->
+      <a class="zuc-nav-brand" href="/Zuc/index"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Nav Links-->
+      <div class="zuc-nav-links flex flex-hor-end flex-hor-between flex-no-wrap flex-vert-center">
+        <!-- Nav Dropdown--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a> <!-- Smarter Living Link ==============================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">What Is Smarter Living?</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a>
+                <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images">
+                <!-- Column Content-->
+                <p>Smarter Living is about making choices that make life more comfortable and convenient.</p><img alt="A smiling couple" src="../../Images/Zuc/images/nav/smarter-living.png">
+              </div>
             </div>
-            <!--Nav Links-->
-             <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-                <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> 
-                <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> 
-                <!-- Login - Logged Out State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">
-                <!-- Logged Out State-->
-                 <!-- <i class="fas fa-lock u-auth-hide"></i> -->
-                 <span class="u-auth-hide">Member Centre</span></a> 
-                 <!-- Account - Logged In State-->
-                 <a class="zuc-user-login flex flex-vert-center u-bold" href="#" title="Logout"><!-- Logged In state-->
-                    <i class="fas fa-user u-auth-show"></i><span class="u-auth-hide">Logout</span></a>
+          </div>
+        </div><!-- Service Plans =====================================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">Service Plans</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a
+                  href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images">
+                <!-- Column Content-->
+                <p>The Smarter Living Plan offers you comprehensive, budget friendly service coverage for your furniture, major appliances, and home-comfort systems.</p><img alt="A service person with toolbag"
+                  src="../../Images/Zuc/images/nav/service-plans.png">
+              </div>
             </div>
-        </div><!-- Main Navigation-->
-        <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
-            <!-- Nav Branding-->
-            <a class="zuc-nav-brand" href="/Zuc/index"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Nav Links-->
-            <div class="zuc-nav-links flex flex-hor-end flex-hor-between flex-no-wrap flex-vert-center">
-                <!-- Nav Dropdown--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a> <!-- Smarter Living Link ==============================-->
-                <div class="zuc-nav-dropdown">
-                    <span class="u-uppercase">What Is Smarter Living?</span> <!-- Drop Down-->
-                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
-                        <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
-                            <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column">
-                                <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a> <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
-                            </div><!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
-                            <p>Smarter Living is about making choices that make life more comfortable and convenient.</p><img alt="A smiling couple" src="../../Images/Zuc/images/nav/smarter-living.png"></div>
-                        </div>
-                    </div>
-                </div><!-- Service Plans =====================================-->
-                <div class="zuc-nav-dropdown">
-                    <span class="u-uppercase">Service Plans</span> <!-- Drop Down-->
-                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
-                        <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
-                            <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column">
-                                <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
-                            </div><!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
-                            <p>The Smarter Living Plan offers you comprehensive, budget friendly service coverage for your furniture, major appliances, and home-comfort systems.</p><img alt="A service person with toolbag" src="../../Images/Zuc/images/nav/service-plans.png"></div>
-                        </div>
-                    </div>
-                </div><!-- Smarter Home Products ===============================-->
-                <div class="zuc-nav-dropdown">
-                    <span class="u-uppercase">SMARTER HOME PRODUCTS</span> <!-- Drop Down-->
-                    <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
-                        <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
-                            <!-- Dropdown Links-->
-                            <div class="zuc-dropdown-column">
-                                <a href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop All Products">Shop all products</a>
-                            </div><!-- Dropdown Images-->
-                            <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
-                            <p>Empower your quest for a clean home and healthy family with Zucora Home's environmentally-responsible products.</p><img alt="A furnished living room" src="../../Images/Zuc/images/nav/smarter-home-products.png"></div>
-                        </div>
-                    </div>
-                </div><!-- Shop Now ===============================-->
-                <div class="zuc-nav-dropdown --clickme">
-                    <a class=" u-uppercase" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Zucora Home Products">Shop Now</a>
-                </div>
-            </div><!-- Mobile Nav Button-->
-            <div class="zuc-menu">
-                <div aria-label="Mobile Navigation" class="zuc-menu-open" data-open-menu="" role="button">
-                    <span aria-hidden="true" aria-label="Open mobile menu" class="hidden">Mobile Menu</span>
-                </div>
+          </div>
+        </div><!-- Smarter Home Products ===============================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">SMARTER HOME PRODUCTS</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a href="/Zuc/purecare"
+                  title="View our line of sleep wellness products">PureCare</a><a href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a
+                  href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop All Products">Shop all products</a>
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images">
+                <!-- Column Content-->
+                <p>Empower your quest for a clean home and healthy family with Zucora Home's environmentally-responsible products.</p><img alt="A furnished living room" src="../../Images/Zuc/images/nav/smarter-home-products.png">
+              </div>
             </div>
-        </nav>
-        <!-- Member center, will show up memeber have logged in. -->
-       <div class="member-navigation flex">
-        <div class="member-links">
-          <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
-          <a href="./user_plans.html">Plans</a><span class="divider">|</span>
-          <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
-          <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
-          <a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products">Shop</a><span class="divider">|</span>
-          <a href="./membership_faq.html" class="active">FAQ</a>
+          </div>
+        </div><!-- Shop Now ===============================-->
+        <div class="zuc-nav-dropdown --clickme">
+          <a class=" u-uppercase" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Zucora Home Products">Shop Now</a>
+        </div>
+      </div><!-- Mobile Nav Button-->
+      <div class="zuc-menu">
+        <div aria-label="Mobile Navigation" class="zuc-menu-open" data-open-menu="" role="button">
+          <span aria-hidden="true" aria-label="Open mobile menu" class="hidden">Mobile Menu</span>
         </div>
       </div>
-        <!-- Mobile Navigation-->
-        <!-- Mobile Only Nav ======================-->
-        <div class="zuc-mobile-nav" data-mobile-menu="">
-            <!-- Top Branding CTA-->
-            <div class="zuc-mobile-nav-content">
-                <a href="/Zuc/index" title="Zucora Home"><img alt="Zucora Home" src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
-            </div><!-- Accordion Nav ========================================-->
-            <div class="zuc-accordion-nav" role="menu">
-                <!--About Links ================================-->
-                <div class="zuc-accordion-item" data-accordion-item="">
-                    <div class="zuc-accordion-title">
-                        About Us<i class="zuc-accordion-arrow fas fa-angle-right"></i>
-                    </div><!-- Hidden Content-->
-                    <div aria-hidden="true" class="zuc-accordion-hidden">
-                        <a class="zuc-accordion-link" href="/Zuc/ourstory" title="About Zucora Home">Our Story</a><a class="zuc-accordion-link" href="/Zuc/formcontactus" title="Contact us">Contact Us</a><a class="zuc-accordion-link" href="/Zuc/ourstory" title="Our team">Our Team</a>
-                    </div>
-                </div><!-- Smarter Living Links ================================-->
-                <div class="zuc-accordion-item" data-accordion-item="">
-                    <div class="zuc-accordion-title">
-                        What Is Smarter Living?<i class="zuc-accordion-arrow fas fa-angle-right"></i>
-                    </div><!-- Hidden Content-->
-                    <div aria-hidden="true" class="zuc-accordion-hidden">
-                        <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a> <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
-                    </div>
-                </div><!-- Service Plans Links ================================-->
-                <div class="zuc-accordion-item" data-accordion-item="">
-                    <div class="zuc-accordion-title">
-                        Service Plans<i class="zuc-accordion-arrow fas fa-angle-right"></i>
-                    </div><!-- Hidden Content-->
-                    <div aria-hidden="true" class="zuc-accordion-hidden">
-                        <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
-                    </div>
-                </div><!-- Home Care Links ================================-->
-                <div class="zuc-accordion-item" data-accordion-item="">
-                    <div class="zuc-accordion-title">
-                        Smarter Home Products<i class="zuc-accordion-arrow fas fa-angle-right"></i>
-                    </div><!-- Hidden Content-->
-                    <div aria-hidden="true" class="zuc-accordion-hidden">
-                        <a class="zuc-accordion-link" href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a class="zuc-accordion-link" href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a class="zuc-accordion-link" href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a class="zuc-accordion-link" href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="View our whole line of offerings">Shop all products</a>
-                    </div>
-                </div><!-- Member Centre Links ================================-->
-                <div class="zuc-accordion-item" data-accordion-item="">
-                    <div class="zuc-accordion-title">
-                        Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
-                    </div>
-                    <!-- Hidden Content-->
-                     <div class="zuc-accordion-hidden" aria-hidden="true">
-                      <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
-                      <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
-                      <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
-                      <a class="zuc-accordion-link" href="./user_rewards.html" title="Member's Rewards" aria-role="menuitem">Rewards</a>
-                      <a class="zuc-accordion-link" href="./member_shop.html" title="Gift card screen a user can buy." aria-role="menuitem">Shop</a>
-                      <a class="zuc-accordion-link" href="./membership_faq.html" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
-                     </div>
-                </div><!-- Shop Now ================================-->
-                <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
-                <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a> <!-- </div> -->
-            </div>
-            <div class="zuc-menu" data-open-menu="">
-                <div aria-label="Mobile Navigation Toggle" class="zuc-menu-open close" role="button">
-                    <span aria-hidden="true" aria-label="Click to toggle mobile menu" class="hidden">Mobile Menu</span>
-                </div>
-            </div><!-- Social Icons-->
+    </nav>
+    <!-- Member center, will show up memeber have logged in. -->
+    <div class="member-navigation flex">
+      <div class="member-links">
+        <a href="./memberProfile_afterConfirmation.html">Profile</a><span class="divider">|</span>
+        <a href="./user_plans.html">Plans</a><span class="divider">|</span>
+        <a href="./user_transactionHistory.html">Billing</a><span class="divider">|</span>
+        <a href="./user_rewards.html">Rewards</a><span class="divider">|</span>
+        <a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products">Shop</a><span class="divider">|</span>
+        <a href="./membership_faq.html" class="active">FAQ</a>
+      </div>
+    </div>
+    <!-- Mobile Navigation-->
+    <!-- Mobile Only Nav ======================-->
+    <div class="zuc-mobile-nav" data-mobile-menu="">
+      <!-- Top Branding CTA-->
+      <div class="zuc-mobile-nav-content">
+        <a href="/Zuc/index" title="Zucora Home"><img alt="Zucora Home" src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest"
+          title="Service Request">Service Request</a>
+      </div><!-- Accordion Nav ========================================-->
+      <div class="zuc-accordion-nav" role="menu">
+        <!--About Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            About Us<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a class="zuc-accordion-link" href="/Zuc/ourstory" title="About Zucora Home">Our Story</a><a class="zuc-accordion-link" href="/Zuc/formcontactus" title="Contact us">Contact Us</a><a class="zuc-accordion-link" href="/Zuc/ourstory"
+              title="Our team">Our Team</a>
+          </div>
+        </div><!-- Smarter Living Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            What Is Smarter Living?<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a>
+            <!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+          </div>
+        </div><!-- Service Plans Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Service Plans<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems"
+              title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+          </div>
+        </div><!-- Home Care Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Smarter Home Products<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a class="zuc-accordion-link" href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a class="zuc-accordion-link" href="/Zuc/zucollection"
+              title="View our line of home care products">ZU Collection</a><a class="zuc-accordion-link" href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a class="zuc-accordion-link" href="/Zuc/furniturecare"
+              title="Learn more about our home wellness care kits">Furniture Care</a><a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="View our whole line of offerings">Shop all
+              products</a>
+          </div>
+        </div><!-- Member Centre Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div>
+          <!-- Hidden Content-->
+          <div class="zuc-accordion-hidden" aria-hidden="true">
+            <a class="zuc-accordion-link" href="./memberProfile_afterConfirmation.html" title="User's profile" aria-role="menuitem">Profile</a>
+            <a class="zuc-accordion-link" href="./user_plans.html" title="Member's Plans" aria-role="menuitem">Plans</a>
+            <a class="zuc-accordion-link" href="./user_transactionHistory.html" title="Member's Billing options" aria-role="menuitem">Billing</a>
+            <a class="zuc-accordion-link" href="./user_rewards.html" title="Member's Rewards" aria-role="menuitem">Rewards</a>
+            <a class="zuc-accordion-link" href="./member_shop.html" title="Gift card screen a user can buy." aria-role="menuitem">Shop</a>
+            <a class="zuc-accordion-link" href="./membership_faq.html" title="Frequently Asked Questions" aria-role="menuitem">FAQ</a>
+          </div>
+        </div><!-- Shop Now ================================-->
+        <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
+        <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;"
+          title="Shop Now">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a> <!-- </div> -->
+      </div>
+      <div class="zuc-menu" data-open-menu="">
+        <div aria-label="Mobile Navigation Toggle" class="zuc-menu-open close" role="button">
+          <span aria-hidden="true" aria-label="Click to toggle mobile menu" class="hidden">Mobile Menu</span>
+        </div>
+      </div><!-- Social Icons-->
+      <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
+        <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link"
+          href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank"
+          title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div><!-- Broadcast Banner-->
+    <div class="zuc-nav-broadcast flex flex-hor-between flex-vert-center" data-broadcast-banner="">
+      <div class="zuc-broadcast-text u-truncate u-bold">
+        Suggested editable broadcast banner that you can turn on/off for promos &amp; customer care outages.
+      </div>
+      <div class="zuc-broadcast-close" onclick="closeBroadcast()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div><!-- Login Modal-->
+  <!-- Modal Container-->
+  <div class="zuc-modal" data-modal-login="" onclick="toggleModal('[data-modal-login]')">
+    <!-- Modal Content-->
+    <div class="zuc-modal-content member-login" onclick="event.stopPropagation()">
+      <!-- Place Modal Content Here-->
+      <div><img alt="Smarter Living logo with house icon on the left." class="smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_small.png"></div>
+      <div class="zuc-modal-subtitle u-text-center">
+        Member login
+      </div><!-- User Email-->
+      <div class="zuc-input-group center">
+        <div class="zuc-input-name">
+          Email address
+        </div><label class="u-screenreader" for="field-email">Email address</label> <input data-required="" id="field-email" name="email" placeholder="Email address" required="" type="text">
+      </div><!-- User Password-->
+      <div class="zuc-input-group center">
+        <div class="zuc-input-name">
+          Password
+        </div><label class="u-screenreader" for="field-password">User Password</label> <input data-required="" name="password" placeholder="Password" required="" type="password"><a class="zuc-input-link" href="/Zuc/formforgotpassword"
+          style="font-size:0.85em;" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
+      </div><!-- Remember me radio button -->
+      <div class="remember-me">
+        <input name="remember-me" type="checkbox" value="remember-me-checked"> Remember me
+      </div><!-- Submit Button-->
+      <div class="form-buttons">
+        <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button> <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button>
+        <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
+      </div><!-- Button div ends-->
+    </div>
+  </div><!-- Main page content-->
+  <section class="member-info-boxed">
+    <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
+    <div class="memberInfo-table">
+      <div>
+        <p class="u-bold">Member Number</p>
+      </div>
+      <div>
+        <p>111</p>
+      </div>
+      <div>
+        <p class="u-bold">Member Since</p>
+      </div>
+      <div>
+        <p>2019/10/29</p>
+      </div>
+      <div>
+        <p class="u-bold">Rewards Balance</p>
+      </div>
+      <div>
+        <p>10,900</p>
+      </div>
+    </div>
+  </section><!-- Profile form, populating the existing settings and information -->
+  <section class="zuc-service-form member-center-container" style="margin-top:2% !important;">
+    <h2 class="sr-only">Smarter living user's payment options.</h2>
+    <section class="inner-width">
+      <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
+      <div class="memberProfile-title margin-bottom-2">
+        <h3>FAQ</h3>
+      </div>
+      <!-- FAQ page content -->
+      <div class="category-box-container">
+        <div class="category-box">
+          <img src="../../Images/Zuc/images/member-portal/bonus_rewards.png" alt="question mark icon." class="center">
+          <a href="#/" id="rewards">
+            <h4 class="margin-top-1">About my Rewards</h4>
+          </a>
+        </div>
+        <div class="category-box">
+          <img src="../../Images/Zuc/images/member-portal/paywithrewards.png" alt="question mark icon." class="center">
+          <a href="#/" id="bonus">
+            <h4 class="margin-top-1 ">Plan Details</h4>
+          </a>
+        </div>
+        <div class="category-box">
+          <img src="../../Images/Zuc/images/member-portal/questions.png" alt="question mark icon." class="center">
+          <a href="#/" id="general">
+            <h4 class="margin-top-1 ">General Questions</h4>
+          </a>
+        </div>
+      </div>
+
+      <!--Rewards section  -->
+
+      <div class="faq-accordion margin-top-5 margin-bottom-2 faq-rewards non-visible">
+        <h4 class="text-center margin-top-2 margin-bottom-1 strong font-24">About my Rewards</h4>
+
+        <div class="accordion">
+          <h4>How do I earn reward points?</h4>
+        </div>
+        <div class="panel">
+          <p>Every $1 dollar spent on your monthly Smarter Living Plan subscription or from shopping earns 10 Smarter Living Reward Points.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>How do I see my point balance?</h4>
+        </div>
+        <div class="panel">
+          <p>Your account balance is available in your Member Centre Profile, in the Smarter Living Rewards section of the Member Centre, and on the check out shopping screen as long as you’ve logged in to shop.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>What is the redemption process?</h4>
+        </div>
+        <div class="panel">
+          <p>Smarter Living Reward Points can be redeemed at checkout or you can convert them into an e-card within the Rewards section of the Member Centre.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>What can reward points be redeemed for?</h4>
+        </div>
+        <div class="panel">
+          <p>Rewards points can be spent on Smarter Home Products or converted into e-gift cards.</p>
+        </div>
+        <hr>
+
+
+      </div>
+      <!--Accordion div ends-->
+
+      <!-- Bonus rewards -->
+
+      <div class="faq-accordion margin-top-5 margin-bottom-2 faq-bonus non-visible">
+        <h4 class="text-center margin-top-2 margin-bottom-1 strong  font-24">Plan Details</h4>
+
+        <div class="accordion">
+          <h4>Are there any exclusions to my service plan or limits to my coverage?</h4>
+        </div>
+        <div class="panel">
+          <p>Although the coverage available through each Smarter Living Plan is extensive, there are some exclusions. Refer to the terms & conditions to see a specific list of limitations and items that are excluded from the appliances, furniture,
+            and home-systems coverage available.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>I have a mix of new and old furniture, appliances and home systems. Does this matter or will only some items be covered?</h4>
+        </div>
+        <div class="panel">
+          <p>The Smarter Living Plan covers your new and existing furniture, appliances and home systems.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>Is there a limit to the number of service calls or items that can be replaced within a year?</h4>
+        </div>
+        <div class="panel">
+          <p>There is not a limit for the number of service requests, only a limit to the total cost allotment for services or replacements within a 12 month period. See terms & conditions for full details.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>Are all Smarter Living Plans available all across Canada?</h4>
+        </div>
+        <div class="panel">
+          <p>Smarter Living Furniture and Appliances Plans are available across the country. Smarter Living Home Systems Plans will be available across Canada in 2020. </p>
+        </div>
+        <hr>
+        <div class="accordion">
+          <h4>Can I purchase a Smarter Living Plan for my home in the United States?</h4>
+        </div>
+        <div class="panel">
+          <p>Not today, but we are working to provide service in the United States. </p>
+        </div>
+        <hr>
+        <div class="accordion">
+          <h4>Can I upgrade my Smarter Living Plan?</h4>
+        </div>
+        <div class="panel">
+          <p>Yes, you can upgrade your plan at any time.</p>
+        </div>
+        <hr>
+        <div class="accordion">
+          <h4>What items in my home are covered through a Smarter Living Plan?</h4>
+        </div>
+        <div class="panel">
+          <p>For full coverage details of each plan please refer:</p>
+          <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplansfurniture">Furniture Plans</a></p>
+          <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplansappliance">Appliances Plans </a></p>
+          <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplanshomesystems">Home Service Plans</a></p>
+          <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplans">Bundles and Combos</a></p>
+        </div>
+        <hr>
+
+
+      </div><!-- Accordion div ends-->
+
+      <!-- Accordions -->
+      <div class="faq-accordion margin-top-5 margin-bottom-2 faq-general non-visible">
+        <h4 class="text-center margin-top-2 margin-bottom-1 strong  font-24">General Questions</h4>
+        <div class="accordion">
+          <h4>How long has ZucoraHome been in business?</h4>
+        </div>
+        <div class="panel">
+          <p>Since 1979, we’ve been helping reduce the challenges of home management with service programs and products designed to deliver peace-of-mind for today’s busy families.</p>
+        </div>
+
+        <hr>
+        <div class="accordion">
+          <h4>What products and services does ZucoraHome offer?</h4>
+        </div>
+        <div class="panel">
+          <p>Our solutions include smarter living plans (to protect and service your furniture, appliances and home systems) together with the latest technology for digitally connected homes. Our smarter living products help maintain clean homes and
+            healthy families.</p>
+        </div>
+        <hr>
+        <div class="accordion">
+          <h4>Where can I buy Zucora Home products?</h4>
+        </div>
+        <div class="panel">
+          <p>Almost all of our products can be purchased online at zucorahome.com or from leading retailers.</p>
+        </div>
+        <hr>
+        <div class="accordion">
+          <h4>Are ZucoraHome’s products available outside of Canada?</h4>
+        </div>
+        <div class="panel">
+          <p>ZucoraHome’s products and services are available in many areas throughout Canada. Soon, we’ll be able to offer our products and services in other areas around the world.</p>
+        </div>
+
+        <hr>
+
+        <div class="accordion">
+          <h4>I have a mix of new and old furniture, appliances and home systems. Does this matter or will only some items be covered?</h4>
+        </div>
+        <div class="panel">
+          <p>The Smarter Living Plan covers your new and existing furniture, appliances and home systems. However, existing furniture items would be replaced at a set rate in the form of a gift certificate with a partner retailer.</p>
+        </div>
+
+        <hr>
+
+        <div class="accordion">
+          <h4>How do replacements work?</h4>
+        </div>
+        <div class="panel">
+          <p>Where Covered Items may require replacement, Zucora Home will issue a gift card with a retail partner for the authorized replacement value.</p>
+        </div>
+
+        <hr>
+        <div class="accordion">
+          <h4>What is the waiting period between the start of my plan and when I can request service?</h4>
+        </div>
+        <div class="panel">
+          <p>Your initial service period begins on the thirtieth (30th) day following the purchase of your Smarter Living Plan.</p>
+        </div>
+        <hr>
+
+        <div class="accordion">
+          <h4>Is there a limit to the number of service calls or items that can be replaced within a year?</h4>
+        </div>
+        <div class="panel">
+          <p>There is not a limit for the number of service requests, only a limit to the total cost allotment for services or replacements per year. See Terms and Conditions for full details.</p>
+        </div>
+
+      </div>
+      <!--accordion ends-->
+      <!-- contact us box -->
+      <div class="memberProfile-title margin-top-5 margin-bottom-2">
+        <h3>Can't find what you're looking for?</h3>
+        <p class="strong">Please check our website's <a href="https://zucorahome.com/Zuc/faq" style="text-decoration: underline;">FAQ here</a>.</p>
+      </div>
+      <div class="helpBox-container">
+        <div class="help-box">
+          <h6 class="strong padding-10">Call us</h6>
+          <img src="../../Images/Zuc/images/member-portal/call.png" alt="Call center icon, displaying headphones." class="center">
+          <p class=" strong margin-top-1 padding-10">
+            <p class="">if user have smarterliving plan.</p>
+            <a href="tel:18666676695" class="">1.866.667.6695</a>
+            <p class="">If user is just member</p>
+            <a href="tel:18006676695" class="">1.800.388.2640</a>
+          </p>
+        </div>
+        <div class="help-box">
+          <h6 class="strong padding-10">Email us</h6>
+          <img src="../../Images/Zuc/images/member-portal/email.png" alt="Email icon, displaying a cover." class="center">
+          <p class="">if user have smarterliving plan.</p>
+          <a href="mailto:smarterliving@zucorahome.com">
+            <p class=" strong margin-top-1" style="word-break: break-word;padding:5px;">Smarter Living</p>
+          </a>
+          <p class="">If user is just member</p>
+          <a href="mailto:info@zucorahome.com">
+            <p class=" strong margin-top-1" style="word-break: break-word;padding:5px;">info@zucorahome.com</p>
+          </a>
+        </div>
+        <div class="help-box">
+          <h6 class="strong padding-10">Mailing address</h6>
+          <img src="../../Images/Zuc/images/member-portal/address.png" alt="Call center icon, displaying headphones." class="center">
+          <p class=" strong margin-top-1 padding-10">ZucoraHome</p>
+          <p class=" text-center margin-bottom-1">552 Clarke Road<br>London, ON N5V 3K5<br>Canada</p>
+        </div>
+      </div>
+    </section>
+    <!--Inner section ends-->
+  </section><!-- main page content ends -->
+  <!-- Site Footer-->
+  <footer class="zuc-footer-wrapper">
+    <!-- - Footer Links-->
+    <footer class="flex flex-hor-center zuc-footer">
+      <div class="zuc-footer--brand-section flex flex-column">
+        <a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
+        <div class="zuc-footer--social-icons-primary">
+          <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
+            <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link"
+              href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/"
+              target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="zuc-footer-body flex flex-row">
+        <div class="zuc-footer-row flex">
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">About Us</h4><a class="zuc-footer--link" href="/Zuc/formcontactus" title="Contact Us">Contact Us</a><a class="zuc-footer--link" href="/Zuc/ourstory" title="About Us">Our Story</a><a
+              class="zuc-footer--link" href="/Zuc/ourstory#our-team" title="Our Team">Our Team</a><a class="zuc-footer--link" href="/Zuc/ourstory#join-us" title="Join Us">Join Us</a>
+          </div>
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">Member Centre</h4><a class="zuc-footer--link" href="/Zuc/smarterliving" title="What is Smarter Living?">What is Smarter Living?</a><a class="zuc-footer--link" href="javascript:void(0)"
+              onclick="toggleModal('[data-modal-login]')" title="Member Login">Member Login</a><a class="zuc-footer--link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
+          </div>
+        </div>
+        <div class="zuc-footer-row flex">
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">Products &amp; Services</h4><a class="zuc-footer--link" href="/Zuc/serviceplans" title="Service Plans Parent">Service Plans</a>
+            <!--<a class="zuc-footer==link" href="/Zuc/smarterhomecontrol" title="Smarter Home Control">Smarter Home Control</a>--><a class="zuc-footer--link" href="/Zuc/smarterhomeproducts" title="Smarter Home Products">Smarter Home Products</a><a
+              class="zuc-footer--link" href="/Zuc/formordersshipping" title="Orders and Returns">Orders &amp; Returns</a><a class="zuc-footer--link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products"
+              title="Shop Now">Shop Now</a>
+          </div>
+        </div>
+        <div class="zuc-footer--zuc-footer-right zuc-footer--column">
+          <a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
+          <div class="zuc-footer--social-icons-secondary">
             <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link"
+                href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/"
+                target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
-        </div><!-- Broadcast Banner-->
-        <div class="zuc-nav-broadcast flex flex-hor-between flex-vert-center" data-broadcast-banner="">
-            <div class="zuc-broadcast-text u-truncate u-bold">
-                Suggested editable broadcast banner that you can turn on/off for promos &amp; customer care outages.
-            </div>
-            <div class="zuc-broadcast-close" onclick="closeBroadcast()">
-                <i class="fas fa-times"></i>
-            </div>
+          </div>
+          <div class="zuc-shipping-blurb">
+            <span class="u-zuc-platinum">CANADA-WIDE SHIPPING AVAILABLE.<br>
+              FREE ON ORDERS OVER</span><span class="u-zuc-mint">&nbsp; $39*</span>
+          </div>
         </div>
-    </div><!-- Login Modal-->
-    <!-- Modal Container-->
-    <div class="zuc-modal" data-modal-login="" onclick="toggleModal('[data-modal-login]')">
-        <!-- Modal Content-->
-        <div class="zuc-modal-content member-login" onclick="event.stopPropagation()">
-            <!-- Place Modal Content Here-->
-            <div><img alt="Smarter Living logo with house icon on the left." class="smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_small.png"></div>
-            <div class="zuc-modal-subtitle u-text-center">
-                Member login
-            </div><!-- User Email-->
-            <div class="zuc-input-group center">
-                <div class="zuc-input-name">
-                    Email address
-                </div><label class="u-screenreader" for="field-email">Email address</label> <input data-required="" id="field-email" name="email" placeholder="Email address" required="" type="text">
-            </div><!-- User Password-->
-            <div class="zuc-input-group center">
-                <div class="zuc-input-name">
-                    Password
-                </div><label class="u-screenreader" for="field-password">User Password</label> <input data-required="" name="password" placeholder="Password" required="" type="password"><a class="zuc-input-link" href="/Zuc/formforgotpassword" style="font-size:0.85em;" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
-            </div><!-- Remember me radio button -->
-            <div class="remember-me">
-                <input name="remember-me" type="checkbox" value="remember-me-checked"> Remember me
-            </div><!-- Submit Button-->
-            <div class="form-buttons">
-                <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button> <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button> <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
-            </div><!-- Button div ends-->
-        </div>
-    </div><!-- Main page content-->
-    <section class="member-info-boxed">
-        <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
-        <div class="memberInfo-table">
-            <div>
-                <p>Member Number</p>
-            </div>
-            <div>
-                <p class="light-grey">111</p>
-            </div>
-            <div>
-                <p>Member Since</p>
-            </div>
-            <div>
-                <p class="light-grey">2019/10/29</p>
-            </div>
-            <div>
-                <p>Rewards Balance</p>
-            </div>
-            <div>
-                <p class="light-grey">10,900</p>
-            </div>
-        </div>
-    </section><!-- Profile form, populating the existing settings and information -->
-    <section class="zuc-service-form member-center-container" style="margin-top:2% !important;">
-        <h2 class="sr-only">Smarter living user's payment options.</h2>
-        <section class="inner-width">
-            <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
-            <div class="memberProfile-title margin-bottom-2">
-                <h3>FAQ</h3>
-            </div>
-            <!-- FAQ page content -->
-            <div class="category-box-container">
-                <div class="category-box">
-                    <img src="../../Images/Zuc/images/member-portal/bonus_rewards.png" alt="question mark icon." class="center">
-                    <a href="#/" id="rewards"><h4 class="margin-top-1">About my Rewards</h4></a>
-                </div>
-                <div class="category-box">
-                    <img src="../../Images/Zuc/images/member-portal/paywithrewards.png" alt="question mark icon." class="center">
-                    <a href="#/" id="bonus"><h4 class="margin-top-1 ">Plan Details</h4></a>
-                </div>
-                <div class="category-box">
-                    <img src="../../Images/Zuc/images/member-portal/questions.png" alt="question mark icon." class="center">
-                    <a href="#/" id="general"><h4 class="margin-top-1 ">General Questions</h4></a>
-                </div>
-            </div>
-
-            <!--Rewards section  -->
-            
-            <div class="faq-accordion margin-top-5 margin-bottom-2 faq-rewards non-visible">
-                <h4 class="text-center margin-top-2 margin-bottom-1 strong middle-grey font-24">About my Rewards</h4>
-
-                    <div class="accordion">
-                        <h4>How do I earn reward points?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Every $1 dollar spent on your monthly Smarter Living Plan subscription or from shopping earns 10 Smarter Living Reward Points.</p>
-                    </div>
-                <hr>
-    
-                 <div class="accordion">
-                        <h4>How do I see my point balance?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Your account balance is available in your Member Centre Profile, in the Smarter Living Rewards section of the Member Centre, and on the check out shopping screen as long as you’ve logged in to shop.</p>
-                    </div>
-                <hr>
-
-                 <div class="accordion">
-                        <h4>What is the redemption process?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Smarter Living Reward Points can be redeemed at checkout or you can convert them into an e-card within the Rewards section of the Member Centre.</p>
-                    </div>
-                <hr>
-
-                 <div class="accordion">
-                        <h4>What can reward points be redeemed for?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Rewards points can be spent on Smarter Home Products or converted into e-gift cards.</p>
-                    </div>
-                <hr>
-                
-            
-            </div> <!--Accordion div ends-->
-
-            <!-- Bonus rewards -->
-            
-            <div class="faq-accordion margin-top-5 margin-bottom-2 faq-bonus non-visible">
-                <h4 class="text-center margin-top-2 margin-bottom-1 strong middle-grey font-24">Plan Details</h4> 
-
-                <div class="accordion">
-                        <h4>Are there any exclusions to my service plan or limits to my coverage?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Although the coverage available through each Smarter Living Plan is extensive, there are some exclusions. Refer to the terms & conditions to see a specific list of limitations and items that are excluded from the appliances, furniture, and home-systems coverage available.</p>
-                    </div>
-                <hr>
-    
-                 <div class="accordion">
-                        <h4>I have a mix of new and old furniture, appliances and home systems. Does this matter or will only some items be covered?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>The Smarter Living Plan covers your new and existing furniture, appliances and home systems.</p>
-                    </div>
-                <hr>
-
-                 <div class="accordion">
-                        <h4>Is there a limit to the number of service calls or items that can be replaced within a year?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>There is not a limit for the number of service requests, only a limit to the total cost allotment for services or replacements within a 12 month period. See terms & conditions for full details.</p>
-                    </div>
-                <hr>
-
-                 <div class="accordion">
-                        <h4>Are all Smarter Living Plans available all across Canada?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Smarter Living Furniture and Appliances Plans are available across the country. Smarter Living Home Systems Plans will be available across Canada in 2020. </p>
-                    </div>
-                <hr>
-                    <div class="accordion">
-                        <h4>Can I purchase a Smarter Living Plan for my home in the United States?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Not today, but we are working to provide service in the United States. </p>
-                    </div>
-                <hr>
-                <div class="accordion">
-                        <h4>Can I upgrade my Smarter Living Plan?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Yes, you can upgrade your plan at any time.</p>
-                    </div>
-                <hr>
-                <div class="accordion">
-                        <h4>What items in my home are covered through a Smarter Living Plan?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>For full coverage details of each plan please refer:</p>
-                        <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplansfurniture">Furniture Plans</a></p>
-                        <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplansappliance">Appliances Plans </a></p>
-                        <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplanshomesystems">Home Service Plans</a></p>
-                        <p class="strong"><a href="https://zucorahome.com/Zuc/serviceplans">Bundles and Combos</a></p>
-                    </div>
-                <hr>
-
-
-            </div><!-- Accordion div ends-->
-            
-            <!-- Accordions -->
-             <div class="faq-accordion margin-top-5 margin-bottom-2 faq-general non-visible">
-                <h4 class="text-center margin-top-2 margin-bottom-1 strong middle-grey font-24">General Questions</h4>
-                     <div class="accordion">
-                        <h4>How long has ZucoraHome been in business?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Since 1979, we’ve been helping reduce the challenges of home management with service programs and products designed to deliver peace-of-mind for today’s busy families.</p>
-                    </div>
-                 
-                <hr>
-                <div class="accordion">
-                        <h4>What products and services does ZucoraHome offer?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Our solutions include smarter living plans (to protect and service your furniture, appliances and home systems) together with the latest technology for digitally connected homes.  Our smarter living products help maintain clean homes and healthy families.</p>
-                    </div>
-                    <hr>
-                    <div class="accordion">
-                        <h4>Where can I buy Zucora Home products?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Almost all of our products can be purchased online at zucorahome.com or from leading retailers.</p>
-                    </div>
-                    <hr>
-                    <div class="accordion">
-                        <h4>Are ZucoraHome’s products available outside of Canada?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>ZucoraHome’s products and services are available in many areas throughout Canada. Soon, we’ll be able to offer our products and services in other areas around the world.</p>
-                    </div>
-                 
-                <hr>
-                
-                     <div class="accordion">
-                        <h4>I have a mix of new and old furniture, appliances and home systems. Does this matter or will only some items be covered?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>The Smarter Living Plan covers your new and existing furniture, appliances and home systems. However, existing furniture items would be replaced at a set rate in the form of a gift certificate with a partner retailer.</p>
-                    </div>
-                
-                <hr>
-               
-                     <div class="accordion">
-                        <h4>How do replacements work?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Where Covered Items may require replacement, Zucora Home will issue a gift card with a retail partner for the authorized replacement value.</p>
-                    </div>
-               
-                <hr>
-                  <div class="accordion">
-                        <h4>What is the waiting period between the start of my plan and when I can request service?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>Your initial service period begins on the thirtieth (30th) day following the purchase of your Smarter Living Plan.</p>
-                    </div>
-                <hr>
-
-                  <div class="accordion">
-                        <h4>Is there a limit to the number of service calls or items that can be replaced within a year?</h4>
-                    </div>
-                    <div class="panel">
-                        <p>There is not a limit for the number of service requests, only a limit to the total cost allotment for services or replacements per year. See Terms and Conditions for full details.</p>
-                    </div>
-                
-            </div>  <!--accordion ends-->
-            <!-- contact us box -->
-             <div class="memberProfile-title margin-top-5 margin-bottom-2">
-                <h3>Can't find what you're looking for?</h3>
-                <p class="strong middle-grey">Please check our website's <a href="https://zucorahome.com/Zuc/faq" style="text-decoration: underline;">FAQ here</a>.</p>
-            </div>
-            <div class="helpBox-container">
-                <div class="help-box">
-                    <h6 class="dark-grey strong padding-10">Call us</h6>
-                    <img src="../../Images/Zuc/images/member-portal/call.png" alt="Call center icon, displaying headphones." class="center">
-                    <p class="middle-grey strong margin-top-1 padding-10">
-                        <p class="light-grey">if user have smarterliving plan.</p>
-                        <a href="tel:18666676695" class="middle-grey">1.866.667.6695</a>
-                        <p class="light-grey">If user is just member</p>
-                        <a href="tel:18006676695" class="middle-grey">1.800.388.2640</a>
-                    </p>
-                </div>
-                 <div class="help-box">
-                    <h6 class="dark-grey strong padding-10">Email us</h6>
-                    <img src="../../Images/Zuc/images/member-portal/email.png" alt="Email icon, displaying a cover." class="center">
-                    <p class="light-grey">if user have smarterliving plan.</p>
-                    <a href="mailto:smarterliving@zucorahome.com">
-                        <p class="middle-grey strong margin-top-1" style="word-break: break-word;padding:5px;">Smarter Living</p>
-                    </a>
-                    <p class="light-grey">If user is just member</p>
-                    <a href="mailto:info@zucorahome.com">
-                        <p class="middle-grey strong margin-top-1" style="word-break: break-word;padding:5px;">info@zucorahome.com</p>
-                    </a>
-                </div>
-                 <div class="help-box">
-                    <h6 class="dark-grey strong padding-10">Mailing address</h6>
-                    <img src="../../Images/Zuc/images/member-portal/address.png" alt="Call center icon, displaying headphones." class="center">
-                    <p class="middle-grey strong margin-top-1 padding-10">ZucoraHome</p>
-                    <p class="light-grey text-center margin-bottom-1">552 Clarke Road<br>London, ON N5V 3K5<br>Canada</p>
-                </div>
-            </div> 
-        </section><!--Inner section ends-->
-    </section><!-- main page content ends -->
-    <!-- Site Footer-->
-    <footer class="zuc-footer-wrapper">
-        <!-- - Footer Links-->
-        <footer class="flex flex-hor-center zuc-footer">
-            <div class="zuc-footer--brand-section flex flex-column">
-                <a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
-                <div class="zuc-footer--social-icons-primary">
-                    <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                        <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="zuc-footer-body flex flex-row">
-                <div class="zuc-footer-row flex">
-                    <div class="flex flex-column flex-vert-start zuc-footer--column">
-                        <h4 class="zuc-footer--header u-uppercase">About Us</h4><a class="zuc-footer--link" href="/Zuc/formcontactus" title="Contact Us">Contact Us</a><a class="zuc-footer--link" href="/Zuc/ourstory" title="About Us">Our Story</a><a class="zuc-footer--link" href="/Zuc/ourstory#our-team" title="Our Team">Our Team</a><a class="zuc-footer--link" href="/Zuc/ourstory#join-us" title="Join Us">Join Us</a>
-                    </div>
-                    <div class="flex flex-column flex-vert-start zuc-footer--column">
-                        <h4 class="zuc-footer--header u-uppercase">Member Centre</h4><a class="zuc-footer--link" href="/Zuc/smarterliving" title="What is Smarter Living?">What is Smarter Living?</a><a class="zuc-footer--link" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">Member Login</a><a class="zuc-footer--link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
-                    </div>
-                </div>
-                <div class="zuc-footer-row flex">
-                    <div class="flex flex-column flex-vert-start zuc-footer--column">
-                        <h4 class="zuc-footer--header u-uppercase">Products &amp; Services</h4><a class="zuc-footer--link" href="/Zuc/serviceplans" title="Service Plans Parent">Service Plans</a> <!--<a class="zuc-footer==link" href="/Zuc/smarterhomecontrol" title="Smarter Home Control">Smarter Home Control</a>--><a class="zuc-footer--link" href="/Zuc/smarterhomeproducts" title="Smarter Home Products">Smarter Home Products</a><a class="zuc-footer--link" href="/Zuc/formordersshipping" title="Orders and Returns">Orders &amp; Returns</a><a class="zuc-footer--link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now">Shop Now</a>
-                    </div>
-                </div>
-                <div class="zuc-footer--zuc-footer-right zuc-footer--column">
-                    <a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
-                    <div class="zuc-footer--social-icons-secondary">
-                        <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
-                            <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="zuc-shipping-blurb">
-                        <span class="u-zuc-platinum">CANADA-WIDE SHIPPING AVAILABLE.<br>
-                        FREE ON ORDERS OVER</span><span class="u-zuc-mint">&nbsp; $39*</span>
-                    </div>
-                </div>
-            </div>
-        </footer><!-- - Footer SubLinks-->
-        <!-- Footer Sub Links-->
-        <div class="zuc-footer--copyright flex flex-vert-center">
-            <div class="zuc-footer--copyright-title">
-                <span class="zuc-footer--copyright-text">Copyright&nbsp;&copy;&nbsp;</span><a class="zuc-footer--copyright-text" href="/Zuc/index" title="Zucora Home">Zucora Inc.</a><span class="zuc-footer--copyright-text">&nbsp;2018</span>
-            </div>
-            <div class="zuc-footer--copyright-menu flex flex-hor-start">
-                <a class="zuc-footer--copyright-text" href="/Zuc/privacypolicy" title="View our Privacy Policy">Privacy Policy</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/termsservice" title="View our Terms of Service">Terms of Service</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/sitemap" title="View our Sitemap">Sitemap</a>
-            </div>
-        </div>
-    </footer>
-    <div class="zuc-footer--btm-trim"></div><!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
-    <script>
-              new LTPublicUtils().ShowUI();
-    </script> 
-    <script src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js" type="text/javascript">
-    </script>
+      </div>
+    </footer><!-- - Footer SubLinks-->
+    <!-- Footer Sub Links-->
+    <div class="zuc-footer--copyright flex flex-vert-center">
+      <div class="zuc-footer--copyright-title">
+        <span class="zuc-footer--copyright-text">Copyright&nbsp;&copy;&nbsp;</span><a class="zuc-footer--copyright-text" href="/Zuc/index" title="Zucora Home">Zucora Inc.</a><span class="zuc-footer--copyright-text">&nbsp;2018</span>
+      </div>
+      <div class="zuc-footer--copyright-menu flex flex-hor-start">
+        <a class="zuc-footer--copyright-text" href="/Zuc/privacypolicy" title="View our Privacy Policy">Privacy Policy</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/termsservice" title="View our Terms of Service">Terms of
+          Service</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/sitemap" title="View our Sitemap">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+  <div class="zuc-footer--btm-trim"></div><!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
+  <script>
+    new LTPublicUtils().ShowUI();
+  </script>
+  <script src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js" type="text/javascript">
+  </script>
 </body>
+
 </html>
