@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Zucora Home: Event page</title>
@@ -388,7 +387,7 @@
 
       <div class="zuc-form-row margin-top-1">
         <div class="zuc-form-group auto-width padding-10">
-          <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit"><strong><span>Add to cart</span></strong></button>
+          <button class="zuc-btn zuc-memberForm-button secondaryButton-color giftCard-redeem-button" type="submit"><strong><span>Add to cart</span></strong></button>
         </div>
       </div>
       <!-- Back to link -->
@@ -398,6 +397,97 @@
     </section>
     <!--Inner section ends-->
   </section><!-- main page content ends -->
+  <section class="giftCard-redeem-modal-container non-visible">
+    <h3 class="non-visible">Pop up modal confirming gift card purchase.</h3>
+      <div class="giftCard-redeem-modal"> 
+        <div class="purple-heading-background flex flex-vert-center flex-hor-between">
+          <p>Confirm Points Deduction</p>
+          <a href="#" class="cross-modal">X</a>
+        </div>
+        <div class="modal-body">
+          <p class="u-bold">Below is a summary of your Gift card purchase</p>
+          <table class="giftCard-table">
+            <thead>
+              <tr>
+                <th scope="col">Gift Card Denomination</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Points Deducted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Gift card Denomination">$10</td>
+                <td data-label="Quantity">3</td>
+                <td data-label="Points Deducted">30,000</td>
+              </tr>
+               <tr>
+                <td data-label="Gift card Denomination">$20</td>
+                <td data-label="Quantity">1</td>
+                <td data-label="Points Deducted">$20,000</td>
+              </tr>
+               <tr>
+                <td data-label="Gift card Denomination">$50</td>
+                <td data-label="Quantity">1</td>
+                <td data-label="Points Deducted">$50,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="giftCard-total">
+            <div class="flex flex-column flex-vert-center send-giftCard">
+              <h4 class="u-zuc-indigo u-bold">Gift a Gift Card?</h4>
+              <input type="checkbox" name="send-giftCard" value="" class="">
+              <p>Check this box to gift a friend a Gift Card</p>
+            </div>
+            <div class="flex flex-column">
+              <div class="flex flex-hor-between flex-vert-center">
+                <p class="u-bold">Total Smarter Living Points <span class="u-normal"><br> Redeemed</span></p>
+                <p>100,000</p>
+              </div>
+              <div class="flex flex-hor-between flex-vert-center">
+                <p class="u-zuc-indigo u-bold">Total Gift Card Value:</p>
+                <p class="u-zuc-indigo u-bold"> $100.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-hor-end margin-top-1">
+               <a href="#" class="zuc-btn-secondary zuc-btn --full-width giftCard-checkout">Checkout</a>
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="sendGiftCard-modal-container non-visible">
+     <div class="sendGiftCard-modal">
+        <div class="purple-heading-background flex flex-vert-center flex-hor-between">
+          <p>Enter a friend's email to receive a gift card and then click send</p>
+          <a href="#" class="cross-modal">X</a>
+        </div>
+          <div class="modal-body">
+          <form class="sendGiftEmail-form memberPortal-login">
+            <div class="flex flex-vert-center flex-hor-center">
+              <label for="" class="u-bold">Email</label>
+              <input type="text" name="email-address" placeholder="Email Address" style="margin-left:1em;">
+            </div>
+            <div class="flex flex-hor-end flex-vert-center">
+              <button class="zuc-btn zuc-btn-secondary u-soft-shadow" type="submit">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+  <section class="giftCardConfirmation-modal-container non-visible">
+    <div class="giftCardConfirmation-modal">
+      <div class="flex flex-hor-end">
+        <a href="#" class="mint-color close-modal close-confirmationGiftCardModal">X</a>
+      </div>
+      <div class="confirmed-message">
+        <h3 class="u-zuc-indigo u-text-center u-bold">A Gift card code has been sent to your email</h3>
+        <p class="body-text u-text-center">Please check your email</p>
+        <div class="flex flex-vert-center flex-hor-center">
+          <a href="#" class="purple-border-button zuc-btn close-confirmationGiftCardModal">Ok</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Site Footer-->
   <footer class="zuc-footer-wrapper">
     <!-- - Footer Links-->

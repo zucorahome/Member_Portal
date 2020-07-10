@@ -240,58 +240,76 @@
         <input type="tel" required="" name="current-phone" placeholder="Phone number where we can reach you" id="field-current-phone">
       </div>
       <div class="zuc-form-group zuc-form-50">
+        <div class="zuc-input-name"><strong>Alternate Phone Number</strong></div>
+        <label class="u-screenreader" for="field-order-phone">Alternate Phone Number</label>
+        <input type="tel" name="order-phone" placeholder="Alternate phone number" id="field-order-phone">
+      </div>
+    </div>
+    <div class="zuc-form-row">
+      <div class="zuc-form-group zuc-form-50">
         <div class="zuc-input-name"><strong>Email Address *</strong></div>
         <label class="u-screenreader" for="field-email">Email Address</label>
         <input type="email" required="" name="email" placeholder="Email address" id="field-email">
       </div>
-    </div>
-    <div class="flex-vert-start flex-hor-start">
       <div class="zuc-form-group zuc-form-50">
-        <div class="zuc-input-name"><strong>Username </strong></div>
-        <label class="u-screenreader" for="field-email">Username</label>
-        <input type="text" required="" name="username" placeholder="Username" id="username">
+        <div class="zuc-input-name"><strong>Alternate Email Address </strong></div>
+        <label class="u-screenreader" for="field-email">Alternate email address</label>
+        <input type="email" required="" name="alternate-email" placeholder="Alternate email address" id="alternate-field-email">
+      </div>
+    </div>
+    <!-- Checkmarks -->
+    <div class="zuc-form-row">
+      <div class="memberForm-checkmark">
+        <h3>Preferred method of contact</h3>
+        <label class="checkmark-container">Phone
+          <input type="checkbox" checked="" name="phone" value="Phone">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="checkmark-container">Text
+          <input type="checkbox" name="text" value="Text">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="checkmark-container">Email
+          <input type="checkbox" name="email" value="Email">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+    <!-- New buttons added when user's account is setup -->
+    
+    <!-- Radio buttons -->
+    <div class="zuc-form-row">
+      <div class="zuc-form-group">
+        <div class="zuc-radio-group-container">
+          <div class="zuc-radio-group memberForm-radioButtons">
+            <label class="radio-container">I would like to receive promotional emails about Smarter Living by ZucoraHome.*
+              <input type="radio"  name="email-notifications" value="Yes" checked>
+              <span class="radio-checkmark"></span>
+            </label>
+            <!-- light grey class added when the radio button is not selected -->
+            <label class="radio-container">I do not want to receive promotional emails about Smarter Living by ZucoraHome.*
+              <input type="radio" name="email-notifications" value="No">
+              <span class="radio-checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zuc-form-row">
+      <div class="zuc-form-group zuc-form-50">
+        <div class="zuc-input-name"><strong>Password*</strong></div>
+        <label class="u-screenreader" for="password">Password</label>
+        <input type="text" name="new-member-password" placeholder="Password" id="password">
+      </div>
+      <div class="zuc-form-group zuc-form-50">
+        <div class="zuc-input-name"><strong>Confirm Password *</strong></div>
+        <label class="u-screenreader" for="confirm-password">Confirm Passowrd</label>
+        <input type="text" name="new-member-confirm-password" placeholder="Confirm Passowrd" id="confirm-passowrd">
       </div>
     </div>
     
-    <!-- New buttons added when user's account is setup -->
-    <div class="zuc-form-row">
-      <div class="memberForm-checkmark flex-column flex-vert-start">
-        <h3 class="">I would like to be contacted about</h3>
-        <div class="flex flex-vert-center flex-hor-start">
-          <label class="checkmark-container">Bucket 1
-            <input type="checkbox" checked="" name="" value="Bucket 1">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="checkmark-container">Bucket 2
-            <input type="checkbox" name="" value="Bucket 2">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="checkmark-container">Bucket 3
-            <input type="checkbox" name="" value="Bucket 3">
-            <span class="checkmark"></span>
-          </label>
-        </div>
-        <div class="flex flex-vert-center flex-hor-start">
-          <label class="checkmark-container">Bucket 4
-            <input type="checkbox" checked="" name="" value="Bucket 4">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="checkmark-container">Bucket 5
-            <input type="checkbox" name="" value="Bucket 5">
-            <span class="checkmark"></span>
-          </label>
-          
-          <label class="checkmark-container">Bucket 6
-            <input type="checkbox" name="" value="Bucket 6">
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </div>
-    </div>
-
     <div class="zuc-form-row zuc-form-action">
       <div class="zuc-form-group zuc-form-33 padding-10">
         <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><strong><span><a href="./register-confirmtion.html">SUBMIT</a></span></strong></button>

@@ -135,4 +135,32 @@ for(i=0;i<faqLinks.length;i++){
 			},1000, 'linear');
 		});
 	}
+
+// New Additions on redeem points page.
+ $('.giftCard-redeem-button').bind('click',{key:'.giftCard-redeem-modal-container'},openModal);
+ $('.giftCard-redeem-modal .purple-heading-background .cross-modal').bind('click',{key:'.giftCard-redeem-modal-container'},closeModal);
+
+// To send the gift card t friend's email
+let giftCheckbox = $('.send-giftCard').find('input[type="checkbox"]');
+
+giftCheckbox.change(function(){
+    if(giftCheckbox.is(':checked')){
+        $('.sendGiftCard-modal-container').removeClass('non-visible');
+
+  }else{
+     $('.sendGiftCard-modal-container').addClass('non-visible');
+  }
+});
+
+// To close send to friend email box modal
+
+$('.sendGiftCard-modal .purple-heading-background .cross-modal').bind('click',{key:'.sendGiftCard-modal-container'},closeModal);
+
+// When clicked on checkout in giftcard redeem
+$('.giftCard-checkout').bind('click',{key:'.giftCardConfirmation-modal-container'},openModal);
+
+$('.close-confirmationGiftCardModal').click(function(){
+  $('.giftCardConfirmation-modal-container').addClass('non-visible');
+});
+
 });

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zucora Home: Event page</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- [ FONTS ]-->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+</head>
+<body style="margin-top:100px;">
+<div class="zuc-nav-wrapper srs-nav-container" data-nav-height>
+      <!-- Main Navigation-->
+      <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation>
+        <!-- Nav Branding-->
+        <a class="zuc-nav-brand newLogin-logo" href="#/"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
+        <!-- Mobile Nav Button-->
+        <div class="zuc-menu">
+          <div class="zuc-menu-open" role="button" data-open-menu aria-label="Mobile Navigation"><span class="hidden" aria-hidden="true" aria-label="Open mobile menu">Mobile Menu</span>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile Navigation-->
+    </div>
+    <!-- Main page content-->
+<section class="member-login-container">
+  <h2 class="u-text-center u-fontWeight-medium u-zuc-indigo u-font-serif">Login</h2>
+  <form action="" method="post" role="form" class="memberLogin-form">
+    <input name="__RequestVerificationToken" type="hidden" value="">   
+    <!-- User Email-->
+      <div class="zuc-input-group center">
+          <div class="zuc-input-name">Username</div>
+          <label class="u-screenreader control-label" for="UserName">Username</label>
+          <input class="form-control" data-val="true" data-val-required="The User name field is required." id="UserName" name="UserName" type="text" value="" placeholder="Username">
+          <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+      </div>
+        <!-- User Password-->
+        <div class="zuc-input-group center">
+            <div class="zuc-input-name">Password</div>
+            <label class="u-screenreader control-label" for="Password">User Password</label>
+            <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" placeholder="Password">
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+        </div>
+        <div class="flex flex-vert-center flex-hor-between memberLogin-links width95">
+        <!-- Remember me radio button -->
+        <div class="remember-me">
+            <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true">
+            <label for="RememberMe" style="display: inline-block;">Remember me</label>
+        </div>
+        <!-- Reset password -->
+        <div>
+           <a class="zuc-input-link" href="/Account/RequestPasswordReset" title="Password Reset"><span class="u-highlight">Reset password</span></a>
+        </div>
+      </div>
+      <!-- Submit Button-->
+      <div class="u-text-center">
+          <a href="./welcome_screen.html" class="zuc-btn zuc-btn-secondary --full-width" style="width: 100%;">Log in</a>
+      </div><!-- Button div ends-->
+      <div class="flex flex-vert-center flex-hor-between width95">
+        <a href="./account-setup.html" class="u-uppercase u-bold u-underline u-zuc-grey">Become a member</a>
+        <a href="#" class="u-uppercase u-bold u-underline u-zuc-grey">Work with us</a>
+      </div>
+  </form>
+</section>
+<!-- main page content ends -->
+</body>
+</html>
