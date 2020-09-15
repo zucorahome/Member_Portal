@@ -255,15 +255,9 @@
     </div>
   </div>
   <!-- Main page content-->
-  <section class="member-info-boxed">
+  <section class="member-info-boxed-rightSide">
     <h2 class="sr-only">A box below member navigation displaying member number, member since, and reward balance.</h2>
     <div class="memberInfo-table">
-      <div>
-        <p class="u-bold">Member Number</p>
-      </div>
-      <div>
-        <p>111</p>
-      </div>
       <div>
         <p class="u-bold">Member Since</p>
       </div>
@@ -281,31 +275,37 @@
   <section class="zuc-service-form member-center-container" style="margin-top:2% !important;">
     <h2 class="sr-only">Smarter living user's payment options.</h2>
     <section class="inner-width">
-      <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
+      <div><img alt="Smarter living logo with house roof icon." class="page-smarterLiving-logo-noBorder center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_larger.png"></div>
       <div class="memberProfile-title margin-bottom-2">
         <h3>My Payment Options</h3>
       </div>
       <!-- Address -->
       <div class="payment-container">
         <div class="two-row margin-top-1">
-          <p class="strong padding-10">Credit Card</p>
-          <p class="strong padding-10">Expiry Date</p>
+          <p class="strong padding-10 dark-grey">Credit Card</p>
+          <p class="strong padding-10 dark-grey">Expiry Date</p>
         </div>
         <div class="payment-box">
           <div class="two-row paymentCard-name flex-vert-center padding-10">
             <div class="flex flex-vert-center">
               <img alt="verified by visa logo." src="../../Images/Zuc/images/member-portal/visa-logo.png">
-              <p>Visa ending with xxxxx</p>
+              <p class="white-color">Visa ending with xxxxx</p>
             </div>
-            <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-down"></i></a></p>
+            <div class="flex flex-hor-between">
+              <p class="white-color">12/2022 </p>
+              <div>
+                <a href="#/" class=""><i class="far fa-trash-alt"></i></a>
+                <a class="" href="#/"><i class="fa fa-chevron-down white-color show-cardInfo"></i></a>
+              </div>
+            </div>
           </div>
           <div class="two-row paymentCard-info display-info padding-10" style="display: none;">
             <div class="info-name">
-              <p class="light-grey"><span class="strong dark-grey">Name on Card</span><br>
+              <p class="middle-grey"><span class="strong dark-grey">Name on Card</span><br>
                 J Smith</p>
             </div>
             <div class="info-address">
-              <p class="light-grey"><span class="strong dark-grey">Billing Address<br></span><span class="strong">Jenna Smith</span><br>
+              <p class="middle-grey"><span class="strong dark-grey">Billing Address<br></span><span class="strong">Jenna Smith</span><br>
                 552 Clarke Road<br>
                 London, ON N5V 3K5<br>
                 Canada</p>
@@ -322,24 +322,30 @@
       <!-- Second payment billing box -->
       <div class="payment-container">
         <div class="two-row margin-top-1">
-          <p class="strong padding-10">Credit Card</p>
-          <p class="strong padding-10">Expiry Date</p>
+          <p class="strong padding-10 dark-grey">Credit Card</p>
+          <p class="strong padding-10 dark-grey">Expiry Date</p>
         </div>
         <div class="payment-box">
           <div class="two-row paymentCard-name flex-vert-center padding-10">
             <div class="flex flex-vert-center">
               <img alt="verified by visa logo." src="../../Images/Zuc/images/member-portal/visa-logo.png">
-              <p>Visa ending with xxxxx</p>
+              <p class="white-color">Visa ending with xxxxx</p>
             </div>
-            <p class="">12/2022 <a class="chevron" href="#/"><i class="fa fa-chevron-down"></i></a></p>
+             <div class="flex flex-hor-between">
+              <p class="white-color">12/2022 </p>
+              <div>
+                <a href="#/" class=""><i class="far fa-trash-alt"></i></a>
+                <a class="" href="#/"><i class="fa fa-chevron-down white-color show-cardInfo"></i></a>
+              </div>
+            </div>
           </div>
           <div class="two-row paymentCard-info padding-10" style="display: none;">
             <div class="info-name">
-              <p class="light-grey"><span class="strong dark-grey">Name on Card</span><br>
-                J Smith</p>
+              <p class=""><span class="strong dark-grey">Name on Card</span><br>
+                <span class="middle-grey">J Smith</span></p>
             </div>
             <div class="info-address">
-              <p class="light-grey"><span class="strong dark-grey">Billing Address<br></span><span class="strong">Jenna Smith</span><br>
+              <p class="middle-grey"><span class="strong dark-grey">Billing Address<br></span><span class="strong">Jenna Smith</span><br>
                 552 Clarke Road<br>
                 London, ON N5V 3K5<br>
                 Canada</p>
@@ -371,17 +377,17 @@
         <form class="addNewCard-form display-info" style="display: none;">
           <div class="zuc-form-row">
             <div class="zuc-form-group">
-              <div class="zuc-input-name light-grey strong">
+              <div class="zuc-input-name middle-grey strong">
                 Name on Card
               </div><label class="u-screenreader" for="field-card-name">Name on Card</label> <input name="card-name" placeholder="Name as written on the card" type="text" value="">
             </div>
             <div class="zuc-form-group">
-              <div class="zuc-input-name light-grey strong">
+              <div class="zuc-input-name middle-grey strong">
                 Card #
               </div><label class="u-screenreader" for="field-card-name">Card Number</label> <input name="card-number" placeholder="0000 0000 00000" type="text" value="">
             </div>
             <div class="zuc-form-group">
-              <div class="zuc-input-name light-grey strong">
+              <div class="zuc-input-name middle-grey strong">
                 Expiration Date
               </div>
               <label class="u-screenreader" for="field-card-name">Expiration Date</label>
@@ -404,12 +410,12 @@
             <div class="zuc-form-group">
               <div class="zuc-radio-group-container address-list">
                 <div class="zuc-radio-group memberForm-radioButtons">
-                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-1"> <span
-                      class="radio-checkmark"></span></label> <!-- second -->
-                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-2"> <span
-                      class="radio-checkmark"></span></label> <!-- third address -->
-                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-3"> <span
-                      class="radio-checkmark"></span></label>
+                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-1"> 
+                  <span class="radio-checkmark"></span></label> <!-- second -->
+                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-2"> 
+                    <span class="radio-checkmark"></span></label> <!-- third address -->
+                  <label class="radio-container"><span class="strong">First Last name</span>, Street address with unit number, City, Province, Postal code, Canada. <input name="address" type="radio" value="address-3"> 
+                    <span class="radio-checkmark"></span></label>
                 </div>
               </div>
             </div>

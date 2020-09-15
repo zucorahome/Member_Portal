@@ -26,6 +26,7 @@
 	display: none;
 }
 
+
 p{
 	  font-family:'aktiv-grotesk',Helvetica,sans-serif;
 }
@@ -87,20 +88,24 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
 }
 
-.light-grey{
-	color: #C8C8C8 !important;
-}
+/*.light-grey{
+	color: #C8C8C8;
+}*/
 
 .dark-grey{
-	/* color:#54565A; */
-	color:#36384B !important;
+	 color:#54565A; 
+	/*color:#36384B !important;*/
 	/* This is zucora deep indigo color */
 }
 
 .middle-grey{
-	color:#898A8D;
+	/*color:#898A8D;*/
+	color:#36384B;
 }
 
+.white-color{
+	color: white;
+}
 .text-left{
 	text-align: left;
 }
@@ -118,16 +123,21 @@ h1,h2,h3,h4,h5,h6{
 }
 /*Member info box only for desktop*/
 @media screen and (max-width:767px){
-	.member-info-boxed, .member-navigation{
+	.member-info-boxed, .member-navigation, .member-info-boxed-rightSide{
 		display: none;
 		visibility: hidden;
 	}
 }
 @media screen and (min-width:768px){
-	.member-info-boxed,.member-navigation{
+	.member-navigation, .member-info-boxed{
 		display: flex;
 		visibility: visible;
 		justify-content: flex-end;
+	}
+
+	.member-info-boxed-rightSide{
+		position: absolute;
+		right: 0;
 	}
 
 	.memberInfo-table{
@@ -136,8 +146,11 @@ h1,h2,h3,h4,h5,h6{
 		    max-width: 100%;
 		    border: 2px solid #36384B;
 		    grid-template-columns: auto auto;
-		    padding: 1em;
-		    grid-gap: 1em 2em;
+		    /*padding: 1em;*/
+		    /*grid-gap: 1em 2em;*/
+		    padding:10px;
+		    grid-gap:10px;
+		    margin-top:5px;
 		}
 
 		.memberInfo-table > div> p{
@@ -215,7 +228,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .memberPortal-login>.zuc-form-row >.zuc-form-group >.zuc-input-name{
-	color: #898A8D;
+	/*color: #898A8D;*/
+	color: #36384B;
     font-weight: 600;
     /*font-size: 20px;*/
 }
@@ -367,8 +381,14 @@ a.form-links:hover{
 /*After registration */
 
 .page-smarterLiving-logo{
+	margin-bottom: 2em;
+}
 
-	margin-bottom: 1em;
+.page-smarterLiving-logo-noBorder{
+	margin: 4em auto !important;
+    position: relative;
+    top: 2em;
+    width: 40%;
 }
 
 @media screen and (max-width:767px){
@@ -376,7 +396,7 @@ a.form-links:hover{
 		width:90%;
 		margin-top:30%;
 	}
-	.page-smarterLiving-logo{
+	.page-smarterLiving-logo, .page-smarterLiving-logo-noBorder{
 		width:90%;
 	}
 }
@@ -392,7 +412,7 @@ a.form-links:hover{
 }
 .registration-border{
 	border: 4px solid #36384B;
-	padding:5vw;
+	padding:3em;
 }
 
 .registration-para{
@@ -427,9 +447,9 @@ background-color: #A3ACFF;
 
 
 @media screen and (min-width:1400px){
-	.member-center-container{
+	/*.member-center-container{
 		width:50%;
-	}
+	}*/
 
 	.page-smarterLiving-logo{
 		width:39%;
@@ -455,13 +475,15 @@ background-color: #A3ACFF;
 }
 .mainAddress-container, .menu-tiles-container{
 	display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     align-items: center;
     grid-gap: 2em;
+    justify-content: center;
 
 }
+
 .menu-tiles-container{
-	grid-gap:1em;
+	grid-gap:3em;
 }
 
 .address-box{
@@ -616,8 +638,9 @@ background-color: #A3ACFF;
 	font-family: 'aktiv-grotesk', Helvetica, sans-serif;
 }
 
-.payment-container p, .payment-containeri{
-	color: #54565A;
+.payment-container p, .payment-container i{
+	/*color: #54565A;*/
+	/*color: white;*/
 }
 
 .payment-box{
@@ -627,8 +650,10 @@ background-color: #A3ACFF;
 
 .paymentCard-name{
 	border-bottom:2px solid #54565A;
-	background-color: #C8C8C8;
+	/*background-color: #C8C8C8;*/
+	background-color: #434DA0;
 	max-width:99.99%;
+	color: white;
 }
 
 .paymentCard-name > div> img{
@@ -769,8 +794,10 @@ background-color: #A3ACFF;
 
 .planDetails-table > .row-heading{
 	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	justify-content: center;
+	/*grid-template-columns: auto auto auto auto auto;*/
+	grid-template-columns: 20% 20% 20% 23% 20%;
+	justify-content: space-between;
+	align-items: center;
 }
  .historyTable-heading, .planDetails-table-row{
 	display:grid;
@@ -782,7 +809,7 @@ background-color: #A3ACFF;
 	text-align: center;
 	border-right:2px solid #54565A;
 	word-wrap:break-word;
-	padding:0 8px;
+	/*padding:0 8px;*/
 }
 
 .row-heading > p>span, .historyTable-heading >p>span{
@@ -825,7 +852,8 @@ background-color: #A3ACFF;
 }
 
 .detailsPane-closed{
-	background-color: #C8C8C8;
+	/*background-color: #C8C8C8;*/
+	background-color: #A3ACFF;
 	padding: 10px;
 }
 
@@ -1081,8 +1109,8 @@ background-color: #A3ACFF;
 .faq-accordion hr{
 	margin:1em 0;
     border: 0;
-    /*border-top: 2px solid #E7E8E6;*/
-    border-bottom: 3px solid #FEB9A6;
+    border-top: 2px solid #E7E8E6;
+    /*border-bottom: 3px solid #FEB9A6;*/
 }
 
 .faq-accordion .accordion{

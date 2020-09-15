@@ -47,15 +47,25 @@ $('input[type=radio]').change(radioText);
 
   function openInfo(e){
   	e.preventDefault();
-  	var $this = $(this);
+  	var $this = $(this).parents(".paymentCard-name");
   	$this.next().toggle(1000);
-  	$("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+  	$(this).toggleClass("fa-chevron-up fa-chevron-down");
   	  getHeight();
   }
 
-  $('.paymentCard-name').click(openInfo);
+  // $('.paymentCard-name').click(openInfo);
+  $('.show-cardInfo').click(openInfo);
 
-  $('.showForm').click(openInfo);
+  function openForm(e){
+      e.preventDefault();
+      var $this = $(this);
+      $this.next().toggle(1000);
+      $("i",this).toggleClass("fa-chevron-up fa-chevron-down");
+      getHeight();
+  }
+
+  $('.showForm').click(openForm);
+
   $('.showForm').click(function(){$('.selectAddress-box').hide()});
 
   // Show address field options
@@ -96,7 +106,6 @@ $('input[type=radio]').change(radioText);
   $('input[type=radio]').change(showcard);
 
   function getHeight(){
-  	// console.log("get height called");
     var newHeight = $(document).height();
     $('.address-modal').css({'height':newHeight});
   }
