@@ -4,23 +4,11 @@
 
 .center {
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
+    /*width: 100%;*/
+    max-width: 100%;
 }
 
-.u-fontWeight-medium{
-    font-weight: 500;
-}
-
-.zuc-input-link{
-    font-size: 0.95em;
-    position: relative;
-    top: 10px;
-    padding-bottom: 10px;
-}
-
-.u-zuc-lightGrey{
-    color:#898A8D
-}
 .margin-top-5 {
     margin-top: 5vw
 }
@@ -41,7 +29,6 @@
     margin-top: 2em
 }
 
-
 .non-visible {
     display: none
 }
@@ -49,6 +36,15 @@
 .width-80 {
     width: 80%;
     position: relative;
+}
+
+.width-70 {
+    width: 70%;
+    position: relative;
+}
+
+.u-zuc-lightGrey {
+    color: #c8c8c8;
 }
 
 .smarterLiving-logo {
@@ -61,54 +57,78 @@
     margin-top: 10px
 }
 
-.member-login>.zuc-input-group {
+.member-login > .zuc-input-group {
     width: 80%;
     margin-bottom: 1em
 }
 
-.member-login>.zuc-input-group>.zuc-input-name {
-    color: #36384b;
-}
+    .member-login > .zuc-input-group > .zuc-input-name {
+        color: #36384b
+    }
 
-.member-login>.zuc-input-group>input[type=date],.member-login>.zuc-input-group>input[type=email],.member-login>.zuc-input-group>input[type=password],.member-login>.zuc-input-group>input[type=search],.member-login>.zuc-input-group>input[type=tel],.member-login>.zuc-input-group>input[type=text],.member-login>.zuc-input-group>input[type=url],.member-login>.zuc-input-group>input[type=number] {
-    width: 100%;
-    height: 50px;
-    border: 2px solid #54565a;
-    border-radius: 10px;
-    background-color: #fbfbfb;
-    color: #36384B;
-    font-family: aktiv-grotesk, Helvetica, sans-serif;
-    padding: 10px;
-    font-weight: 500;
-}
+    .member-login > .zuc-input-group > input[type=date],
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=url], input[type=number] {
+        width: 100%;
+        height: 50px;
+        border: 2px solid #54565a;
+        border-radius: 10px;
+        background-color: #fbfbfb;
+        color: #898a8d;
+        font-family: aktiv-grotesk, Helvetica, sans-serif;
+        padding: 10px
+    }
 
-.member-login>.zuc-input-group>.zuc-input-link {
-    text-align: left;
-    color: #36384b;
-    margin-top: 5px
-}
+    .member-login > .zuc-input-group > .zuc-input-link {
+        text-align: left;
+        color: #36384b;
+        margin-top: 5px
+    }
 
-.member-login>.form-buttons {
+.member-login > .form-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row
+    flex-direction: row;
+    margin:1em auto;
+}
+
+.becomeMember-form-container, .becomeMember-form-success{
+    border:5px solid #70E9B2;
+    border-radius: 20px;
+}
+.becomeMember-form-container > .title, .becomeMember-form-success > .title{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.blue-hr{
+    background-color: #434DA0;
+    width: 75%;
+    /*height: 2px;*/
+    margin:15px auto;
+    border-top:1px solid #434DA0;
+    border-bottom: 0;
+    color: #434DA0;
 }
 
 .remember-me {
-    width: 80%;
+    width: 100%;
     /*margin-left: 2.5em*/
-    margin:2em 0 1em 0;
 }
 
-.remember-me>input {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    font-family: aktiv-grotesk, Helvetica, sans-serif;
-    font-size: 12px;
-    margin: 0 auto
-}
+    .remember-me > input {
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        font-family: aktiv-grotesk, Helvetica, sans-serif;
+        font-size: 12px;
+        margin: 0 auto
+    }
 
 .square-radio {
     display: block;
@@ -123,11 +143,11 @@
     -ms-user-select: none
 }
 
-.square-radio>input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer
-}
+    .square-radio > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer
+    }
 
 .checkmark {
     position: absolute;
@@ -139,11 +159,11 @@
     border-radius: 0
 }
 
-.square-radio:hover input~.checkmark {
+.square-radio:hover input ~ .checkmark {
     background-color: #ccc
 }
 
-.square-radio input:checked~.checkmark {
+.square-radio input:checked ~ .checkmark {
     border: 2px solid #434da0;
     background-color: #fff
 }
@@ -154,7 +174,7 @@
     display: none
 }
 
-.remember-me input:checked~.checkmark:after {
+.remember-me input:checked ~ .checkmark:after {
     display: block
 }
 
@@ -167,24 +187,29 @@
     background: #434da0
 }
 
+.remember-me > span{
+    position: relative;
+    margin-left:5px;
+}
+
 .jobPostings {
     width: 60%;
     margin: 0 auto
 }
 
-.jobPostings h5 {
-    font-size: 2em
-}
+    .jobPostings h5 {
+        font-size: 2em
+    }
 
-.jobPostings .u-text-uppercase {
-    text-transform: uppercase
-}
+    .jobPostings .u-text-uppercase {
+        text-transform: uppercase
+    }
 
-.jobPostings p,
-.jobPostings ul li {
-    font-size: 1.125rem;
-    line-height: 1.5
-}
+    .jobPostings p,
+    .jobPostings ul li {
+        font-size: 1.125rem;
+        line-height: 1.5
+    }
 
 .purple-arrows {
     transform: rotate(270deg);
@@ -221,9 +246,6 @@
     font-size: 1.15em
 }
 
-.values-container {
-    margin-top: 10vw
-}
 
 .values-container .zuc-sixgrid-container {
     padding: 0 16vw
@@ -235,30 +257,30 @@
     padding: 0 0 2vw
 }
 
-.our-values .zuc-sixgrid-item img {
-    width: 80%
-}
+    .our-values .zuc-sixgrid-item img {
+        width: 80%
+    }
 
 .commitments {
     width: 100%;
     height: auto
 }
 
-.commitments .zuc-sixgrid-container {
-    margin-top: 2em
-}
+    .commitments .zuc-sixgrid-container {
+        margin-top: 2em
+    }
 
-.commitments>.zuc-title-container>h4 {
-    font-size: 1.5em
-}
+    .commitments > .zuc-title-container > h4 {
+        font-size: 1.5em
+    }
 
-.commitments section.zuc-sixgrid-container {
-    margin-top: 10vw
-}
+    .commitments section.zuc-sixgrid-container {
+        margin-top: 10vw
+    }
 
-.commitments>h2.u-zuc-indigo {
-    margin-bottom: 1em
-}
+    .commitments > h2.u-zuc-indigo {
+        margin-bottom: 1em
+    }
 
 .commitment-featured-content p {
     margin-top: 1em
@@ -278,9 +300,9 @@
     font-weight: 700
 }
 
-.circle:hover {
-    cursor: pointer
-}
+    .circle:hover {
+        cursor: pointer
+    }
 
 .plus-sign {
     line-height: 1em
@@ -295,29 +317,33 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: space-around;
     margin-top: 4vw
 }
 
-.gallery-arrow>a>i {
+.gallery-arrow > a > i {
     color: #434da0;
     font-weight: 700
 }
 
-.gallery-image>img {
+.gallery-image > img {
     width: 100%
 }
 
-.gallery-text>.subtext-team {
+.gallery-text > .subtext-team {
     font-size: 22px;
     font-weight: 500;
-    font-style: italic
+    /*font-style: italic*/
+    width: 90%;
 }
 
 .gallery-title {
     color: #434da0;
     font-family: PublicoHeadline;
-    font-weight: 700
+    /*font-weight: 700*/
+    margin-bottom: 0;
+    font-size: 35px;
 }
 
 .gallery-subtitle {
@@ -326,33 +352,34 @@
     font-size: 1.1em
 }
 
-.gallery-info>p {
+.gallery-info > p {
     font-size: 1.25em;
-    margin-top: 1em
+    /*margin-top: 1em*/
 }
 
-.gallery-info>a>i {
+.gallery-info > a > i {
     font-size: 2em;
     /*margin-top: .95em;*/
-    margin:10px;
+    margin: 10px;
     color: #0077b5
 }
 
-.linkedin-link{
+.linkedin-link {
     float: left;
 }
 
-.personal-link{
-    margin:10px 3em;
+.personal-link {
+    margin: 10px 3em;
     text-decoration: underline;
 }
+
 .thumbnails {
     margin-top: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    margin-left: 0!important
+    margin-left: 0 !important
 }
 
 .low-opacity {
@@ -365,7 +392,7 @@
 }
 
 .thumbnail {
-    padding: 0!important;
+    padding: 0 !important;
     height: 100px;
     border: 1px solid #fff
 }
@@ -376,20 +403,20 @@
     align-items: center;
 }
 
-.more-page-links>a {
-    padding: 1em;
-    text-transform: uppercase;
-    font-size: 1.35rem;
-    font-weight: 600;
-    color: #a3acff
-}
+    .more-page-links > a {
+        padding: 1em;
+        text-transform: uppercase;
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: #a3acff
+    }
 
-.more-page-links>a:hover {
-    color: #fff;
-    background-color: #434da0;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out
-}
+        .more-page-links > a:hover {
+            color: #fff;
+            background-color: #434da0;
+            transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out
+        }
 
 .aboutUs.zuc-footer-wrapper {
     margin-top: 0
@@ -407,26 +434,27 @@
 }
 
 .culture-text {
-    width: 70%;
+    width: 55%;
     position: relative;
-    bottom: 15em
+    bottom: 15em;
 }
 
-.culture-text h1 {
-    color: #434da0;
-    font-family: PublicoHeadline, aktiv-grotesk, Helvetica, sans-serif;
-    font-size: 4em;
-    text-align: center
-}
+    .culture-text h1 {
+        color: #434da0;
+        font-family: PublicoHeadline, aktiv-grotesk, Helvetica, sans-serif;
+        font-size: 4em;
+        text-align: center
+    }
 
-.culture-text p {
-    text-align: center;
-    font-size: 21px;
-    font-family: aktiv-grotesk, Helvetica, sans-serif;
-    padding: 1em;
-    color: #36384b;
-    line-height: 30px
-}
+    .culture-text p {
+        text-align: center;
+        font-size: 21px;
+        font-family: aktiv-grotesk, Helvetica, sans-serif;
+        padding: 1em;
+        color: #36384b;
+        line-height: 30px;
+        font-weight: 500;
+    }
 
 .two-columns {
     display: flex;
@@ -442,7 +470,8 @@
 }
 
 .culture-boxShadow {
-    box-shadow: 1px 5px 12px #888
+    /*box-shadow: 1px 5px 12px #888;*/
+    box-shadow: 1px 5px 12px rgba(0,0,0,0.09);
 }
 
 .scroll-gallery-container {
@@ -452,52 +481,56 @@
 }
 
 .slider-container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center
 }
 
-.slider-container .left-slide,
-.slider-container .right-slide {
-    width: auto;
-    position: relative;
-    z-index: 100
-}
+    .slider-container .left-slide,
+    .slider-container .right-slide, .employeesFeedback-slider .left-slide, .employeesFeedback-slider .right-slide {
+        width: auto;
+        position: relative;
+        z-index: 100
+    }
 
-.slider-container .left-slide {
-    left: 2%
-}
+    .slider-container .left-slide {
+        left: 2%
+    }
 
-.slider-container .left-slide img,
-.slider-container .right-slide img {
-    width: 60px
-}
+        .slider-container .left-slide img,
+        .slider-container .right-slide img, .employeesFeedback-slider .left-slide, .employeesFeedback-slider .right-slide {
+            width: 60px
+        }
 
-.slider-container .right-slide {
-    right: 2%
-}
+    .slider-container .right-slide {
+        right: 2%
+    }
 
-.slider-gallery {
+.slider-gallery, .employeesFeedback-slider-gallery {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    display: flex!important;
+    display: flex !important;
     justify-content: center;
     align-items: center
 }
 
-.slider-gallery .slider-image {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px
+.employeesFeedback-slider-gallery {
+    margin: 2em auto;
 }
+
+    .slider-gallery .slider-image, .employeesFeedback-slider-gallery .employeesFeedback-slider-image {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px
+    }
 
 .slick-slide img {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 
 .community-hero {
@@ -508,6 +541,11 @@
 .bottom-5 {
     position: relative;
     bottom: 5em;
+}
+
+.bottom-15 {
+    position: relative;
+    bottom: 15em;
 }
 
 .organization-container {
@@ -527,24 +565,23 @@
     align-items: center
 }
 
-.org-logo img {
-    width: 100%;
-    /*display: table-cell;*/
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    /*padding: 1em;*/
-    vertical-align: middle
-}
+    .org-logo img {
+        width: 100%;
+        /*display: table-cell;*/
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        /*padding: 1em;*/
+        vertical-align: middle
+    }
 
-.org-logo>.width-60 {
-    width: 60%
-}
+    .org-logo > .width-60 {
+        width: 60%
+    }
 
 .joinZucora-hero {
-    background: url(/Images/Zuc/images/join-zucora/joinbanner.jpg) top center no-repeat;
+    background: url(../../../Images/Zuc/images/join-zucora/joinbanner.jpg) top center no-repeat;
     background-size: contain;
-
 }
 
 .join-box {
@@ -554,19 +591,19 @@
     padding: 5em
 }
 
-.join-box>div {
-    text-align: center
-}
+    .join-box > div {
+        text-align: center
+    }
 
 .zucora-website {
     color: #434da0;
     font-family: PublicoHeadline, aktiv-grotesk, Helvetica, sans-serif;
     font-size: 4em;
-    text-align: center
+    /*text-align: center*/
 }
 
 .perks-container {
-    bottom: 20em
+    bottom: 18em;
 }
 
 .perks-boxes {
@@ -574,59 +611,61 @@
     grid-template-columns: 33% 33% 33%;
     grid-gap: 4em 10px;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 4.5em;
     align-items: flex-start
 }
 
 .box-item {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: grid;
-    box-shadow: 0 0 80px rgba(0, 0, 0, .3)
+    /*box-shadow: 0 0 80px rgba(0, 0, 0, .3)*/
 }
 
-.box-item img {
-    display: block;
-    margin: 0 auto;
-    padding: 2em;
-    max-width: 100%
-}
+    .box-item img {
+        display: block;
+        margin: 0 auto;
+        /*padding: 2em;*/
+        max-width: 100%
+    }
 
-.box-item h3 {
-    background-color: #434da0;
-    color: #fff;
-    font-family: PublicoHeadline, aktiv-grotesk, Helvetica, sans-serif;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 24px;
-    padding: 13px
-}
+    .box-item h3 {
+        /*background-color: #434da0;*/
+        color: #434da0;
+        font-family: aktiv-grotesk, Helvetica, sans-serif;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 20px;
+        padding: 13px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
 
 .jobOpening-box {
-    width: 80%;
+    width: 90%;
     display: block;
-    margin: 2em auto;
-    padding: 2em
+    /*margin: 2em auto;*/
+    /*padding: 2em;*/
 }
 
-.jobOpening-box h3 {
-    font-size: 48px;
-    color: #434da0;
-    font-family:PublicoHeadline,aktiv-grotesk,Helvetica,sans-serif;
-    /*font-weight: 500;*/
-    font-size: 2.5em;
-    margin-bottom: 0
-}
+    .jobOpening-box h3 {
+        font-size: 48px;
+        /*color: #434da0;*/
+        font-family: PublicoHeadline,aktiv-grotesk,Helvetica,sans-serif;
+        /*font-weight: 500;*/
+        font-size: 2.5em;
+        margin-bottom: 0
+    }
 
-.jobOpening-box p {
-    /*color: #5e5f6e;*/
-    /*font-family: "Aktiv Grotesk";*/
-    /*font-weight: 500;*/
-    /*font-size: 1.75em;*/
-    margin-bottom: 1em
-}
+    .jobOpening-box p {
+        /*color: #5e5f6e;*/
+        /*font-family: "Aktiv Grotesk";*/
+        /*font-weight: 500;*/
+        /*font-size: 1.75em;*/
+        margin-bottom: 1em
+    }
 
-.culture-text-p{
+.culture-text-p {
     font-size: 20px;
     font-family: aktiv-grotesk, Helvetica, sans-serif;
     /*padding-top: 13px;*/
@@ -642,18 +681,18 @@
     color: #64eeb0
 }
 /*New Smarter Protection Plan page*/
-.smart-protection-plans-container,.smarter-retailer-container{
-    margin:9% auto;
-    padding:0 2em;
-    width:100%;
+.smart-protection-plans-container, .smarter-retailer-container {
+    margin: 12% auto;
+    padding: 0 2em;
+    width: 100%;
 }
 
-.smart-protection-plans-container .zuc-title-flag, .smarter-retailer-container .zuc-title-flag{
-    margin:2em auto;
-    width: 5em;
-}
+    .smart-protection-plans-container .zuc-title-flag, .smarter-retailer-container .zuc-title-flag {
+        margin: 2em auto;
+        width: 5em;
+    }
 
-.two-column-smarterPlan{
+.two-column-smarterPlan {
     display: grid;
     grid-template-columns: 50% 50%;
     /*grid-gap:2.5em 2.5em;*/
@@ -663,19 +702,20 @@
     margin-top: 2em;
 }
 
-.two-column-smarterPlan h3{
-    font-family: aktiv-grotesk,Helvetica,sans-serif;
-}
-.smart-protection-plans-container h4,.smarter-retailer-container h4{
+    .two-column-smarterPlan h3 {
+        font-family: aktiv-grotesk,Helvetica,sans-serif;
+    }
+
+.smart-protection-plans-container h4, .smarter-retailer-container h4 {
     line-height: 27px;
 }
 
-.smarter-partner-logo{
-    width:32%;
+.smarter-partner-logo {
+    width: 32%;
     height: auto;
 }
 
-.two-grid-column-center{
+.two-grid-column-center {
     display: grid;
     grid-template-columns: 50% 50%;
     align-content: center;
@@ -683,81 +723,83 @@
     /* padding:1em 20%; */
 }
 
-.video-box{
-    width:95%;
+.video-box {
+    width: 95%;
     /* width:400px; */
-    height:300px;
+    height: 300px;
     background-color: white;
-    margin:0 auto;
+    margin: 0 auto;
     cursor: pointer;
     box-shadow: 0 0.1vw 3.43vw 0 hsla(0,0%,5%,.2);
     -webkit-shadow: 0 0.1vw 3.43vw 0 hsla(0,0%,5%,.2);
 }
 
-.video-box p{
-    background-color: #434da0;
+    .video-box p {
+        background-color: #434da0;
+        color: white;
+        padding: 10px;
+        font-family: aktiv-grotesk,Helvetica,sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        min-height: 70px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.fa-play, .fa-play-circle {
+    font-size: 5em;
+    /* color:#434da0; */
     color: white;
-    padding:10px;
-    font-family: aktiv-grotesk,Helvetica,sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    min-height: 70px;
-    height: auto;
-    display: flex;
-    align-items: center;
+}
+
+.play-icon {
+    position: relative;
+    bottom: 70%;
+}
+
+.video-background {
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px hsla(0,0%,5%,.2);
+}
+
+.video-back1 {
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/zucorahome-team-min.jpg');
+}
+
+.video-back2 {
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-2-background.jpg');
+}
+
+.video-back3 {
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');
+}
+
+.video-back4 {
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-4-background.jpg');
+}
+
+.video-back5 {
+    background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-5-background.jpg');
+}
+
+.three-grid-column-center {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-content: center;
     justify-content: center;
+    /* padding:1em 15%; */
+    margin: 7% auto;
 }
 
-.fa-play,.fa-play-circle{
-  font-size:5em;
-  /* color:#434da0; */
-  color: white;
-}
-
-.play-icon{
-  position: relative;
-  bottom: 70%;
-}
-.video-background{
- background-position: top center;
- background-size: cover;
- width:100%;
- height: 100%;
- background-repeat: no-repeat;
- box-shadow: inset 0 0 0 2000px hsla(0,0%,5%,.2);
-}
-
-    .video-back1{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/zucorahome-team-min.jpg');
-    }
-
-    .video-back2{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-2-background.jpg');
-    }
-
-    .video-back3{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');
-    }
-
-    .video-back4{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-4-background.jpg');
-    }
-
-    .video-back5{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-5-background.jpg');
-    }
-.three-grid-column-center{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  align-content: center;
-  justify-content: center;
-  /* padding:1em 15%; */
-  margin:7% auto;
-}
-
-.modal-container{
-  position: fixed;
+.modal-container {
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -767,125 +809,132 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modalCustom{
+.modalCustom {
     border: 2px solid #36384B;
     background: white;
     width: 70%;
-    margin: 15% auto;
-    padding:1em;
+    margin: 10% auto;
+    padding: 1em;
 }
 
-.modalCustom .close-modal{
-  font-size: 1.5em;
-    padding: 14px;
-    color: #70E9B2;
-    content: 'X';
-    float: right;
-    color: #70E9B2;
-    font-weight: 300;
-    cursor: pointer;
-    font-family: cursive;
-}
-.modal-content{
-  position: relative;
+    .modalCustom .close-modal {
+        font-size: 1.5em;
+        padding: 14px;
+        color: #70E9B2;
+        content: 'X';
+        float: right;
+        color: #70E9B2;
+        font-weight: 300;
+        cursor: pointer;
+        /*font-family: cursive;*/
+    }
+
+.modal-content {
+    position: relative;
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
-.modalCustom h2{
-  font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
+.modalCustom h2 {
+    font-family: "PublicoHeadline", aktiv-grotesk, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 3em;
     color: #434DA0;
     text-align: center;
     padding: 12px;
 }
-.purple-background{
-  background-color: #434DA0;
+
+.purple-background {
+    background-color: #434DA0;
 }
 
-.becomePartner-form-container{
-
-}
-.becomePartner-form{
-  padding:0;
-  width:40%;
+.becomePartner-form-container {
 }
 
-.purple-background h2{
-  color: white;
-  font-size: 18px;
-  padding: 1em;
-  font-family: aktiv-grotesk, Helvetica, sans-serif;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 0;
+.becomePartner-form {
+    padding: 0;
+    width: 40%;
 }
 
-.sps-form-style{
-  margin:0 auto;
-  padding:1em;
-  width: 70%;
+.purple-background h2 {
+    color: white;
+    font-size: 18px;
+    padding: 1em;
+    font-family: aktiv-grotesk, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0;
 }
 
-.sps-form-style .column-div{
-  display: flex;
-  flex-flow: column;
-  /* align-items: center; */
-  align-content: flex-start;
-  justify-content: flex-start;
-  padding:5px 0;
+.sps-form-style {
+    margin: 0 auto;
+    padding: 1em;
+    width: 70%;
 }
-.column-div label{
+
+    .sps-form-style .column-div {
+        display: flex;
+        flex-flow: column;
+        /* align-items: center; */
+        align-content: flex-start;
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+.column-div label {
     font-family: aktiv-grotesk,Helvetica,sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
-.column-div input, .column-div select{
-  height: 50px;
-  color:#36384B;
-  padding:10px;
-  border: 2px solid #36384B;
-  width: 95%;
-  font-size: 16px;
-  font-family: aktiv-grotesk,Helvetica,sans-serif;
-  border-radius: 10px;
-  height: 50px;
+.column-div input, .column-div select {
+    height: 50px;
+    color: #36384B;
+    padding: 10px;
+    border: 2px solid #36384B;
+    width: 95%;
+    font-size: 16px;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    border-radius: 10px;
+    height: 50px;
 }
 
-.column-div input{
-  background-color: #FFFFFF;
+.column-div input {
+    background-color: #FFFFFF;
 }
 
-.column-div select{
-  background-color: #A3ACFF;
+.column-div select {
+    background-color: #A3ACFF;
 }
-.column-div input[type="radio"]{
-  width:25px;
-  height: 25px;
-  margin:5px;
+
+.column-div input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
 }
-.two-grid-column{
-  display: grid;
-  grid-template-columns: 52% 45%;
-  align-items: center;
+
+.two-grid-column {
+    display: grid;
+    grid-template-columns: 52% 45%;
+    align-items: center;
 }
-.thankYou-modal p{
-    padding:1em 3em;
+
+.thankYou-modal p {
+    padding: 1em 3em;
     text-align: center;
     font-size: 26px;
-    color:#36384B;
+    color: #36384B;
     font-weight: 500;
 }
 
-.noZindex{
+.noZindex {
     z-index: 0;
 }
-.shop-now-link{
+
+.shop-now-link {
     width: 100%;
     font-size: 5vw;
     text-transform: uppercase;
@@ -896,24 +945,24 @@
     letter-spacing: 1px;
 }
 /*New styling for Covid 19 page*/
-.important-msg{
+.important-msg {
     background-color: #F3202C;
     padding: 10px;
     font-size: 1em;
-    text-align: center; 
+    text-align: center;
     font-family: aktiv-grotesk,Helvetica,sans-serif;
     color: white;
 }
 
-.covid19-container{
+.covid19-container {
     margin-top: 14%;
 }
 
-.zucora-color-logo{
-    width:30%;
+.zucora-color-logo {
+    width: 30%;
 }
 
-.notice-text-container{
+.notice-text-container {
     font-family: aktiv-grotesk,Helvetica,sans-serif;
     /*padding:0 20% 0 15%;*/
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
@@ -921,17 +970,17 @@
     margin: 0 auto;
 }
 
-.padding-5{
+.padding-5 {
     padding: 5em 3em 1em 3em;
 }
 
-.notice-text-container h3{
-    color:#434DA0;
+.notice-text-container h3 {
+    color: #434DA0;
     font-weight: 600;
     font-size: 30px;
 }
 
-.silver-text{
+.silver-text {
     font-size: 16px;
     color: #8a8a8a;
     padding: 0;
@@ -940,12 +989,12 @@
     font-weight: 500;
 }
 
-.notice-text-container h4{
-    color:#36384B;
-
+.notice-text-container h4 {
+    color: #36384B;
 }
-.notice-text-container p{
-    margin:7px 0;
+
+.notice-text-container p {
+    margin: 7px 0;
     font-size: 18px;
     line-height: 30px;
 }
@@ -959,22 +1008,23 @@
     font-family: aktiv-grotesk,Helvetica,sans-serif;
 }
 */
-.grid-text-image{
-        display: grid;
-        grid-template-columns: 65% 35%;
-        justify-content: space-between;
-        align-content: center;
-        align-items: center;
+.grid-text-image {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
-.brad-image{
+.brad-image {
     width: 55%;
 }
 
-.notice-text-container > .rainbow-purple-background{
+.notice-text-container > .rainbow-purple-background {
     /*padding:2em 3em 0 3em;*/
 }
-.rainbow-purple-background h3, .rainbow-purple-background p{
+
+.rainbow-purple-background h3, .rainbow-purple-background p {
     color: white;
     text-align: left;
     font-family: aktiv-grotesk,Helvetica,sans-serif;
@@ -982,21 +1032,22 @@
 }
 
 /*Be Rainbow section*/
-.rainbow-container{
+.rainbow-container {
     max-width: 100%;
 }
 
-.image-width{
-    width:auto;
+.image-width {
+    width: auto;
     max-width: 100%;
 }
-.purple-wave-background{
-    width:100%;
+
+.purple-wave-background {
+    width: 100%;
     background: url('../../../Images/Zuc/images/community/wave.png');
-    background-position:bottom center;
+    background-position: bottom center;
     background-size: cover;
-    height:600px;
-    width:100%;
+    height: 600px;
+    width: 100%;
     max-width: 100%;
     position: relative;
     z-index: -100;
@@ -1005,84 +1056,84 @@
     /*bottom:1.5em;*/
 }
 
-.rainbow-text{
+.rainbow-text {
     position: relative;
     z-index: 100;
-    width:70%;
-    margin:0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
-.rainbow-text p{
-    font-size: 24px;
-    color: white;
-    font-family: aktiv-grotesk,Helvetica,sans-serif;
-    /*padding-top:5em;*/
-}
-.rainbow-text-steps{
+
+    .rainbow-text p {
+        font-size: 24px;
+        color: white;
+        font-family: aktiv-grotesk,Helvetica,sans-serif;
+        /*padding-top:5em;*/
+    }
+
+.rainbow-text-steps {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 7%;
 }
 
-.rainbow-text-steps h2{
-    font-size: 48px;
-    font-family: PublicoHeadline, Helvetica, sans-serif;
-    color: white;
+    .rainbow-text-steps h2 {
+        font-size: 48px;
+        font-family: PublicoHeadline, Helvetica, sans-serif;
+        color: white;
+    }
 
-}
+    .rainbow-text-steps p {
+        padding-top: 0;
+        margin: 10px 0;
+    }
 
-.rainbow-text-steps p{
-    padding-top: 0;
-    margin:10px 0;
-}
-
-.rainbow-text-steps .number-bullet{
-    font-size: 70px;
-    color: white;
-    font-family: PublicoHeadline, Helvetica, sans-serif;
-    font-weight: 300;
-}
+    .rainbow-text-steps .number-bullet {
+        font-size: 70px;
+        color: white;
+        font-family: PublicoHeadline, Helvetica, sans-serif;
+        font-weight: 300;
+    }
 
 /*New rainbow section edits*/
 
-.rainbowInitiative-container{
-    width:70%;
-    margin:0 auto;
-    margin-top:5em;
+.rainbowInitiative-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5em;
 }
 
-.rainbowInitiative-container p{
-    width:80%;
-    margin:3em auto;
-    font-size: 21px;
-}
+    .rainbowInitiative-container p {
+        width: 80%;
+        margin: 3em auto;
+        font-size: 21px;
+    }
 
-.rainbow-purple-background{
+.rainbow-purple-background {
     background-color: #434DA0;
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
     max-width: 100%;
 }
 
-.rainbow-purple-background .rainbow-text p{
-     padding:3em 0 2em 0;
+    .rainbow-purple-background .rainbow-text p {
+        padding: 3em 0 2em 0;
+    }
+
+.polaroid-image {
 }
 
-.polaroid-image{
-
-}
-
-.rainbow-logo{
+.rainbow-logo {
     position: relative;
-    top:18%;
+    top: 18%;
 }
 
-.sanitizer-container{
-    width:70%;
-    margin:0 auto;
+.sanitizer-container {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 40% 60%;
     /*grid-column-gap: 1em;*/
@@ -1090,211 +1141,379 @@
     justify-content: space-between;
 }
 
-.sanitizer-container a{
-    text-decoration: underline;
-}
+    .sanitizer-container a {
+        text-decoration: underline;
+    }
 
-.sanitizer-image{
+.sanitizer-image {
     /*position: relative;*/
     /*top:2%;*/
 }
 
-.sanitizer-container .culture-text{
+.sanitizer-container .culture-text {
     bottom: 0;
-    width:100%;
+    width: 100%;
 }
 
-/*New Gift card page*/
 
-.newLogin-logo{
-    width:30% !important;
-    max-width: 100% !important;
-    padding:15px;
+/*New About us page changes*/
+
+.zuc-about-hero-textbox > h4 {
+    font-size: 1.95em;
+    margin: 0.85em 0;
 }
 
-.giftCard-login-container{
+.zuc-about-hero-textbox > ul, .more-text-first > ul {
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin-left: 1.35em;
+}
+
+    .zuc-about-hero-textbox > ul > li, .more-text-first > ul > li {
+        line-height: 24px;
+    }
+
+.new-rainbowSection {
+    background-image: url('../../../Images/Zuc/images/about/Wave.png');
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+    height: 750px;
+    z-index: -100;
+    margin-top: 2em;
+}
+
+.new-rainbowSection-text {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+    text-align: center;
+    color: #36384B;
+    position: relative;
+    top: 25%;
+}
+
+    .new-rainbowSection-text > p {
+        font-size: 1.80em;
+        font-weight: 400;
+        color: #36384B;
+        margin: 2em 3em;
+    }
+
+.more-text-first, .more-text-second, .more-text-third {
+    display: none;
+}
+
+.whyZucora-section {
+    bottom: 22em;
+}
+
+.whyZucora-title {
+    font-size: 1.95em;
+    margin: 0 0 0 15px;
+}
+
+.whyZucora-text {
+    width: 85%;
+    margin-left: 20px;
+}
+
+.remoteLife-section {
+    bottom: 12em;
+}
+
+.remoteLife-article-section {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2em;
+    grid-column-gap: 2em;
+    grid-template-columns: 31% 31% 31%;
+}
+
+.remoteLife-article > img {
     width: 100%;
     max-width: 100%;
 }
 
-.giftCard-form > .zuc-input-group >input[type=date], .giftCard-form > .zuc-input-group > input[type=email], .giftCard-form > .zuc-input-group > input[type=password], .giftCard-form > .zuc-input-group > input[type=search],.giftCard-form > .zuc-input-group > input[type=tel], .giftCard-form > .zuc-input-group > input[type=text],.giftCard-form > .zuc-input-group > input[type=url], .giftCard-form > .zuc-input-group > input[type=number], .giftCard-form > .zuc-input-group >input[type=text]:active,.giftCard-form > .zuc-input-group >  input[type=text]:focus, .giftCard-form > .zuc-input-group > input[type=text]:hover{
-    border:none;
-    height: 65px;
-    background-color: rgba(163, 172, 255, 0.2);
+.remoteLife-article {
+    display: grid;
+    width: 100%;
+    height: 100%;
 }
 
-.giftCard-form > .zuc-input-group > .zuc-input-name{
-    font-size: 20px;
-    font-weight: bold;
+.remoteLife-articleText {
+    padding: 15px 10px;
 }
 
-.button-margin{
-    margin:16px;
+.employeesFeedback-section {
+    position: relative;
+    bottom: 12em;
 }
 
+.employeesFeedback-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+}
 
-@media only screen and (max-width: 350px){
-    .purple-wave-background{
+    .employeesFeedback-slider .left-slide {
+        left: 3%;
+    }
+
+    .employeesFeedback-slider .right-slide {
+        right: 3%;
+    }
+
+@media only screen and (max-width: 350px) {
+    .purple-wave-background {
         height: 1200px !important;
     }
 
-    .rainbow-text-steps{
+    .rainbow-text-steps {
         padding-top: 20%;
     }
 }
+
+
 @media only screen and (min-width:641px) and (max-width:1024px) {
     .our-values .zuc-sixgrid-item img {
         width: 60%
     }
+
     .background-image {
         height: 600px
     }
-    .culture-gallery-title>h2 {
+
+    .culture-gallery-title > h2 {
         font-size: 2em
     }
+
     .org-logo {
         height: auto;
         min-height: auto
     }
-    .org-logo .width-60 {
-        width: 80%
-    }
-    .three-grid-column-center{
+
+        .org-logo .width-60 {
+            width: 80%
+        }
+
+    .three-grid-column-center {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-row-gap:6em;
-        margin:9% auto;
+        grid-row-gap: 6em;
+        margin: 9% auto;
     }
-    .smart-protection-plans-container,.smarter-retailer-container{
-          margin:15% auto;
+
+    .smart-protection-plans-container, .smarter-retailer-container {
+        margin: 18% auto;
     }
-      .purple-wave-background{
+
+    .purple-wave-background {
         height: 1000px;
     }
-    .rainbow-text{
+
+    .rainbow-text {
         width: 90%;
     }
-    .rainbow-text-steps{
+
+    .rainbow-text-steps {
         /*grid-template-columns: 100%;*/
-        width:90%;
+        width: 90%;
         grid-column-gap: 1em;
     }
 
-    .giftCard-login-container{
-        margin:20% auto;
-        padding:1.5em;
+    .new-rainbowSection-text {
+        width: 90%;
     }
-   
 
+    .left-side-image {
+        flex-flow: column nowrap
+    }
+
+    .right-side-image {
+        flex-flow: column-reverse nowrap
+    }
+
+    .commitment-featured-content {
+        width: 100%;
+    }
+
+    .remoteLife-article-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 2em;
+    }
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
     .our-values .zuc-sixgrid-item img {
         width: 60%
     }
-    .values-container {
-        margin-top: 17vw
-    }
+
     .background-image {
         height: 600px
     }
+
     .org-logo {
         height: auto;
         min-height: auto
     }
-    .org-logo .width-60 {
-        width: 80%
-    }
-    .sps-form-style{
+
+        .org-logo .width-60 {
+            width: 80%
+        }
+
+    .sps-form-style {
         width: 100%;
     }
-      .becomePartner-form{
-        width:100%;
-    }
-    .smart-protection-plans-container,.smarter-retailer-container{
-      margin:15% auto;
-    }
- }
 
-@media only screen and (max-width:767px) {
-    .zuc-modal-logo {
-        width: 80%
+    .becomePartner-form {
+        width: 100%;
     }
-    .member-login>.form-buttons {
-        flex-direction: column
+
+    .smart-protection-plans-container, .smarter-retailer-container {
+        margin: 18% auto;
     }
-    .thumbnails {
-        display: none
+
+    .new-rainbowSection-text {
+        width: 90%;
     }
-    .gallery-text {
-        padding: 0 2em
-    }
+
     .left-side-image {
         flex-flow: column nowrap
     }
+
     .right-side-image {
         flex-flow: column-reverse nowrap
     }
+
+    .commitment-featured-content {
+        width: 100%;
+    }
+
+    .remoteLife-article-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 2em;
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .zuc-modal-logo {
+        width: 80%
+    }
+
+    .member-login > .form-buttons {
+        flex-direction: column
+    }
+
+    .thumbnails {
+        display: none
+    }
+
+    .gallery-text {
+        padding: 0 2em
+    }
+
+    .left-side-image {
+        flex-flow: column nowrap
+    }
+
+    .right-side-image {
+        flex-flow: column-reverse nowrap
+    }
+
     .commitment-featured-content,
     .commitment-featured-image {
         width: 100%;
         padding: 0
     }
-    .commitment-featured-image>img {
-        max-width: 100%
-    }
+
+        .commitment-featured-image > img {
+            max-width: 100%;
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+        }
+
     .commitment-featured-content {
         padding: 0 1em;
         margin-top: 1em
     }
+
     .show-for-mobile-only {
         display: block
     }
+
     .tip {
         display: none
     }
+
     #value-text {
         display: none;
         opacity: 0
     }
-    .gallery-arrow>a>i {
-        font-size: 3em
+
+    .gallery-arrow > a > i {
+        font-size: 7em
     }
+
     .main-info {
         justify-content: space-around
     }
+
     .imageGallery-display {
         display: grid;
         width: 60%;
         justify-content: center;
         align-items: center
     }
+
     .our-values .zuc-sixgrid-item {
         width: 35%
     }
-    .values-container>h2 {
-        margin-top: 1em
+
+    .values-container {
+        margin-top: 30em;
     }
-    .more-page-links{
+
+        .values-container > h2 {
+            margin-top: 1em
+        }
+
+    .more-page-links {
         flex-direction: column;
     }
+
     .background-image {
         height: 380px
     }
+
     .culture-text {
         bottom: 8em;
         width: 100%
     }
-    .width-80 {
-        width: 90%
+
+    .width-80, .width-70 {
+        width: 90%;
     }
+
     .two-column-container {
         bottom: 5em
     }
+
     .two-columns {
         display: flex;
         flex-direction: column
     }
+
     .scroll-gallery-container {
         flex-direction: column;
         position: relative;
@@ -1303,158 +1522,215 @@
         display: block;
         margin: 0 auto
     }
+
     .scroll-gallery {
         margin-top: 2em
     }
-    .scroll-gallery>.left-slide>a>img,
-    .scroll-gallery>.right-slide>a>img {
-        width: 100%
-    }
+
+        .scroll-gallery > .left-slide > a > img,
+        .scroll-gallery > .right-slide > a > img {
+            width: 100%
+        }
+
     .organization-container {
         grid-template-columns: auto;
         padding: 1em
     }
-    .organization-container>.culture-gallery-title {
-        padding: 1em
-    }
+
+        .organization-container > .culture-gallery-title {
+            padding: 1em
+        }
+
     .join-box {
         width: 100%;
         position: relative;
         bottom: 10em;
         z-index: 100;
-        padding: 3em
+        padding: 3em;
     }
+
     .perks-container {
         bottom: 0;
         text-align: center
     }
-    .perks-container>.zuc-title-container {
+
+    .whyZucora-section {
+        bottom: 5em;
+        text-align: left;
+    }
+
+    .whyZucora-points {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .whyZucora-text {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .perks-container > .zuc-title-container {
         justify-content: center
     }
+
     .perks-boxes {
         grid-template-columns: auto
     }
+
     .hiring-container {
         margin-top: 2em
     }
-    .hiring-container>.zucora-website {
-        font-size: 30px;
-        font-weight: 500
-    }
-    .smart-protection-plans-container{
-        margin-top:25%;
+
+        .hiring-container > .zucora-website {
+            font-size: 30px;
+            font-weight: 500
+        }
+
+    .smart-protection-plans-container {
+        margin-top: 25%;
     }
 
-    .two-column-smarterPlan{
+    .two-column-smarterPlan {
         grid-template-columns: 100%;
     }
-    .smart-protection-plans-container,.smarter-retailer-container{
-        width:100%;
-        margin:30% auto;
-    }
-    .two-grid-column-center, .three-grid-column-center{
-      grid-template-columns: 100%;
-      grid-gap:4em;
+
+    .smart-protection-plans-container, .smarter-retailer-container {
+        width: 100%;
+        margin: 30% auto;
     }
 
-    .smarter-partner-logo{
-      width:75%;
+    .two-grid-column-center, .three-grid-column-center {
+        grid-template-columns: 100%;
+        grid-gap: 4em;
     }
 
-    .three-grid-column-center{
-      margin:20% auto;
+    .smarter-partner-logo {
+        width: 75%;
     }
 
-    .video-box{
-      width:100%;
-      max-width: 100%;
-      margin:1em 0;
+    .three-grid-column-center {
+        margin: 20% auto;
     }
 
-    .modalCustom{
-      margin: 25% auto;
-      width: 95%;
+    .video-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 1em 0;
     }
 
-    .modalCustom h2{
-      font-size: 30px;
-      text-align: center;
+    .modalCustom {
+        margin: 25% auto;
+        width: 95%;
     }
-    .sps-form-style{
+
+        .modalCustom h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+    .sps-form-style {
         width: 100%;
     }
-      .becomePartner-form{
-        width:100%;
+
+    .becomePartner-form {
+        width: 100%;
     }
 
-    .thankYou-modal p{
-        padding:1em;
+    .thankYou-modal p {
+        padding: 1em;
     }
 
-    .zucora-color-logo{
+    .zucora-color-logo {
         width: 85%;
     }
-    .purple-wave-background{
+
+    .purple-wave-background {
         height: 900px;
     }
-    .rainbow-text{
+
+    .rainbow-text {
         width: 90%;
     }
-    .rainbow-text-steps{
+
+    .rainbow-text-steps {
         grid-template-columns: 100%;
-        padding-top:12%;
+        padding-top: 12%;
     }
 
 
-    .rainbow-logo{
-        width:90%;
+    .rainbow-logo {
+        width: 90%;
         max-width: 100%;
-        margin:0 auto;
+        margin: 0 auto;
         display: block;
     }
 
-    .rainbowInitiative-container{
-        width:100%;
-        margin:0 auto;
-    }
-
-    .rainbowInitiative-container img{
-        padding:0 1em;
-    }
-
-    .rainbowInitiative-container p{
+    .rainbowInitiative-container {
         width: 100%;
-        padding:1em;
-        margin:1em auto;
+        margin: 0 auto;
     }
 
-    .new-rainbow-images{
+        .rainbowInitiative-container img {
+            padding: 0 1em;
+        }
+
+        .rainbowInitiative-container p {
+            width: 100%;
+            padding: 1em;
+            margin: 1em auto;
+        }
+
+    .new-rainbow-images {
         flex-direction: column;
     }
 
-    .sanitizer-container{
-        width:100%;
+    .sanitizer-container {
+        width: 100%;
         max-width: 100%;
         grid-template-columns: 100%;
         padding: 0 1em;
     }
 
-    .notice-text-container{
-        width:90%;
+    .notice-text-container {
+        width: 90%;
     }
 
-    .grid-text-image{
+    .grid-text-image {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .giftCard-login-container{
-        margin:33% auto;
-        padding: 1.5em;
+    .new-rainbowSection-text {
+        width: 90%;
     }
-  
-    .newLogin-logo{
-        width: 50% !important;
+
+        .new-rainbowSection-text > p {
+            margin: 1em 0 0 0;
+        }
+
+    .zuc-about-hero-textbox > ul, .more-text-first > ul {
+        font-size: 14px;
+    }
+
+    .employeesFeedback-section {
+        bottom: 0em;
+        margin-top: 2em;
+    }
+
+    .remoteLife-section {
+        bottom: 0;
+    }
+
+    .remoteLife-article-section {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 2em;
+    }
+
+    .zuc-featured-block .\--gif-size img {
+        width: 100%;
     }
 }
 
@@ -1462,50 +1738,55 @@
     .show-for-mobile-only {
         display: none
     }
-    .left-side-image,
-    .right-side-image {
-        flex-flow: row wrap
-    }
+
     .commitment-featured-image {
         width: 50%
     }
-    .commitment-featured-image>img {
-        width: 100%;
-        max-width: 100%
-    }
-    .commitment-featured-content {
-        width: 50%;
-        padding: 0 2em
-    }
+
+        .commitment-featured-image > img {
+            width: 40%;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
     .tip-1 {
         top: -40%;
         left: 9%
     }
+
     .gallery-image {
         padding: 1em
     }
+
     .gallery-info {
         display: block;
         padding: 1em
     }
-    .team-gallery>.gallery-text {
+
+    .team-gallery > .gallery-text {
         width: 65%;
         margin: 0 auto
     }
+
     .thumbnail:hover {
         cursor: pointer;
         opacity: 1;
         transition: opacity .2s ease-in
     }
-    .thumbnail>img {
+
+    .thumbnail > img {
         width: 100px
     }
+
     .more-page-links {
         flex-direction: row;
     }
-    .gallery-arrow>a>i {
-        font-size: 6em
+
+    .gallery-arrow > a > i {
+        font-size: 9em
     }
+
     .imageGallery-display {
         display: grid;
         width: 70%;
@@ -1513,31 +1794,40 @@
         justify-content: center;
         align-items: center
     }
+
     .scroll-gallery-container {
         margin-top: 3em
     }
-    .three-slider>img {
+
+    .three-slider > img {
         margin: 0 10px
     }
+
     .culture-gallery-title {
         padding-left: 1em
     }
-    .culture-gallery-title>.zuc-title-container {
-        justify-content: flex-end
-    }
-    .culture-gallery-title h2 {
-        text-align: right
-    }
+
+        .culture-gallery-title > .zuc-title-container {
+            justify-content: flex-end
+        }
+
+        .culture-gallery-title h2 {
+            text-align: right
+        }
+
     .two-column-container {
         bottom: 10em
     }
+
     .scroll-gallery-container {
         position: relative;
         bottom: 3em
     }
+
     .organization-container {
         margin-top: 5em
     }
+
     .join-box {
         width: 50%;
         box-shadow: 0 2px 68px 0 hsla(0, 0%, 5%, .2);
@@ -1547,13 +1837,25 @@
         z-index: 100;
         padding: 5em
     }
-    .becomeZucorian-container>.culture-text {
+
+    .becomeZucorian-container > .culture-text {
         bottom: 25em
     }
+
     .hiring-container {
-        bottom: 10em
+        bottom: 5em;
     }
 
+    .whyZucora-points {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .values-container {
+        margin-top: 45em;
+    }
 }
 
 @media only screen and (min-width:1024px) {
@@ -1564,19 +1866,24 @@
         justify-content: center;
         align-items: center
     }
-    .three-grid-column-center{
-      margin:8% auto;
+
+    .three-grid-column-center {
+        margin: 8% auto;
     }
 
-    /*New gift card page*/
-    .giftCard-login-container{
-        margin:12% auto;
+    .image-width-60 {
+        width: 60% !important;
     }
-    .giftCard-login-container > form{
-         width:45%;
-        margin:2em auto;
+
+    .left-side-image,
+    .right-side-image {
+        flex-flow: row wrap;
     }
-  
+
+    .commitment-featured-content {
+        width: 50%;
+        padding: 0 2em
+    }
 }
 
 
@@ -1584,61 +1891,62 @@
     .our-values .zuc-sixgrid-item img {
         width: 70%
     }
+
     section.zuc-sixgrid-container {
         padding: 0 16vw
     }
-    .values-container {
-        margin-top: 13vw
-    }
+
     .background-image {
         height: 800px
     }
-    .two-column-smarterPlan{
-        padding:1em 6em;
-    }
 
+    .two-column-smarterPlan {
+        padding: 1em 6em;
+    }
 }
 
 @media only screen and (min-width:1441px) {
     .our-values .zuc-sixgrid-item img {
         width: 70%
     }
-    .values-container {
-        margin-top: 10vw
-    }
+
     .background-image {
         height: 1100px;
         background-size: cover
     }
-    .two-column-smarterPlan{
-        padding:1em 10em;
-    }
-    .smart-protection-plans-container,.smarter-retailer-container{
-      width:85%;
-      margin:7% auto;
-    }
-    .two-grid-column-center .video-box{
-      margin-top:1em;
-    }
-    .three-grid-column-center{
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
-      margin:5% auto;
-    }
-      .two-grid-column-center{
-      padding:1em 16.5%;
-      /*padding: 1em 0;*/
+
+    .two-column-smarterPlan {
+        padding: 1em 10em;
     }
 
-    .video-box{
-        max-width:500px;
+    .smart-protection-plans-container, .smarter-retailer-container {
+        width: 85%;
+        margin: 12% auto;
     }
 
-    .becomeSP-formOpen{
-      position: relative;
-      top:5em;
+    .two-grid-column-center .video-box {
+        margin-top: 1em;
     }
-   
+
+    .three-grid-column-center {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 5% auto;
+    }
+
+    .two-grid-column-center {
+        padding: 1em 16.5%;
+        /*padding: 1em 0;*/
+    }
+
+    .video-box {
+        max-width: 500px;
+    }
+
+    .becomeSP-formOpen {
+        position: relative;
+        top: 5em;
+    }
 }
 
 @media screen and (min-width:1980px) and (max-width:2399px) {
@@ -1646,13 +1954,18 @@
         background-size: cover;
         height: 1100px
     }
+
     .joinZucora-hero.background-image {
         height: 1200px
     }
+
     .jobOpening-box {
         width: 60%
     }
 
+    .new-rainbowSection-text {
+        top: 30%;
+    }
 }
 
 @media screen and (min-width:2400px) {
@@ -1660,17 +1973,29 @@
         height: 1500px;
         background-size: cover
     }
+
     .culture-text {
         bottom: 5em
     }
+
     .jobOpening-box {
         width: 50%
     }
-    .two-column-smarterPlan{
-        padding:1em 25%;
-        width:100%;
+
+    .two-column-smarterPlan {
+        padding: 1em 25%;
+        width: 100%;
     }
-    .three-grid-column-center .video-box{
-      /* width:450px; */
+
+    .three-grid-column-center .video-box {
+        /* width:450px; */
+    }
+
+    .new-rainbowSection-text {
+        top: 30%;
+    }
+
+    .join-box {
+        bottom: 40em;
     }
 }
