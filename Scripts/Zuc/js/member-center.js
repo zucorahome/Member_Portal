@@ -172,4 +172,53 @@ $('.close-confirmationGiftCardModal').click(function(){
   $('.giftCardConfirmation-modal-container').addClass('non-visible');
 });
 
+
+//New welcome screen js code.
+ 
+ $('.show-successModal').click(function(){
+    $('.becomeMember-form-success').show(1000);
+    $('.becomeMember-form-container').hide(1000);
+ });
+
+ // $('.becomeMember-close-modal').click(function(){
+ //  $(this).parent().closest('div .becomeMember-form-success').parent().closest('div').toggleClass('zuc-modal-active');
+ // });
+
+  $('.becomeMember-close-modal').click(function(){
+    $('.becomeMember-form-success').hide();
+    $('.becomeMember-form-container').show();
+    $('.becomeMember-form-container').parent('div').removeClass('zuc-modal-active');
+  });
+
+//rotating images
+
+//howeever number of circle class is it will change that many times.
+let totalCircles = $('.circle');
+let welcomeScreenProducts = ['../../Images/Zuc/images/member-portal/Zensory.png','../../Images/Zuc/images/member-portal/Celliant.png','../../Images/Zuc/images/member-portal/Frio.png','../../Images/Zuc/images/member-portal/Appliances.png'];
+let index = 0;
+function rotateImage(){
+
+  $('.product-imageGallery').fadeOut('slow',function(){
+    $(this).attr('src',welcomeScreenProducts[index]);
+
+    $(this).fadeIn('slow',function(){
+      if(index == welcomeScreenProducts.length-1)
+      {
+        index = 0;
+        $(totalCircles[index]).addClass('filled-color');
+        $(totalCircles[welcomeScreenProducts.length-1]).removeClass('filled-color')
+      }
+      else
+      {
+        index++;
+        //console.log(totalCircles[index]);
+        $(totalCircles[index]).addClass('filled-color');
+        $(totalCircles[index - 1]).removeClass('filled-color');
+      }
+    });
+  });
+}
+
+setInterval(rotateImage,3000);
+
 });

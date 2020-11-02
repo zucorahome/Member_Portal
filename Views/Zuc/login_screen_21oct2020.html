@@ -211,7 +211,7 @@
         <div class="form-buttons">
             <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button>
             <!-- <p style="font-size: 0.85em;" class="zuc-input-link">Don't have account?</p> -->
-            <button class="zuc-btn zuc-btn-secondary --full-width"><a href="javascript:void(0)" onclick="">Become a Member</a></button>
+            <button class="zuc-btn zuc-btn-secondary --full-width"><a href="javascript:void(0)" onclick="toggleModal('[data-modal-becomeMember]')">Become a Member</a></button>
           <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
         </div><!-- Button div ends-->
       </div>
@@ -260,8 +260,8 @@
             </div>
             <!-- Form buttons -->
             <div class="flex flex-hor-end flex-vert-center margin-top-1">
-              <a href="#/" class="u-uppercase">Cancel</a>
-              <button class="zuc-btn zuc-btn-secondary" style="margin:0 0 0 10px;"><a href="#/">Create account</a></button>
+              <a href="#/" class="u-uppercase becomeMember-close-modal">Cancel</a>
+              <button class="zuc-btn zuc-btn-secondary" style="margin:0 0 0 10px;"><a href="#/" class="show-successModal">Create account</a></button>
             </div>
           </div>
       </div>
