@@ -43,16 +43,16 @@
       <!-- User Navigation-->
       <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
         <!-- Slogan-->
-        <div class="zuc-nav-slogan u-normal">CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$49*</span></div>
+        <div class="zuc-nav-slogan u-normal">CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span></div>
         <!--Nav Links-->
         <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
-           <a href="/Zuc/ourstory" style="color:white;" class="u-text-uppercase">About us</a>
-          <a href="#/" style="color:white;" class="u-text-uppercase">Blog</a>
+           <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a>
+          <a href="#/" style="text-transform: uppercase;color:white;">Blog</a>
           <!-- Login - Logged Out State--><a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">
-            <!-- Logged Out State--> <i class="fas fa-lock u-auth-hide"></i><span class="u-auth-hide">Log In</span></a>
+            <!-- Logged Out State--><!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Centre</span></a>
           <!-- Account - Logged In State--><a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account">
             <!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
-            <a href="javascript:void(0)" onclick="toggleModal('[data-modal-becomeMember]')" class="flex flex-vert-center u-text-uppercase zuc-user-login u-bold">Become a member</a>
+
         </div>
       </div>
       <!-- Main Navigation-->
@@ -203,64 +203,15 @@
           <input type="password" required data-required name="password" placeholder="Password"><a style="font-size:0.85em;" class="zuc-input-link" href="/Zuc/formforgotpassword" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
         </div>
         <!-- Remember me radio button -->
-        <div class="remember-me" style="margin-left:2.5em;">
-            <input type="checkbox" value="remember-me-checked" name="remember-me"> 
-            <span>Remember me</span>
+        <div class="remember-me">
+            <input type="checkbox" value="remember-me-checked" name="remember-me"> Remember me
         </div>
         <!-- Submit Button-->
         <div class="form-buttons">
-            <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button>
-            <!-- <p style="font-size: 0.85em;" class="zuc-input-link">Don't have account?</p> -->
-            <button class="zuc-btn zuc-btn-secondary --full-width"><a href="javascript:void(0)" onclick="toggleModal('[data-modal-becomeMember]')">Become a Member</a></button>
+          <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button>
+          <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button>
           <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
         </div><!-- Button div ends-->
-      </div>
-    </div>
-    <!-- Become a member modal -->
-    <div class="zuc-modal" data-modal-becomeMember onclick="toggleModal('[data-modal-becomeMember]')">
-      <div class="zuc-modal-content becomeMember-form-container" onclick="event.stopPropagation()">
-          <p class="u-text-center u-zuc-indigo title">Become a member Today!</p>
-          <hr class="blue-hr">
-          <p class="u-text-center" style="font-size: 22px;font-weight: 500;">Please complete the form below to create your account</p>
-          <div class="flex flex-column margin-top-1">
-            <div class="zuc-form-row">
-              <div class="zuc-form-50 zuc-form-group">
-                <input type="text" name="firstName-becomeMember" placeholder="First Name" required="">
-              </div>
-              <div class="zuc-form-50 zuc-form-group">
-                <input type="text" name="lastName-becomeMember" placeholder="Last Name" required="">
-              </div>
-            </div>
-            <div class="zuc-form-row margin-top-1 margin-bottom-2">
-              <div class="zuc-form-group">
-                <input type="email" required="" name="email" placeholder="Email address">
-              </div>
-            </div>
-            <!-- inputs -->
-            <div class="remember-me margin-top-1 margin-bottom-1">
-              <input type="checkbox" required="" value="becomeMember-agreedTermsConditions" name="becomeMember-agreedTermsConditions" style="width: 30px;height: 30px;"> 
-              <span>*I have read and agree to the Terms of Service and Privacy Policy.</span>
-            </div>
-            <div class="remember-me margin-top-1 margin-bottom-1">
-              <input type="checkbox" value="emailNewsletter-agreed" name="emailNewsletter-agreed" style="width: 30px;height: 30px;"> 
-              <span>Please keep me informed about Smarter Living by ZucoraHome.</span>
-            </div>
-            <!-- Form buttons -->
-            <div class="flex flex-hor-end flex-vert-center margin-top-1">
-              <a href="#/" class="u-uppercase becomeMember-close-modal">Cancel</a>
-              <button class="zuc-btn zuc-btn-secondary" style="margin:0 0 0 10px;"><a href="#/" class="show-successModal">Create account</a></button>
-            </div>
-          </div>
-      </div>
-      <div class="zuc-modal-content becomeMember-form-success non-visible" onclick="event.stopPropagation()">
-        <p class="u-text-center u-zuc-indigo title">Success!</p>
-          <hr class="blue-hr">
-          <p class="u-text-center" style="font-weight:600;font-size: 22px;">Please Check Your Email.</p>
-          <div class="flex flex-column margin-top-1">
-            <img src="../../Images/Zuc/images/homepage/Checkmark.png" alt="Purple checkmark" class="center">
-            <p class="u-text-center" style="font-size: 18px;font-weight: 500;margin:1em auto;width: 80%;">Your have successfully created your account.  We've sent you an email with a verification link. Please check your email and follow the instructions provided.</p>
-            <button class="zuc-btn-secondary zuc-btn"><a href="javascript:void(0)" class="becomeMember-close-modal">Close</a></button>
-          </div>
       </div>
     </div>
     <!-- Main page content-->

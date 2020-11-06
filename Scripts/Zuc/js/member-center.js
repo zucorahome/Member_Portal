@@ -211,7 +211,6 @@ function rotateImage(){
       else
       {
         index++;
-        //console.log(totalCircles[index]);
         $(totalCircles[index]).addClass('filled-color');
         $(totalCircles[index - 1]).removeClass('filled-color');
       }

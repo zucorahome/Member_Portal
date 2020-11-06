@@ -5,7 +5,7 @@
 .center {
     display: block;
     margin: 0 auto;
-    /*width: 100%;*/
+    width: auto;
     max-width: 100%;
 }
 
@@ -98,11 +98,11 @@
 }
 
 .becomeMember-form-container, .becomeMember-form-success{
-    border:5px solid #70E9B2;
+    border:5px solid #434DA0;
     border-radius: 20px;
 }
 .becomeMember-form-container > .title, .becomeMember-form-success > .title{
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 700;
 }
 
