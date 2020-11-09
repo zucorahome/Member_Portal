@@ -1485,7 +1485,7 @@ background-color: #A3ACFF;
 
 /*New styling*/
 
-.fa-user-circle{
+.member-links > a > .fa-user-circle{
 	font-size: 20px;
 	color: #434DA0;
 	margin:5px;
@@ -1519,4 +1519,70 @@ background-color: #A3ACFF;
 	border-top:1px solid #434DA0;
 	width: 100%;
 	height: 2px;
+}
+
+/*New account review page*/
+
+@media screen and (max-width: 1024px){
+	.accountOverview-container{
+		width:100%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display:block;
+		visibility: visible;
+	}
+	.verticalMenu{
+		display: none;
+		visibility: hidden;
+	}
+}	
+
+@media screen and (min-width: 1025px) and (max-width:1679px){
+	.accountOverview-container{
+		width: 90%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 1680px){
+	.accountOverview-container{
+		width: 80%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.verticalMenu{
+	background-color: #434DA0;
+	color: white;
+	height: 100%;
+	padding: 1em;
+}
+
+.verticalMenu-forMobile > a , .verticalMenu > a{
+	margin:15px 0;
+}
+
+.verticalMenu-forMobile > a:focus , .verticalMenu > a:focus{
+	color:#70E9B2;
+}
+
+.verticalMenu-forMobile > a > .fa-pencil-alt, .verticalMenu > a > .fa-pencil-alt{
+	transform: rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+
+}
+
+.verticalMenu-forMobile > a > i, .verticalMenu > a > i{
+	font-size: 1.5em;
+	margin:0 5px;
+
 }
