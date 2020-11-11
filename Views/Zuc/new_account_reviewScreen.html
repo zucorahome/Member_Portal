@@ -222,7 +222,7 @@
   <!-- Main page content ends -->
   <section class="accountOverview-container">
     <!-- For less than 1024px  devices-->
-    <div class="flex flex-vert-center flex-hor-start">  
+    <div class="account-overview">  
       <div class="verticalMenu-forMobile">
         
       </div>
@@ -241,12 +241,31 @@
       </div>
       <div class="accountOverview-content">
         <h3 class="u-zuc-indigo u-bold" style="margin:0;">Account Overview</h3>
-        <p class="" style="font-size: 20px;font-weight: 500;margin:0;padding:0">Profile</p>
-        <div class="">
-          
+        <p class="" style="font-size: 22px;font-weight: 500;margin:10px 0;padding:0">Profile</p>
+        <div class="flex flex-column">
+          <div class="accountInfo-input">
+            <label>Email Address:</label>
+            <input type="text" name="accountOverview-emailId">
+          </div>
+          <div class="accountInfo-input">
+            <label>Service Address:</label>
+            <input type="text" name="accountOverview-address">
+          </div>
+          <div class="accountInfo-input">
+            <label>Phone Number</label>
+            <input type="number" name="accountOverview-phoneNumber">
+          </div>
+          <div class="accountInfo-input">
+            <label>Member Id:</label>
+            <input type="number" name="accountOverview-memberId">
+          </div>
+          <div class="flex flex-vert-center flex-hor-center">
+            
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
+
   </section>
   <!-- <footer></footer> -->
 

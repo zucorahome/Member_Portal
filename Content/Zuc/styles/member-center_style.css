@@ -1560,6 +1560,13 @@ background-color: #A3ACFF;
 	}
 }
 
+.account-overview{
+	display: grid;
+	grid-template-columns: 25% 70%;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
 .verticalMenu{
 	background-color: #434DA0;
 	color: white;
@@ -1585,4 +1592,12 @@ background-color: #A3ACFF;
 	font-size: 1.5em;
 	margin:0 5px;
 
+}
+
+.accountOverview-content .accountInfo-input{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	align-items: center;
+	justify-content: space-around;
+	margin:10px 0;
 }
