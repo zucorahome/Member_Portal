@@ -239,31 +239,56 @@
         <a href="#" class="flex flex-vert-end"><i class="fas fa-shipping-fast"></i>My Orders</a>
         <a href="#" class="flex flex-vert-end"><i class="fas fa-toggle-on"></i>Activate A Plan</a>
       </div>
-      <div class="accountOverview-content">
+      <div class="accountOverview-content margin-top-1">
         <h3 class="u-zuc-indigo u-bold" style="margin:0;">Account Overview</h3>
         <p class="" style="font-size: 22px;font-weight: 500;margin:10px 0;padding:0">Profile</p>
         <div class="flex flex-column">
           <div class="accountInfo-input">
-            <label>Email Address:</label>
+            <label>Email Address :</label>
             <input type="text" name="accountOverview-emailId">
           </div>
           <div class="accountInfo-input">
-            <label>Service Address:</label>
+            <label>Service Address :</label>
             <input type="text" name="accountOverview-address">
           </div>
           <div class="accountInfo-input">
-            <label>Phone Number</label>
+            <label>Phone Number :</label>
             <input type="number" name="accountOverview-phoneNumber">
           </div>
           <div class="accountInfo-input">
-            <label>Member Id:</label>
+            <label>Member Id :</label>
             <input type="number" name="accountOverview-memberId">
           </div>
-          <div class="flex flex-vert-center flex-hor-center">
-            
+          <div class="flex flex-vert-center flex-hor-between margin-top-1">
+            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="#/">Edit profile</a></button>
+            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="#/">Reset Password</a></button>
           </div>
         </div>
+        <!-- Your plans section -->
+        <div class="margin-top-2 margin-bottom-2">
+          <p style="font-size: 30px;font-weight: 500;" class="margin-bottom-1">Your Plans</p>
+          <div class="overviewAccount-plansBox">
+            <div class="">
+              <div class="flex flex-column">
+                <p class="u-zuc-indigo u-bold" style="font-size: 1.85em;">Smarter Living Plan</p>
+                <p class="u-bold">Combo Plan: Home Systems and Appliances</p>
+                <a href="#/" style="font-style: italic;text-decoration: underline;">Terms and Conditions</a>
+                <span style="margin-top:12%;">
+                  <p class="u-zuc-indigo" style="font-size: 1.85em;">Subscription Details:</p>
+                  <p class="u-bold">Your next bill date is xxxx-xx-xx.</p>
+                  <p class="u-bold">Your credit card (ending in xxxx) will be charged $xx + tax</p>
+                </span>
+                <a href="#/" class="margin-top-1 u-zuc-indigo u-uppercase u-bold">Change Payment Details</a>
+              </div>
+              <div>
+                <img src="../../Images/Zuc/images/member-portal/Appliances.png" class="center" style="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--AccountOverview div ends  -->
       </div>
+     
     </div>
 
   </section>
