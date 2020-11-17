@@ -1523,43 +1523,6 @@ background-color: #A3ACFF;
 
 /*New account review page*/
 
-@media screen and (max-width: 1024px){
-	.accountOverview-container{
-		width:100%;
-		margin:0 auto;
-	}
-	.verticalMenu-forMobile{
-		display:block;
-		visibility: visible;
-	}
-	.verticalMenu{
-		display: none;
-		visibility: hidden;
-	}
-}	
-
-@media screen and (min-width: 1025px) and (max-width:1679px){
-	.accountOverview-container{
-		width: 90%;
-		margin:0 auto;
-	}
-	.verticalMenu-forMobile{
-		display: none;
-		visibility: hidden;
-	}
-}
-
-@media screen and (min-width: 1680px){
-	.accountOverview-container{
-		width: 80%;
-		margin:0 auto;
-	}
-	.verticalMenu-forMobile{
-		display: none;
-		visibility: hidden;
-	}
-}
-
 .account-overview{
 	display: grid;
 	grid-template-columns: 25% 70%;
@@ -1612,7 +1575,69 @@ background-color: #A3ACFF;
 
 .overviewAccount-plansBox > div{
 	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 60% 40%;
 	align-items: center;
 	justify-content: center;
 }
+
+
+@media screen and (max-width: 1024px){
+	.accountOverview-container{
+		width:100%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display:block;
+		visibility: visible;
+	}
+	.verticalMenu{
+		display: none;
+		visibility: hidden;
+	}
+	.account-overview{
+		grid-template-columns: 90%;
+	}
+
+	.accountOverview-content .accountInfo-input{
+		grid-template-columns: 30% 70%;
+	}
+}	
+
+@media screen and (min-width: 1025px) and (max-width:1679px){
+	.accountOverview-container{
+		width: 90%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 1680px){
+	.accountOverview-container{
+		width: 80%;
+		margin:0 auto;
+	}
+	.verticalMenu-forMobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.editProfile-container{
+	border-radius: 20px;
+	border:5px solid #434DA0;
+}
+
+.editProfile-container > .title{
+	font-size: 3em;
+	font-weight: 700;
+}
+
+.flex-form-input{
+	display: grid;
+	grid-template-columns: 25% 75%;
+	align-items: center;
+	justify-content: center;
+} 

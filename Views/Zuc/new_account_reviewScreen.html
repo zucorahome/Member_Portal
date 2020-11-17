@@ -229,7 +229,7 @@
       <!-- For more than 1024px width -->
       <div class="verticalMenu flex flex-column">
         <a href="#" class="flex flex-vert-center"><i class="fas fa-user-circle"></i>Welcome, xxxx</a>
-        <a href="#" class="flex flex-vert-end margin-top-2"><i class="fas fa-home"></i>Account Overview</a>
+        <a href="#" class="flex flex-vert-end margin-top-2 verticalMenu-active"><i class="fas fa-home"></i>Account Overview</a>
         <a href="#" class="flex flex-vert-end"><i class="far fa-credit-card"></i>My Payment Details</a>
         <a href="#" class="flex flex-vert-end"><i class="fas fa-pencil-alt"></i>Plan Management</a>
         <a href="#" class="flex flex-vert-end"><i class="fas fa-gift"></i>My Rewards</a>
@@ -259,8 +259,8 @@
             <label>Member Id :</label>
             <input type="number" name="accountOverview-memberId">
           </div>
-          <div class="flex flex-vert-center flex-hor-between margin-top-1">
-            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="#/">Edit profile</a></button>
+          <div class="flex flex-vert-center flex-hor-center margin-top-1">
+            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="javascript:void(0)" onclick="toggleModal('[data-modal-editProfile]')">Edit profile</a></button>
             <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="#/">Reset Password</a></button>
           </div>
         </div>
@@ -281,16 +281,57 @@
                 <a href="#/" class="margin-top-1 u-zuc-indigo u-uppercase u-bold">Change Payment Details</a>
               </div>
               <div>
-                <img src="../../Images/Zuc/images/member-portal/Appliances.png" class="center" style="">
+                <img src="../../Images/Zuc/images/member-portal/Home-Appliances.png" class="center" style="">
               </div>
             </div>
           </div>
         </div>
         <!--AccountOverview div ends  -->
       </div>
-     
     </div>
-
+  </section>
+  <section class="zuc-modal" data-modal-editProfile onclick="toggleModal('[data-modal-editProfile]')">
+    <div class="zuc-modal-content editProfile-container" onclick="event.stopPropagation()">
+      <p class="u-zuc-indigo u-text-center title">Edit Profile</p>
+      <div class="margin-top-1">
+        <div class="zuc-form-row">
+          <div class="zuc-form-group flex-form-input">
+            <label>First Name:</label>
+            <input type="text" name="profile-firstName" for="" >
+          </div>
+          <div class="zuc-form-group flex-form-input">
+            <label>Last Name:</label>
+            <input type="text" name="profile-lastName" for="" >
+          </div>
+          <div class="zuc-form-group flex-form-input">
+            <label>Address 1:</label>
+            <input type="text" name="profile-address1" for="" >
+          </div>
+          <div class="zuc-form-group flex-form-input">
+            <label>Address 2:</label>
+            <input type="text" name="profile-address2" for="" >
+          </div>
+          <div class="zuc-form-group flex-form-input">
+            <label>City:</label>
+            <input type="text" name="profile-addressCity" for="" >
+          </div>
+        </div> 
+        <div class="zuc-form-row">
+            <div class="zuc-form-50 zuc-form-group flex-form-input">
+              <label>Province:</label>
+              <input type="text" name="profile-province" for="" >
+            </div>
+            <div class="zuc-form-50 zuc-form-group flex-form-input">
+              <label>Postal Code:</label>
+              <input type="text" name="profile-postalCode" for="" >
+            </div>
+        </div>
+        <div class="margin-top-2  margin-bottom-1 flex flex-vert-center flex-hor-center">
+          <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit" style="margin:0 10px;"><a href="javascript:void(0)">Complete</a></button>
+          <a href="#/" class="u-uppercase u-bold" onclick="toggleModal('[data-modal-editProfile]')">Cancel</a>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- <footer></footer> -->
 
