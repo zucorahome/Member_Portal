@@ -24,8 +24,14 @@
 
 .non-visible{
 	display: none;
+	visibility: hidden;
+	width: 0;
+	height: 0;
 }
 
+.margin-left-2{
+	margin-left: 2em;
+}
 
 p{
 	  font-family:'aktiv-grotesk',Helvetica,sans-serif;
@@ -124,9 +130,16 @@ h1,h2,h3,h4,h5,h6{
 }
 /*Member info box only for desktop*/
 @media screen and (max-width:767px){
-	.member-info-boxed, .member-navigation, .member-info-boxed-rightSide{
+	.member-info-boxed, .member-info-boxed-rightSide{
 		display: none;
 		visibility: hidden;
+	}
+
+	.member-navigation{
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		padding:10px;
 	}
 }
 @media screen and (min-width:768px){
@@ -405,6 +418,9 @@ a.form-links:hover{
 	.page-smarterLiving-logo, .page-smarterLiving-logo-noBorder{
 		width:90%;
 	}
+	.zuc-btn{
+		padding:15px 17px;
+	}
 }
 
 @media screen and (min-width:768px){
@@ -432,7 +448,7 @@ a.form-links:hover{
     color: white;
     letter-spacing: 1px;
     border: none;
-    min-width: 15em;
+    /*min-width: 15em;*/
     width: auto;
     text-align: center;
 }
@@ -453,9 +469,6 @@ background-color: #A3ACFF;
 
 
 @media screen and (min-width:1400px){
-	/*.member-center-container{
-		width:50%;
-	}*/
 
 	.page-smarterLiving-logo{
 		width:39%;
@@ -579,17 +592,6 @@ background-color: #A3ACFF;
 	}
 }
 
-/*@media screen and (min-width:1400px){
-	.address-modal{
-		height:170%;
-	}
-}
-
-@media screen and (min-width:1700px){
-	.address-modal{
-		height:180%;
-	}
-}*/
 
 .addressForm-select> .zuc-select-container select{
 	-webkit-box-shadow: none;
@@ -1386,6 +1388,10 @@ background-color: #A3ACFF;
 		width:90%;
 		margin:25% auto;
 	}
+
+	.mobile-margin-top-5{
+		margin-top: 2em;
+	}
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px){
@@ -1523,18 +1529,28 @@ background-color: #A3ACFF;
 /*new welcome screen*/
 
 .arrow-rightSide{
-	float: right;
-	width:auto;
-	height:auto;
-	position: relative;
+	
 }
 
+.arrow-rightSide > img{
+	transform: rotateY(160deg);
+	-webkit-transform: rotateY(160deg);
+	animation: moving 2s infinite;
+
+}
+
+@keyframes moving{
+	from{top:10px;}
+	to{top:0px;}
+}
 /*New account review page*/
 
 .account-overview{
-	display: grid;
-	grid-template-columns: 25% 70%;
-	justify-content: space-around;
+	/*display: grid;*/
+	/*grid-template-columns: 25% 70%;*/
+	/*justify-content: space-around;*/
+	display: flex;
+	justify-content: center;
 	align-items: flex-start;
 }
 
@@ -1543,8 +1559,13 @@ background-color: #A3ACFF;
 	color: white;
 	height: 100%;
 	padding: 1em;
+	margin-top:2em;
 }
 
+.verticalMenu-active{
+	color: #70E9B2;
+	font-weight: bold;
+}
 .verticalMenu-forMobile > a , .verticalMenu > a{
 	margin:15px 0;
 }
@@ -1564,6 +1585,7 @@ background-color: #A3ACFF;
 	margin:0 5px;
 
 }
+
 
 .accountOverview-content .accountInfo-input{
 	display: grid;
@@ -1588,6 +1610,15 @@ background-color: #A3ACFF;
 	justify-content: center;
 }
 
+@media screen and (max-width:767px){
+
+}
+
+@media screen and (min-width: 768px){
+	/*.accountOverview-content{
+		margin-left:2em;
+	}*/
+}
 
 @media screen and (max-width: 1024px){
 	.accountOverview-container{
@@ -1609,17 +1640,42 @@ background-color: #A3ACFF;
 	.accountOverview-content .accountInfo-input{
 		grid-template-columns: 30% 70%;
 	}
+	.accountOverview-content{
+		width: 90%;
+		margin:0 auto;
+	}
+	.arrow-rightSide{
+		float: right;
+		width:auto;
+		height:auto;
+		position: relative;
+		z-index: 1000;
+		margin:0 10px;
+	}	
+}
+
+@media screen and (min-width: 1025px){
+	.arrow-rightSide{
+		position: fixed;
+		left: 92%;
+		top:23%;
+		z-index: 1000;
+		width: auto;
+		height: auto;
+	}
 }	
 
 @media screen and (min-width: 1025px) and (max-width:1679px){
 	.accountOverview-container{
-		width: 90%;
+		width: 95%;
 		margin:0 auto;
+		margin-top: 3em;
 	}
 	.verticalMenu-forMobile{
 		display: none;
 		visibility: hidden;
 	}
+
 }
 
 @media screen and (min-width: 1680px){
@@ -1633,12 +1689,12 @@ background-color: #A3ACFF;
 	}
 }
 
-.editProfile-container{
+.memberProfile-container{
 	border-radius: 20px;
 	border:5px solid #434DA0;
 }
 
-.editProfile-container > .title{
+.memberProfile-container > .title{
 	font-size: 3em;
 	font-weight: 700;
 }

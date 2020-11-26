@@ -135,10 +135,14 @@
     <!-- Member center, will show up memeber have logged in. -->
     <div class="member-navigation flex">
       <div class="member-links">
-        <a href="#/" class="active">Help</a><span class="divider">|</span>
+        <a href="#/">Help</a><span class="divider">|</span>
         <a href="#/">1000 pts</a><span class="divider">|</span>
-        <a href="./memberProfile_afterConfirmation.html" class=""><i class="fas fa-user-circle"></i>My Account</a>
+        <a href="#/" class="active"><i class="fas fa-user-circle"></i>My Account</a>
       </div>
+      <!-- Mobile nav button -->
+       <div class="zuc-menu">
+        <div class="zuc-menu-open" role="button" data-memberportal-menu aria-label="Mobile Navigation"><span class="hidden" aria-hidden="true" aria-label="Open mobile menu">Mobile Menu</span></div>
+      </div> 
     </div>
     <!-- Mobile Navigation-->
     <!-- Mobile Only Nav ------------------------>
@@ -198,7 +202,8 @@
         <!-- Shop Now ---------------------------------->
         <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
         <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now"
-          style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;">Shop Now<i class="zuc-accordion-arrow fas fa-angle-right"></i></a>
+          style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;">Shop Now</a>
+          <!-- <i class="zuc-accordion-arrow fas fa-angle-right"></i> -->
         <!-- </div> -->
       </div>
       <div class="zuc-menu" data-open-menu>
@@ -218,28 +223,32 @@
     </div>
   </div>
   <!--Main page content starts  -->
-
-  <!-- Main page content ends -->
   <section class="accountOverview-container">
     <!-- For less than 1024px  devices-->
     <div class="account-overview">  
-      <div class="verticalMenu-forMobile">
-        
+      <div class="verticalMenu-forMobile zuc-mobile-nav" data-mobile-memberportal-menu>
+        <!-- Accordion Nav -->
+        <div class="zuc-accordion-nav" role="menu" aria-role="menu">
+          <!-- Main Welcome link -->
+          <div class="zuc-accordion-item" data-accordion-item>
+            <div class="zuc-accordion-title"><i class="fas fa-user-circle"></i>Welcome, xxxx</div>
+          </div>
+        </div>
       </div>
       <!-- For more than 1024px width -->
       <div class="verticalMenu flex flex-column">
-        <a href="#" class="flex flex-vert-center"><i class="fas fa-user-circle"></i>Welcome, xxxx</a>
-        <a href="#" class="flex flex-vert-end margin-top-2 verticalMenu-active"><i class="fas fa-home"></i>Account Overview</a>
-        <a href="#" class="flex flex-vert-end"><i class="far fa-credit-card"></i>My Payment Details</a>
-        <a href="#" class="flex flex-vert-end"><i class="fas fa-pencil-alt"></i>Plan Management</a>
-        <a href="#" class="flex flex-vert-end"><i class="fas fa-gift"></i>My Rewards</a>
-        <a href="#" class="flex flex-vert-end"><i class="far fa-file-alt"></i>Transaction History</a>
-        <a href="#" class="flex flex-vert-end"><i class="far fa-folder-open"></i>Important Documents</a>
-        <a href="#" class="flex flex-vert-end"><i class="far fa-eye"></i>My Claim Status</a>
-        <a href="#" class="flex flex-vert-end"><i class="fas fa-shipping-fast"></i>My Orders</a>
-        <a href="#" class="flex flex-vert-end"><i class="fas fa-toggle-on"></i>Activate A Plan</a>
+        <a href="#/" class="flex flex-vert-center"><i class="fas fa-user-circle"></i>Welcome, xxxx</a>
+        <a href="#/" class="flex flex-vert-end margin-top-2 verticalMenu-active"><i class="fas fa-home"></i>Account Overview</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-credit-card"></i>My Payment Details</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-pencil-alt"></i>Plan Management</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-gift"></i>My Rewards</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-file-alt"></i>Transaction History</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-folder-open"></i>Important Documents</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-eye"></i>My Claim Status</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-shipping-fast"></i>My Orders</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-toggle-on"></i>Activate A Plan</a>
       </div>
-      <div class="accountOverview-content margin-top-1">
+      <div class="accountOverview-content margin-top-2 margin-left-2">
         <h3 class="u-zuc-indigo u-bold" style="margin:0;">Account Overview</h3>
         <p class="" style="font-size: 22px;font-weight: 500;margin:10px 0;padding:0">Profile</p>
         <div class="flex flex-column">
@@ -291,7 +300,7 @@
     </div>
   </section>
   <section class="zuc-modal" data-modal-editProfile onclick="toggleModal('[data-modal-editProfile]')">
-    <div class="zuc-modal-content editProfile-container" onclick="event.stopPropagation()">
+    <div class="zuc-modal-content memberProfile-container" onclick="event.stopPropagation()">
       <p class="u-zuc-indigo u-text-center title">Edit Profile</p>
       <div class="margin-top-1">
         <div class="zuc-form-row">
@@ -330,6 +339,13 @@
           <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit" style="margin:0 10px;"><a href="javascript:void(0)">Complete</a></button>
           <a href="#/" class="u-uppercase u-bold" onclick="toggleModal('[data-modal-editProfile]')">Cancel</a>
         </div>
+      </div>
+    </div>
+    <!-- Sucees message once profile "complete" button clicked and form have been validated -->
+    <div class="zuc-modal-content memberProfile-container non-visible" onclick="">
+      <p class="u-zuc-indigo u-text-center title">Success</p>
+      <div class="">
+        
       </div>
     </div>
   </section>

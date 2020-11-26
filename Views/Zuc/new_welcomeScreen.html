@@ -135,9 +135,9 @@
     <!-- Member center, will show up memeber have logged in. -->
     <div class="member-navigation flex">
       <div class="member-links">
-        <a href="#/" class="active">Help</a><span class="divider">|</span>
+        <a href="#/">Help</a><span class="divider">|</span>
         <a href="#/">1000 pts</a><span class="divider">|</span>
-        <a href="./memberProfile_afterConfirmation.html" class=""><i class="fas fa-user-circle"></i>My Account</a>
+        <a href="./new_account_reviewScreen.html" class=""><i class="fas fa-user-circle"></i>My Account</a>
       </div>
     </div>
     <!-- Mobile Navigation-->
@@ -217,35 +217,57 @@
       <div class="zuc-broadcast-close" onclick="closeBroadcast()"><i class="fas fa-times"></i></div>
     </div>
   </div>
-  <!--Main page content starts  -->
-  <div class="arrow-rightSide">
-      <i class="fas fa-arrow-up"></i>
-      <p class="u-zuc-indigo u-bold">Get started here</p>
-    </div>
-  <section class="zuc-service-form member-center-container" style="">
-    <h1 class="sr-only">Member portal landing welcome page</h1>
 
-    <div class="inner-width">
-      <div class="flex flex-vert-center flex-hor-between mobile-column">
-        <div class="landingPage-scroll">
-          <p class="u-zuc-indigo mainTitle">Hello, Name!</p>
-          <p class="subTitle">Want to edit your profile or upgrade your Smarter Living Plan?  You can do it all here!</p>
-        </div>
-        <div>
-          <img src="../../Images/Zuc/images/member-portal/Appliances.png" alt="Image 1" class="center product-imageGallery">
-        </div>
+<section class="accountOverview-container">
+    <!-- For less than 1024px  devices-->
+    <div class="account-overview">  
+      <div class="verticalMenu-forMobile zuc-mobile-nav non-visible" data-mobile-menu>
+        
       </div>
-      <div class="flex flex-vert-center flex-hor-center margin-top-1">
-        <a href="javascript:void(0);" class="circle filled-color"></a>
-        <a href="javascript:void(0);" class="circle"></a>
-        <a href="javascript:void(0);" class="circle"></a>
-        <a href="javascript:void(0);" class="circle"></a>
+      <div class="verticalMenu flex flex-column non-visible">
+        <a href="#/" class="flex flex-vert-end margin-top-2 verticalMenu-active"><i class="fas fa-home"></i>Account Overview</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-credit-card"></i>My Payment Details</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-pencil-alt"></i>Plan Management</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-gift"></i>My Rewards</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-file-alt"></i>Transaction History</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-folder-open"></i>Important Documents</a>
+        <a href="#/" class="flex flex-vert-end"><i class="far fa-eye"></i>My Claim Status</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-shipping-fast"></i>My Orders</a>
+        <a href="#/" class="flex flex-vert-end"><i class="fas fa-toggle-on"></i>Activate A Plan</a>
       </div>
-    </div>
-    <div class="blue-hr"></div>
-  </section>
-  <!--Main page content ends  -->
-
+      <!-- Main content -->
+      <div class="accountOverview-content margin-top-2">
+        <h1 class="sr-only">Member portal landing welcome page</h1>
+        <!--  -->
+          <div class="arrow-rightSide">
+            <!-- <i class="fas fa-arrow-up"></i> -->
+            <img src="../../Images/Zuc/images/member-portal/Arrow.png" alt="Purple coloured circular arrow with text 'Get started here'" class="">
+            <p class="u-zuc-indigo u-bold">Get started here</p>
+          </div>
+      <!-- <section class="member-center-container" style=""> -->
+        <div class="accountOverview-content width-80 center mobile-margin-top-5">
+          <div class="flex flex-vert-center flex-hor-between mobile-column">
+            <div class="landingPage-scroll">
+              <p class="u-zuc-indigo mainTitle">Hello, Name!</p>
+              <p class="subTitle">Want to edit your profile or upgrade your Smarter Living Plan?  You can do it all here!</p>
+            </div>
+            <div>
+              <img src="../../Images/Zuc/images/member-portal/Appliances.png" alt="Image 1" class="center product-imageGallery">
+            </div>
+          </div>
+          <div class="flex flex-vert-center flex-hor-center margin-top-1">
+            <a href="javascript:void(0);" class="circle filled-color"></a>
+            <a href="javascript:void(0);" class="circle"></a>
+            <a href="javascript:void(0);" class="circle"></a>
+            <a href="javascript:void(0);" class="circle"></a>
+          </div>
+        </div>
+        <div class="blue-hr"></div>
+      <!-- </section> -->
+        <!--  -->
+      </div>
+    </div> 
+</section>
   <!-- Site Footer-->
   <footer class="zuc-footer-wrapper">
     <!-- - Footer Links-->

@@ -175,20 +175,17 @@ $('.close-confirmationGiftCardModal').click(function(){
 
 //New welcome screen js code.
  
- $('.show-successModal').click(function(){
-    $('.becomeMember-form-success').show(1000);
-    $('.becomeMember-form-container').hide(1000);
- });
-
- // $('.becomeMember-close-modal').click(function(){
- //  $(this).parent().closest('div .becomeMember-form-success').parent().closest('div').toggleClass('zuc-modal-active');
+ // $('.show-successModal').click(function(){
+ //    $('.becomeMember-form-success').show(1000);
+ //    $('.becomeMember-form-container').hide(1000);
  // });
 
-  $('.becomeMember-close-modal').click(function(){
-    $('.becomeMember-form-success').hide();
-    $('.becomeMember-form-container').show();
-    $('.becomeMember-form-container').parent('div').removeClass('zuc-modal-active');
-  });
+
+  // $('.becomeMember-close-modal').click(function(){
+  //   $('.becomeMember-form-success').hide();
+  //   $('.becomeMember-form-container').show();
+  //   $('.becomeMember-form-container').parent('div').removeClass('zuc-modal-active');
+  // });
 
 //rotating images
 
@@ -219,5 +216,13 @@ function rotateImage(){
 }
 
 setInterval(rotateImage,3000);
+
+// Setting height of vertical menu. 
+
+function getHeight(){
+  let height = $('.accountOverview-content').height();
+  $('.verticalMenu').css('height', height);
+}
+
 
 });

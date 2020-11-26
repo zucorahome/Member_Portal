@@ -100,9 +100,20 @@
       target.removeClass('zuc-nav-active');
     }
   };
+
+  //Adding new member portal menu js
+  $('[data-memberportal-menu]').click(function(){
+
+    $('[data-mobile-memberportal-menu]').toggleClass('zuc-mobile-nav-active');
+    $('body').toggleClass('body-active-mobile-nav');
+  });
+
+
 })();
 
 // Close Broadcast Banner
 function closeBroadcast() {
   $('[data-broadcast-banner]').addClass('u-hidden');
 }
+
+
