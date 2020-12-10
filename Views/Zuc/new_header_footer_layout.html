@@ -258,15 +258,15 @@
       <div class="zuc-broadcast-close" onclick="closeBroadcast()"><i class="fas fa-times"></i></div>
     </div>
   </div>
-  <!--Main page content starts  -->
-  <section class="accountOverview-container">
-    <!-- For less than 1024px  devices-->
-    <div class="account-overview">  
-      <!-- For more than 1024px width -->
-      <div class="verticalMenu flex flex-column">
+  <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
+
+<!--Main page content starts  -->
+<section class="accountOverview-container">
+  <div class="account-overview">  
+    <div class="verticalMenu flex flex-column">
         <a href="#/" class="flex flex-vert-center"><i class="fas fa-user-circle"></i>Welcome, xxxx</a>
-        <a href="#/" class="flex flex-vert-end margin-top-2 verticalMenu-active"><i class="fas fa-home"></i>Account Overview</a>
-        <a href="#/" class="flex flex-vert-end"><i class="far fa-credit-card"></i>My Payment Details</a>
+        <a href="#/" class="flex flex-vert-end margin-top-2"><i class="fas fa-home"></i>Account Overview</a>
+        <a href="#/" class="flex flex-vert-end verticalMenu-active"><i class="far fa-credit-card"></i>My Payment Details</a>
         <a href="#/" class="flex flex-vert-end"><i class="fas fa-pencil-alt"></i>Plan Management</a>
         <a href="#/" class="flex flex-vert-end"><i class="fas fa-gift"></i>My Rewards</a>
         <a href="#/" class="flex flex-vert-end"><i class="far fa-file-alt"></i>Transaction History</a>
@@ -276,128 +276,12 @@
         <a href="#/" class="flex flex-vert-end"><i class="fas fa-toggle-on"></i>Activate A Plan</a>
       </div>
       <div class="accountOverview-content margin-top-2 margin-left-2">
-        <h3 class="u-zuc-indigo u-bold" style="margin:0;">Account Overview</h3>
-        <p class="" style="font-size: 22px;font-weight: 500;margin:10px 0;padding:0">Profile</p>
-        <div class="flex flex-column">
-          <div class="accountInfo-input">
-            <label>Email Address :</label>
-            <input type="text" name="accountOverview-emailId">
-          </div>
-          <div class="accountInfo-input">
-            <label>Service Address :</label>
-            <input type="text" name="accountOverview-address">
-          </div>
-          <div class="accountInfo-input">
-            <label>Phone Number :</label>
-            <input type="number" name="accountOverview-phoneNumber">
-          </div>
-          <div class="accountInfo-input">
-            <label>Member Id :</label>
-            <input type="number" name="accountOverview-memberId">
-          </div>
-          <div class="flex flex-vert-center flex-hor-center margin-top-1">
-            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="javascript:void(0)" onclick="toggleModal('[data-modal-editProfile]')">Edit profile</a></button>
-            <button class="zuc-btn zuc-memberForm-button secondaryButton-color center" type="submit"><a href="#/">Reset Password</a></button>
-          </div>
-        </div>
-        <!-- Your plans section -->
-        <div class="margin-top-2 margin-bottom-2">
-          <p style="font-size: 30px;" class="margin-bottom-1 u-bold">Your Plans</p>
-          <div class="overviewAccount-plansBox">
-            <div class="">
-              <div class="flex flex-column">
-                <p class="u-zuc-indigo u-bold" style="font-size: 1.85em;">Smarter Living Plan</p>
-                <p class="u-bold">Combo Plan: Home Systems and Appliances</p>
-                <a href="#/" class="u-italic" style="text-decoration: underline;">Terms and Conditions</a>
-                <span style="margin-top:12%;">
-                  <p class="u-zuc-indigo" style="font-size: 1.85em;">Subscription Details:</p>
-                  <p class="u-bold">Your next bill date is xxxx-xx-xx.</p>
-                  <p class="u-bold">Your credit card (ending in xxxx) will be charged $xx + tax</p>
-                </span>
-                <!-- This will go to payment details screen -->
-                <a href="#/" class="margin-top-1 u-zuc-indigo u-uppercase u-bold">Change Payment Details</a>
-              </div>
-              <div>
-                <img src="../../Images/Zuc/images/member-portal/Home-Appliances.png" class="center" style="">
-              </div>
-            </div>
-          </div>
-          <!-- If user have other plan as well -->
-          <div class="overviewAccount-plansBox margin-top-2">
-            <div>
-              <div class="flex flex-column">
-                <p class="u-zuc-indigo u-bold" style="font-size: 1.85em;">SmarterONE Furniture Protection Plan</p>
-                <p class="u-bold">5 Year Furniture Protection</p>
-                <p class="margin-top-2 u-normal">Activated:<span>October 5, 2020</span></p>
-                <p class="u-bold">Valid untill October 5, 2025</p>
-                <a href="#/" class="u-italic" style="text-decoration: underline;">Terms and Conditions</a>
-              </div>
-              <div>
-                <img src="../../Images/Zuc/images/member-portal/Funiture-memberPortal.png" class="center" style="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--AccountOverview div ends  -->
+        <!-- PAGE CONTENT -->
+        <!-- PAGE CONTENT ENDS -->
       </div>
-    </div>
-  </section>
-  <section class="zuc-modal" data-modal-editProfile onclick="toggleModal('[data-modal-editProfile]')">
-    <div class="zuc-modal-content memberProfile-container" onclick="event.stopPropagation()">
-      <p class="u-zuc-indigo u-text-center title">Edit Profile</p>
-      <div class="margin-top-1">
-        <div class="zuc-form-row">
-          <div class="zuc-form-group flex-form-input">
-            <label>First Name:</label>
-            <input type="text" name="profile-firstName" for="" >
-          </div>
-          <div class="zuc-form-group flex-form-input">
-            <label>Last Name:</label>
-            <input type="text" name="profile-lastName" for="" >
-          </div>
-          <div class="zuc-form-group flex-form-input">
-            <label>Address 1:</label>
-            <input type="text" name="profile-address1" for="" >
-          </div>
-          <div class="zuc-form-group flex-form-input">
-            <label>Address 2:</label>
-            <input type="text" name="profile-address2" for="" >
-          </div>
-          <div class="zuc-form-group flex-form-input">
-            <label>City:</label>
-            <input type="text" name="profile-addressCity" for="" >
-          </div>
-        </div> 
-        <div class="zuc-form-row">
-            <div class="zuc-form-50 zuc-form-group flex-form-input">
-              <label>Province:</label>
-              <input type="text" name="profile-province" for="" >
-            </div>
-            <div class="zuc-form-50 zuc-form-group flex-form-input">
-              <label>Postal Code:</label>
-              <input type="text" name="profile-postalCode" for="" >
-            </div>
-        </div>
-        <div class="margin-top-2  margin-bottom-1 flex flex-vert-center flex-hor-center">
-          <button class="zuc-btn zuc-memberForm-button secondaryButton-color" type="submit" style="margin:0 10px;"><a href="javascript:void(0)">Complete</a></button>
-          <a href="#/" class="u-uppercase u-bold" onclick="toggleModal('[data-modal-editProfile]')">Cancel</a>
-        </div>
-      </div>
-    </div>
-    <!-- Sucees message once profile "complete" button clicked and form have been validated -->
-    <div class="zuc-modal-content memberProfile-container non-visible" onclick="">
-      <p class="u-zuc-indigo u-text-center title">Success</p>
-      <div class="flex flex-column margin-top-1 flex-vert-center flex-hor-center">
-        <img src="../../Images/Zuc/images/homepage/Checkmark.png" alt="Purple checkmark" class="center">
-        <p class="u-text-center margin-top-1" style="font-size:1.75em;font-weight: 500;">Your profile has been updated!</p>
-        <button class="zuc-btn-secondary zuc-btn"><a href="javascript:void(0)" class="">Close</a></button>
-      </div>
-    </div>
-  </section>
-  <!-- <footer></footer> -->
-
-  <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
-
+  </div>
+</section>  
+<!-- Main Content ends -->
 </body>
 
 </html>

@@ -1400,10 +1400,6 @@ background-color: #A3ACFF;
 		margin:20% auto;
 		padding: 1.5em;
 	}
-		.member-links{
-			position: relative;
-			right: 3em;
-	}
 }
 @media screen and (min-width: 1025px){
 	.member-login-container{
@@ -1724,14 +1720,4 @@ background-color: #A3ACFF;
 .purple-background{
 	background-color: #434da0;
 	padding: 10px;
-}
-
-.input-halfWidth > input{
-	width: 50%;
-}
-
-@media screen and (max-width:767px ){
-	.input-halfWidth > input{
-		width: 100%;
-	}
 }
